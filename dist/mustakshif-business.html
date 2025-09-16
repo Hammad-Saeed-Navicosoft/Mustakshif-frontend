@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mustakshif Business</title>
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="mustakship-business-page">
+
+    <!-- ========== HEADER ========== -->
+    <header class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200 home-header">
+      <nav class="relative container w-full mx-auto md:flex md:items-center md:justify-between md:gap-3">
+        <div class="flex justify-between items-center gap-x-1 px-4 h-full mbldeskheaderchange">
+          <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80" href="index.html" aria-label="Brand">
+            <img class="mobilelogo-width hidden md:block" src="/assets/images/newlogo.png" alt="" srcset=""/>
+            <img class="mobilelogo-width md:hidden" src="/assets/images/logo 2.png" alt="" srcset=""/>
+          </a>
+
+          <!-- Collapse Button -->
+          <button type="button" class="hs-collapse-toggle lg:hidden relative size-9 justify-center items-center font-medium text-sm rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
+            <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <!-- End Collapse Button -->
+        </div>
+
+        <!-- Collapse -->
+        <div id="hs-header-base" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:flex mobilebgheader"  aria-labelledby="hs-header-base-collapse" >
+          <div class="w-full overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
+            <div class="py-2 md:py-0 flex flex-col lg:flex-row lg:items-center gap-0.5 md:gap-1 navbtns-parent">
+              <div class="grow">
+                <div class="onlymenu flex flex-col md:flex-row justify-center lg:items-center gap-6 xl:gap-3 2xl:gap-6 px-3">
+                  
+
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Halal Places
+                  </a>
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Products
+                  </a>
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Shariah Board
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="#">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                    Subscription 
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="./How-mustakshif-works.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+                     How Mustakshif Work?
+                  </a>
+
+                  <!-- <div class="actions">
+
+                    
+                    <button class="icon-button" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+
+                    
+                    <div class="lang-dropdown">
+                      <button class="lang-toggle" onclick="toggleLangMenu()">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      </button>
+                      <div class="lang-menu" id="langMenu">
+                        <button onclick="setLanguage('en', 'us')">
+                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
+                        </button>
+                        <button onclick="setLanguage('ms', 'my')">
+                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
+                        </button>
+                        <button onclick="setLanguage('ar', 'sa')">
+                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
+                        </button>
+                        <button onclick="setLanguage('fr', 'fr')">
+                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
+                        </button>
+                        <button onclick="setLanguage('de', 'de')">
+                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
+                        </button>
+                      </div>
+                    </div>
+
+                    
+                    <div id="searchModal">
+                      <div class="modal-content flex items-center gap-6">
+                        <input type="text" placeholder="Search..." />
+                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                      </div>
+                    </div>
+
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- Button Group -->
+              <div class="md:ms-auto md:mt-0 flex  items-center px-2 header-btnsss">
+                <div class="actions">
+
+                    <!-- Search icon -->
+                    <button class="icon-button mt-1" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+
+                    <!-- Language selector with flag images -->
+                    <div class="lang-dropdown">
+                      <button class="lang-toggle" onclick="toggleLangMenu()">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      </button>
+                      <div class="lang-menu" id="langMenu">
+                        <button onclick="setLanguage('en', 'us')">
+                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
+                        </button>
+                        <button onclick="setLanguage('ms', 'my')">
+                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
+                        </button>
+                        <button onclick="setLanguage('ar', 'sa')">
+                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
+                        </button>
+                        <button onclick="setLanguage('fr', 'fr')">
+                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
+                        </button>
+                        <button onclick="setLanguage('de', 'de')">
+                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Search Modal -->
+                    <div id="searchModal">
+                      <div class="modal-content flex items-center gap-6">
+                        <input type="text" placeholder="Search..." />
+                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                <a class="bg-btn-gold py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  <i class="fa fa-user text-base" style="font-size: 16px;"></i> Log in
+                </a>
+                <a class="bg-btn-blue py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  Download
+                </a>
+              </div>
+              <!-- End Button Group -->
+            </div>
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+    <div class="advertisement-sec md:hidden" style="background-color: #D2C092; margin-top: -25px; height: 100px;"></div>
+    <div class="container mx-auto px-4 hidden md:block"> 
+      <div class="advertisement-sec rounded-xl" style="background-color: #D2C092; margin-top: -25px; height: 250px;">
+
+      </div> 
+    </div>
+
+    <div class="relative overflow-hidden dashboard-container">
+
+      <div class="container mx-auto px-4">
+        <div class="py-4 w-full">
+
+          <div class="grid grid-cols-3 gap-4 my-4 mobileblockitems">          
+            <div class="col-span-2 w-full" >
+              <div class="rounded-xl border" style="border-color: #E0DFDC;">
+                <div class="busibannimg">
+                  <img src="/assets/images/cover-img-business.png" width="100%" alt="">
+                </div>
+                <div class="px-6 py-4 flex lg:flex-row flex-col justify-between smallmobileblockitems" >
+                  <div class="profile-img-sec">
+                    <div class="profile-margin-negative">
+                      <img src="/assets/images/profile-img-business.png" width="auto" alt="">
+                    </div>
+                    <div class="pt-2">
+                      <h3 class="font-medium text-center md:text-left" style="font-size: 26px;">Display name Business on your</h3>
+                      <p class="text-base font-medium text-left centermbltxt">Business tag line</p>  
+                    </div>
+                  </div>
+                  <div class="flex md:flex-row flex-col gap-4 justify-center smallmobileblockitems mblsmallblockitms" style="align-items:flex-end">
+                    
+                    <div class="py-2 my-2 btnsdivbusi">
+                      <a class="button-bg-gold py-2 px-6 inline-flex items-center text-base font-medium text-white" style="border-radius:5px;" href="#">
+                      + Claim your Business
+                      </a>
+                      <a class="py-2 px-6 inline-flex items-center text-base font-medium text-white" style="background-color: red;border-radius:5px;" href="#">
+                        Haram
+                      </a>
+                      <a class="py-2 px-6 inline-flex items-center text-base font-medium text-white" style="background-color: #58BD51;border-radius:5px;" href="#">
+                      Halal
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-4 grid-rows-2 gap-2 my-4 smallmobileblockitems">
+  <div class="col-span-2 row-span-2 div1 relative">
+    <img src="/assets/images/mainimggallary.png" class="block w-full h-auto" alt="">
+    <a class="button-bg-gold py-2 px-6 inline-flex items-center font-medium text-white btnOnImg" style="border-radius: 20px;" href="#">
+      50+ Photos
+    </a>
+  </div>
+
+  <div class="col-span-1 div2">
+    <img src="/assets/images/imggallary2.png" class="block w-full h-auto" alt="">
+  </div>
+
+  <div class="col-span-1 div3">
+    <img src="/assets/images/imggallary3.png" class="block w-full h-auto" alt="">
+  </div>
+
+  <!-- only change is here: make the inner row a 3-col grid and allow shrink -->
+  <div class="row-start-2 col-start-3 div4 w-full min-w-0">
+    <div class="grid grid-cols-3 gap-2">
+      <img src="/assets/images/imggallary4.png" class="block w-full h-auto" alt="">
+      <img src="/assets/images/imggallary5.png" class="block w-full h-auto" alt="">
+      <img src="/assets/images/imggallary6.png" class="block w-full h-auto" alt="">
+    </div>
+  </div>
+</div>
+
+
+              <div class="tab-section">
+                <div class="border-b border-gray-200 my-4">
+                  <nav class="flex gap-4 tablist" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
+                    <button type="button" class="hs-tab-active:font-semibold py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent whitespace-nowrap text-black  focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none active" id="tabs-with-underline-item-1" aria-selected="true" data-hs-tab="#tabs-with-underline-1" aria-controls="tabs-with-underline-1" role="tab">
+                      Business Information
+                    </button>
+                    <button type="button" class="hs-tab-active:font-semibold py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent whitespace-nowrap text-black focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" id="tabs-with-underline-item-2" aria-selected="false" data-hs-tab="#tabs-with-underline-2" aria-controls="tabs-with-underline-2" role="tab">
+                      Halal Certificate
+                    </button>
+                    <button type="button" class="hs-tab-active:font-semibold py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent whitespace-nowrap text-black focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" id="tabs-with-underline-item-5" aria-selected="false" data-hs-tab="#tabs-with-underline-2" aria-controls="tabs-with-underline-2" role="tab">
+                      Menu
+                    </button>
+                    <button type="button" class="hs-tab-active:font-semibold py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent whitespace-nowrap text-black  focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" id="tabs-with-underline-item-3" aria-selected="false" data-hs-tab="#tabs-with-underline-3" aria-controls="tabs-with-underline-3" role="tab">
+                      Products
+                    </button>
+                    <button type="button" class="hs-tab-active:font-semibold py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent whitespace-nowrap text-black focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" id="tabs-with-underline-item-4" aria-selected="false" data-hs-tab="#tabs-with-underline-4" aria-controls="tabs-with-underline-4" role="tab">
+                      Reviews
+                    </button>
+                  </nav>
+                </div>
+
+                <div class="mt-3">
+                  <div id="tabs-with-underline-1" role="tabpanel" aria-labelledby="tabs-with-underline-item-1">
+                    <div class="rounded-xl border w-full my-4 p-4" style="border-color: #E0DFDC;">
+                      <div class="flex lg:flex-row flex-col gap-4 justify-between">
+                        <div class="w-full">
+                          <div class="my-4">
+                            <h3 class="text-xl font-medium text-black my-2">Email</h3>
+                            <p class="text-gray-500 text-base">
+                              haider.navicosof.com
+                            </p>
+                          </div>
+                          <div class="my-4">
+                            <h3 class="text-xl font-medium text-black my-2">Phone</h3>
+                            <p class="text-gray-500 text-base">
+                              +92 347 426 7788
+                            </p>
+                          </div>
+                          <div class="my-4">
+                            <h3 class="text-xl font-medium text-black my-2">Website</h3>
+                            <p class="text-gray-500 text-base">
+                              Mustakshif.com
+                            </p>
+                          </div>
+                          <div class="my-4">
+                            <h3 class="text-xl font-medium text-black my-2">Opening/Closing hours</h3>
+                            <!-- Preline + Tailwind Business Hours Dropdown -->
+                            <div class="hs-dropdown relative inline-flex [--placement:bottom-start] w-full">
+                              <!-- Toggle button -->
+                              <button id="hs-dropdown-business-hours" type="button"
+                                class="hs-dropdown-toggle inline-flex items-center justify-between gap-4 text-base px-4 py-2 rounded-lg font-medium text-gray-800 w-full" style="background-color: #EDEDED;">
+                                
+                                <span class="font-semibold">Wednesday - Thursday</span>
+                                <span class="text-green-600 font-medium">Open</span>
+                                <span>8:30am–7pm</span>
+                                
+                                <!-- Arrow icon -->
+                                <svg class="hs-dropdown-open:rotate-180  transition-transform ml-2 text-gray-600" fill="none" stroke="currentColor" stroke-width="2"
+                                  viewBox="0 0 24 24" style="width: 20px;">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                              </button>
+
+                              <!-- Dropdown content -->
+                              <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden z-20 mt-2 w-64 bg-white shadow-md rounded-lg border divide-y divide-gray-100"
+                                aria-labelledby="hs-dropdown-business-hours">
+                                
+                                <ul class="py-2 text-sm text-gray-700">
+                                  
+                                  <li class="flex justify-between gap-4 px-4 py-2">
+                                    <span>Friday</span><span>8:30am–7pm</span>
+                                  </li>
+                                  <li class="flex justify-between gap-4 px-4 py-2">
+                                    <span>Saturday</span><span>10:00am–4pm</span>
+                                  </li>
+                                  <li class="flex justify-between gap-4 px-4 py-2">
+                                    <span>Sunday</span><span style="color: #ff0000;">Closed</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="my-4">
+                            <h3 class="text-xl font-medium text-black my-2">Description</h3>
+                            <p class="text-gray-500 text-base">
+                              This halal food store is my go-to for fresh, high-quality products. The meat is always clean, and the service is friendly. I trust them completely
+                            </p>
+                          </div>
+                        </div> 
+                         <div class="w-full md:hidden" style="margin-top: -25px; margin-bottom: -25px;">
+                  <div class="text-center flex justify-center py-6 my-6 smallmobnone">
+                      <div class="mobileimgside ">
+                          <img  src="/assets/images/sidemobile.png"  alt="">
+                      </div>
+                  </div> 
+
+
+              <div class="text-center w-full my-4">               
+                <img src="/assets/images/advertiseimgside.png" width="100%">
+                <div class="my-4 text-center">
+                    <a class="button-bg-gold py-2 px-6 inline-flex items-center text-base font-medium text-white" style="border-radius: 20px;" href="#">
+                    Advertise with us
+                    </a>
+                </div>
+              </div>
+            </div>
+
+                        <div class="w-full">
+                          <div class="my-4">
+                            <div class="rounded-xl border w-full" style="border-color: #E0DFDC;">
+                              <div class="map-sec">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.58686755088!2d-0.2667466032008627!3d51.52852572208268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2s!4v1748244408878!5m2!1sen!2s" width="100%" height="235" style="border:0; border-radius: 10px 10px 0px 0px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              </div>
+                              <div class="p-4 flex justify-center flex-nowrap md:flex-wrap items-center gap-2">
+                                <a class="py-1 md:px-4 px-2 inline-flex items-center gap-2 text-base font-medium text-white border" style="border-radius: 20px; border-color:#B89B51; color:#B89B51" href="#">
+                                <img src="/assets/images/Navigation.png" alt=""> Direction
+                                </a>
+
+                                <a class="py-1 md:px-4 px-2 inline-flex items-center gap-2 text-base font-medium text-white border" style="border-radius: 20px; border-color:#B89B51; color:#B89B51" href="#">
+                                <img src="/assets/images/Bookmark.png" alt=""> Save
+                                </a>
+
+                                <a class="py-1 md:px-4 px-2 inline-flex items-center gap-2 text-base font-medium text-white border" style="border-radius: 20px; border-color:#B89B51; color:#B89B51" href="#">
+                                <img src="/assets/images/Share.png" alt=""> Share
+                                </a>
+
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="my-4">
+                            <h3 class="text-xl font-medium text-black my-2">Address:</h3>
+                            <p class="text-gray-500 text-base">
+                              12 C1 MM Alam Rd, Block C1 Block C 1 Gulberg III, Lahore12 C1 MM Alam Rd, Block C1 Block C 1 Gulberg III, Lahore
+                            </p>
+                          </div>
+                        </div> 
+                      </div>
+                        
+                    </div>
+                  </div>
+                  <div id="tabs-with-underline-2" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-2">
+                    <div class="rounded-xl border w-full my-4 p-4" style="border-color: #E0DFDC;">
+                      <div class="grid grid-cols-3 gap-5 p-5">
+                        <div class="p-8 text-center rounded-lg shadow-lg" style="height: 200px;background-color: #EDEDED;"></div>
+                        <div class="p-8 text-center rounded-lg shadow-lg" style="height: 200px;background-color: #EDEDED;"></div>
+                        <div class="p-8 text-center rounded-lg shadow-lg" style="height: 200px;background-color: #EDEDED;"></div>
+                        <div class="p-8 text-center rounded-lg shadow-lg" style="height: 200px;background-color: #EDEDED;"></div>
+                        <div class="p-8 text-center rounded-lg shadow-lg" style="height: 200px;background-color: #EDEDED;"></div>
+                      </div>
+                    </div> 
+                  </div>
+                  <div id="tabs-with-underline-5" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-2">
+                    <div class="rounded-xl border w-full my-4 p-4" style="border-color: #E0DFDC;">
+                      <div class="grid grid-cols-3 gap-5 p-5">
+                        <div class="p-8 text-center rounded-lg shadow-lg" style="height: 200px;background-color: #EDEDED;"></div>
+                        <div class="p-8 text-center rounded-lg shadow-lg" style="height: 200px;background-color: #EDEDED;"></div>
+                        <div class="p-8 text-center rounded-lg shadow-lg" style="height: 200px;background-color: #EDEDED;"></div>
+                        <div class="p-8 text-center rounded-lg shadow-lg" style="height: 200px;background-color: #EDEDED;"></div>
+                        <div class="p-8 text-center rounded-lg shadow-lg" style="height: 200px;background-color: #EDEDED;"></div>
+                      </div>
+                    </div> 
+                  </div>
+                  <div id="tabs-with-underline-3" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-3">
+                    <div class="rounded-xl border w-full my-4 p-4" style="border-color: #E0DFDC;">
+                    
+                      <div class="px-6 py-4">
+                        <h3 class="font-medium" style="font-size: 28px;">Most Scanned Products of the Day</h3>
+                      </div>
+                      <div class="px-6 py-4">
+                        <div class="grid lg-grid-cols-4 md-grid-col-2 gap-4 products-busi">
+                        
+                          <div>
+                            <div class="py-4 px-6 border rounded-xl flex justify-center" style="border-color: #E0DFDC;">
+                              <img class="py-6" src="/assets/images/prod-scan-img1.png" width="auto">
+                            </div>
+                            <h3 class="font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                            
+                          </div>
+
+                          <div>
+                            <div class="py-4 px-6 border rounded-xl flex justify-center" style="border-color: #E0DFDC;">
+                              <img class="py-6" src="/assets/images/prod-scan-img2.png" width="auto">
+                            </div>
+                            <h3 class="font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                            
+                          </div>
+                          <div>
+                            <div class="py-4 px-6 border rounded-xl flex justify-center" style="border-color: #E0DFDC;">
+                              <img class="py-6" src="/assets/images/prod-scan-img1.png" width="auto">
+                            </div>
+                            <h3 class="font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                            
+                          </div>
+
+                          <div>
+                            <div class="py-4 px-6 border rounded-xl flex justify-center" style="border-color: #E0DFDC;">
+                              <img class="py-6" src="/assets/images/prod-scan-img2.png" width="auto">
+                            </div>
+                            <h3 class="font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                            
+                          </div>
+                          <div>
+                            <div class="py-4 px-6 border rounded-xl flex justify-center" style="border-color: #E0DFDC;">
+                              <img class="py-6" src="/assets/images/prod-scan-img1.png" width="auto">
+                            </div>
+                            <h3 class="font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                            
+                          </div>
+
+                          <div>
+                            <div class="py-4 px-6 border rounded-xl flex justify-center" style="border-color: #E0DFDC;">
+                              <img class="py-6" src="/assets/images/prod-scan-img2.png" width="auto">
+                            </div>
+                            <h3 class="font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                            
+                          </div>
+                          <div>
+                            <div class="py-4 px-6 border rounded-xl flex justify-center" style="border-color: #E0DFDC;">
+                              <img class="py-6" src="/assets/images/prod-scan-img1.png" width="auto">
+                            </div>
+                            <h3 class="font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                            
+                          </div>
+
+                          <div>
+                            <div class="py-4 px-6 border rounded-xl flex justify-center" style="border-color: #E0DFDC;">
+                              <img class="py-6" src="/assets/images/prod-scan-img2.png" width="auto">
+                            </div>
+                            <h3 class="font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                            
+                          </div>
+
+                        
+
+                        </div>
+                      </div>
+                    </div>
+     
+                  </div>
+                  <div id="tabs-with-underline-4" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-3">
+                    <div class="rounded-xl border w-full my-4 p-4" style="border-color: #E0DFDC; background-color: #f1f1f1;">
+                    
+
+                                <div class="people-love-section" >
+                                  <div class="container mx-auto">
+    <div class="flex flex-row items-end py-4">
+              <h3 class="text-nowrap" style="font-size: 28px;">People Love</h3>
+              <div class="w-full mx-2 mb-2" style="border-bottom: 1px solid #000"></div> 
+      </div>
+                                  </div>
+                                  <div class="people-love-grid people-love-gridbusiness1 grid-cols-4 grid gap-5" >
+                                    <div class="people-love-card bg-white">
+                                      <div class="flex gap-3 justify-center">
+                                        <img src="../assets/images/people-avatar1.png" alt="">
+                                        <div class="flex flex-col justify-center">
+                                          <h4 class="font-semibold" style="font-size: 18px;">Mila McSabbu</h4>
+                                          <p style="font-size: 14px;">Freelance Designer</p>
+                                        </div>
+                                      </div>
+                                      <p class="text-center reviewtext-al" style="margin-top: 20px;">We test and compare the best project management software for collaborating with a team, hitting deadlines.</p>
+                                    </div>
+                                    <div class="people-love-card bg-white">
+                                      <div class="flex gap-3">
+                                        <img src="../assets/images/people-avatar2.png" alt="">
+                                        <div class="flex flex-col justify-center">
+                                          <h4 class="font-semibold" style="font-size: 18px;">Mila McSabbu</h4>
+                                          <p style="font-size: 14px;">Freelance Designer</p>
+                                        </div>
+                                      </div>
+                                      <p class="text-center reviewtext-al" style="margin-top: 20px;">We test and compare the best project management software for collaborating with a team, hitting deadlines.</p>
+                                    </div>
+                                    <div class="people-love-card bg-white">
+                                      <div class="flex gap-3">
+                                        <img src="../assets/images/people-avatar3.png" alt="">
+                                        <div class="flex flex-col justify-center">
+                                          <h4 class="font-semibold" style="font-size: 18px;">Mila McSabbu</h4>
+                                          <p style="font-size: 14px;">Freelance Designer</p>
+                                        </div>
+                                      </div>
+                                      <p class="text-center reviewtext-al" style="margin-top: 20px;">We test and compare the best project management software for collaborating with a team, hitting deadlines.</p>
+                                    </div>
+                                    <div class="people-love-card bg-white">
+                                      <div class="flex gap-3">
+                                        <img src="../assets/images/people-avatar4.png" alt="">
+                                        <div class="flex flex-col justify-center">
+                                          <h4 class="font-semibold" style="font-size: 18px;">Mila McSabbu</h4>
+                                          <p style="font-size: 14px;">Freelance Designer</p>
+                                        </div>
+                                      </div>
+                                      <p class="text-center reviewtext-al" style="margin-top: 20px;">We test and compare the best project management software for collaborating with a team, hitting deadlines.</p>
+                                    </div>
+                                    <div class="people-love-card bg-white">
+                                      <div class="flex gap-3">
+                                        <img src="../assets/images/people-avatar4.png" alt="">
+                                        <div class="flex flex-col justify-center">
+                                          <h4 class="font-semibold" style="font-size: 18px;">Mila McSabbu</h4>
+                                          <p style="font-size: 14px;">Freelance Designer</p>
+                                        </div>
+                                      </div>
+                                      <p class="text-center reviewtext-al" style="margin-top: 20px;">We test and compare the best project management software for collaborating with a team, hitting deadlines.</p>
+                                    </div>
+                                  </div>
+                                  <div class="people-love-grid people-love-gridbusiness2 grid-cols-4 grid gap-5" >
+                                    <div class="people-love-card bg-white">
+                                      <div class="flex gap-3 justify-center">
+                                        <img src="../assets/images/people-avatar1.png" alt="">
+                                        <div class="flex flex-col justify-center">
+                                          <h4 class="font-semibold" style="font-size: 18px;">Mila McSabbu</h4>
+                                          <p style="font-size: 14px;">Freelance Designer</p>
+                                        </div>
+                                      </div>
+                                      <p class="text-center reviewtext-al" style="margin-top: 20px;">We test and compare the best project management software for collaborating with a team, hitting deadlines.</p>
+                                    </div>
+                                    <div class="people-love-card bg-white">
+                                      <div class="flex gap-3">
+                                        <img src="../assets/images/people-avatar2.png" alt="">
+                                        <div class="flex flex-col justify-center">
+                                          <h4 class="font-semibold" style="font-size: 18px;">Mila McSabbu</h4>
+                                          <p style="font-size: 14px;">Freelance Designer</p>
+                                        </div>
+                                      </div>
+                                      <p class="text-center reviewtext-al" style="margin-top: 20px;">We test and compare the best project management software for collaborating with a team, hitting deadlines.</p>
+                                    </div>
+                                    <div class="people-love-card bg-white">
+                                      <div class="flex gap-3">
+                                        <img src="../assets/images/people-avatar3.png" alt="">
+                                        <div class="flex flex-col justify-center">
+                                          <h4 class="font-semibold" style="font-size: 18px;">Mila McSabbu</h4>
+                                          <p style="font-size: 14px;">Freelance Designer</p>
+                                        </div>
+                                      </div>
+                                      <p class="text-center reviewtext-al" style="margin-top: 20px;">We test and compare the best project management software for collaborating with a team, hitting deadlines.</p>
+                                    </div>
+                                    <div class="people-love-card bg-white">
+                                      <div class="flex gap-3">
+                                        <img src="../assets/images/people-avatar4.png" alt="">
+                                        <div class="flex flex-col justify-center">
+                                          <h4 class="font-semibold" style="font-size: 18px;">Mila McSabbu</h4>
+                                          <p style="font-size: 14px;">Freelance Designer</p>
+                                        </div>
+                                      </div>
+                                      <p class="text-center reviewtext-al" style="margin-top: 20px;">We test and compare the best project management software for collaborating with a team, hitting deadlines.</p>
+                                    </div>
+                                    <div class="people-love-card bg-white">
+                                      <div class="flex gap-3">
+                                        <img src="../assets/images/people-avatar4.png" alt="">
+                                        <div class="flex flex-col justify-center">
+                                          <h4 class="font-semibold" style="font-size: 18px;">Mila McSabbu</h4>
+                                          <p style="font-size: 14px;">Freelance Designer</p>
+                                        </div>
+                                      </div>
+                                      <p class="text-center reviewtext-al" style="margin-top: 20px;">We test and compare the best project management software for collaborating with a team, hitting deadlines.</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+
+
+
+
+                     
+                    </div>
+     
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center w-full">               
+                <img src="/assets/images/advertizeimg.png" width="100%">
+
+                <div class="my-4 text-center">
+                    <a class="button-bg-gold py-2 px-6 inline-flex items-center text-base font-medium text-white" style="border-radius: 20px;" href="#">
+                    Advertise with us
+                    
+                    </a>
+                </div>
+              </div>
+
+              <div class="rounded-xl border" style="border-color: #E0DFDC;">
+                <div class="p-4 nearbbbbb">
+                  <h3 class="font-medium" style="font-size: 26px;">Nearby Business</h3>
+                </div>
+                <div>
+                  <!-- Grid -->
+                  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 slidingcards">
+                    <!-- Card -->
+                    <div class="group border hover:border-transparent hover:shadow-lg relative focus:outline-hidden focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl mx-2 my-4" style="border-color: #EDEDED;">
+                      <div class="mt-auto flex items-start gap-2 p-4">
+                        <img src="/assets/images/businessprofileicon.png" alt="">
+                        <div>
+                          <h5 class="text-sm text-black">Display name Business on your</h5>
+                          <div class="flex items-center gap-2">
+          
+                            <div class="flex">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                            </div>
+
+                            <p class="py-1 text-sm text-gray-500">
+                            4.8 reviews
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-full">
+                        <img class="w-full object-cover" src="/assets/images/businessimgnearby.png" alt="">
+                      </div>
+                      <div class="px-2 py-4 flex flex-row justify-between gap-2 items-center" style="background-color: #EDEDED;">
+                        <span>
+                          <img src="/assets/images/Clock.png" width="auto" alt="">
+                        </span>
+                        <span class="text-sm font-medium" style="color: #ff0000;">
+                          Closes soon . 5 pm .
+                        </span>
+                        <span class="text-sm font-medium" style="color: #2F870F;">
+                           Opens 8 am Tue
+                        </span>
+                      </div>
+
+                      <div class="p-4 flex justify-center">
+                        <a class="button-bg-gold py-1 px-4 inline-flex items-center gap-2 text-base font-medium text-white border btnabsoluteline" style="border-radius: 20px;" href="#">
+                          <img src="/assets/images/navigation-white.png" alt=""> Direction
+                        </a>
+
+                      </div>
+                      
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="group border hover:border-transparent hover:shadow-lg relative focus:outline-hidden focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl mx-2 my-4" style="border-color: #EDEDED;">
+                      <div class="mt-auto flex items-start gap-2 p-4">
+                        <img src="/assets/images/businessprofileicon.png" alt="">
+                        <div>
+                          <h5 class="text-sm text-black">Display name Business on your</h5>
+                          <div class="flex items-center gap-2">
+          
+                            <div class="flex">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                            </div>
+
+                            <p class="py-1 text-sm text-gray-500">
+                            4.8 reviews
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-full">
+                        <img class="w-full object-cover" src="/assets/images/businessimgnearby.png" alt="">
+                      </div>
+                      <div class="px-2 py-4 flex flex-row justify-between gap-2 items-center" style="background-color: #EDEDED;">
+                        <span>
+                          <img src="/assets/images/Clock.png" width="auto" alt="">
+                        </span>
+                        <span class="text-sm font-medium" style="color: #ff0000;">
+                          Closes soon . 5 pm .
+                        </span>
+                        <span class="text-sm font-medium" style="color: #2F870F;">
+                           Opens 8 am Tue
+                        </span>
+                      </div>
+
+                      <div class="p-4 flex justify-center">
+                        <a class="button-bg-gold py-1 px-4 inline-flex items-center gap-2 text-base font-medium text-white border btnabsoluteline" style="border-radius: 20px;" href="#">
+                          <img src="/assets/images/navigation-white.png" alt=""> Direction
+                        </a>
+
+                      </div>
+                      
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="group border hover:border-transparent hover:shadow-lg relative focus:outline-hidden focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl mx-2 my-4" style="border-color: #EDEDED;">
+                      <div class="mt-auto flex items-start gap-2 p-4">
+                        <img src="/assets/images/businessprofileicon.png" alt="">
+                        <div>
+                          <h5 class="text-sm text-black">Display name Business on your</h5>
+                          <div class="flex items-center gap-2">
+          
+                            <div class="flex">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                            </div>
+
+                            <p class="py-1 text-sm text-gray-500">
+                            4.8 reviews
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-full">
+                        <img class="w-full object-cover" src="/assets/images/businessimgnearby.png" alt="">
+                      </div>
+                      <div class="px-2 py-4 flex flex-row justify-between gap-2 items-center" style="background-color: #EDEDED;">
+                        <span>
+                          <img src="/assets/images/Clock.png" width="auto" alt="">
+                        </span>
+                        <span class="text-sm font-medium" style="color: #ff0000;">
+                          Closes soon . 5 pm .
+                        </span>
+                        <span class="text-sm font-medium" style="color: #2F870F;">
+                           Opens 8 am Tue
+                        </span>
+                      </div>
+
+                      <div class="p-4 flex justify-center">
+                        <a class="button-bg-gold py-1 px-4 inline-flex items-center gap-2 text-base font-medium text-white border btnabsoluteline" style="border-radius: 20px;" href="#">
+                          <img src="/assets/images/navigation-white.png" alt=""> Direction
+                        </a>
+
+                      </div>
+                      
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="group border hover:border-transparent hover:shadow-lg relative focus:outline-hidden focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl mx-2 my-4" style="border-color: #EDEDED;">
+                      <div class="mt-auto flex items-start gap-2 p-4">
+                        <img src="/assets/images/businessprofileicon.png" alt="">
+                        <div>
+                          <h5 class="text-sm text-black">Display name Business on your</h5>
+                          <div class="flex items-center gap-2">
+          
+                            <div class="flex">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                              <img src="/assets/images/Star.png" width="16px" height="16px" alt="">
+                            </div>
+
+                            <p class="py-1 text-sm text-gray-500">
+                            4.8 reviews
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-full">
+                        <img class="w-full object-cover" src="/assets/images/businessimgnearby.png" alt="">
+                      </div>
+                      <div class="px-2 py-4 flex flex-row justify-between gap-2 items-center" style="background-color: #EDEDED;">
+                        <span>
+                          <img src="/assets/images/Clock.png" width="auto" alt="">
+                        </span>
+                        <span class="text-sm font-medium" style="color: #ff0000;">
+                          Closes soon . 5 pm .
+                        </span>
+                        <span class="text-sm font-medium" style="color: #2F870F;">
+                           Opens 8 am Tue
+                        </span>
+                      </div>
+
+                      <div class="p-4 flex justify-center">
+                        <a class="button-bg-gold py-1 px-4 inline-flex items-center gap-2 text-base font-medium text-white border btnabsoluteline" style="border-radius: 20px;" href="#">
+                          <img src="/assets/images/navigation-white.png" alt=""> Direction
+                        </a>
+
+                      </div>
+                      
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                  <!-- End Grid -->
+                  <!-- Card -->
+                  <div class="mt-4 py-2 text-center border-t" style="border-color: #EDEDED;">
+                    <a class="py-1 px-4 inline-flex items-center gap-2 text-base font-medium text-black" href="#">
+                      View All Business 
+                    </a>
+                  </div>
+                  <!-- End Card -->
+                </div>
+              </div>
+
+            </div>
+
+            <div class="w-full hidden md:block">
+              <div class="w-full p-4 rounded-lg sidebg relative " >
+                <h3 class="font-medium text-center py-4" >Download Mustakshif App</h3>
+                <div class="flex flex-col items-center justify-end py-4 my-4 relative sm-align-center businessdownbtn" style="align-items: flex-end; z-index: 1;">
+                  <div class="qrcodesec">
+                      <a href="#"><img src="/assets/images/qrcodeimg.png" width="100%" alt=""></a>
+                  </div>
+                  <div class="flex flex-col gap-2 py-3" style="width: 146px;">
+                      <div class="text-right border bg-applebtn rounded" style="border-color: #000;">
+                      <a class="flex flex-row items-center justify-between gap-2 w-full  py-2 px-3 " href="#">
+                          <div class="img-sec-features"><img src="/assets/images/Apple-Inc.png" width="100%" alt=""></div>
+                          <p class="text-xs font-medium">App Store</p>
+                          <p class="text-xl font-medium">&#8594;</p>  
+                      </a>
+                      </div>
+                      <div class="text-center border bg-googlebtn rounded bg-transparentHover" style="border-color: #000; background-color: transparent; color: #000 !important;">
+                      <a class="flex flex-row items-center justify-center gap-2 w-full py-2 px-3 " href="#">
+                          <div class="img-sec-features"><img src="/assets/images/Google-Play.png" width="100%" alt=""></div>
+                          <p class="text-xs font-medium text-black">Google Play</p>
+                          <p class="text-xl font-medium text-black">&#8594;</p>
+                      </a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="imgsidebus">
+                  <div class="text-center flex justify-center py-6 my-6 smallmobnone">
+                      <div class="mobileimgside ">
+                          <img  src="/assets/images/sidemobile.png"  alt="">
+                      </div>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="text-center w-full my-4">               
+                <img src="/assets/images/advertiseimgside.png" width="100%">
+                <div class="my-4 text-center">
+                    <a class="button-bg-gold py-2 px-6 inline-flex items-center text-base font-medium text-white" style="border-radius: 20px;" href="#">
+                    Advertise with us
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="mt-4 w-full container py-4 px-4 sm:px-6 lg:px-8 mx-auto">
+        <div class="text-center">
+          <h3 class="text-base font-medium" style="color: #677d99">
+            2025 @ Mustakshif, Design & Develop By Navicosoft
+          </h3>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
+
+    <script src="/assets/script.js">
+    </script>
+
+  </body>
+</html>

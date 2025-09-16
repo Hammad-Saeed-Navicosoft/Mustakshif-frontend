@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<script src="//unpkg.com/alpinejs" defer></script>
+
+  </head>
+  <body class="dashboard-page">
+
+<!-- Include Alpine.js -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+<!-- Mobile Header with Sidebar -->
+<div x-data="{ open: false }" class="md:hidden z-50 relative">
+
+  <!-- TOP BAR (Always Visible) -->
+  <div class="flex justify-between items-center px-4 py-3" style="background-color: #0D1E38;">
+    <!-- Hamburger Button -->
+    <button @click="open = true">
+      <svg width="34" height="19" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="7" width="28" height="5" rx="2.5" fill="white" />
+        <rect width="34" height="5" rx="2.5" fill="white" />
+        <rect y="14" width="23" height="5" rx="2.5" fill="white" />
+      </svg>
+    </button>
+
+    <!-- Logo -->
+    <img src="/assets/images/logo 2.png" alt="Mustakshif" class="h-8" />
+
+    <!-- Notification Bell with Dot -->
+    <div class="relative">
+      <button class="p-2 flex items-center justify-center rounded-full" style="background-color: #FAFAFA;">
+  
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6999 11.7146C19.0041 10.9021 18.688 10.1979 18.688 9.00168V8.59494C18.688 7.03607 18.3292 6.03168 17.5491 5.02729C16.3469 3.46746 14.3229 2.52734 12.3416 2.52734H12.2573C10.3176 2.52734 8.35707 3.42429 7.13398 4.9208C6.31134 5.94534 5.9109 6.9929 5.9109 8.59494V9.00168C5.9109 10.1979 5.61554 10.9021 4.89892 11.7146C4.37163 12.3132 4.20312 13.0826 4.20312 13.9152C4.20312 14.7489 4.47671 15.5384 5.02577 16.1801C5.74239 16.9495 6.75437 17.4407 7.78812 17.526C9.28479 17.6968 10.7815 17.7611 12.2999 17.7611C13.8174 17.7611 15.3141 17.6536 16.8117 17.526C17.8445 17.4407 18.8565 16.9495 19.5731 16.1801C20.1212 15.5384 20.3957 14.7489 20.3957 13.9152C20.3957 13.0826 20.2272 12.3132 19.6999 11.7146Z" fill="#B89B51"/>
+                <path opacity="0.4" d="M14.2089 18.9356C13.7328 18.834 10.8312 18.834 10.3551 18.9356C9.94801 19.0297 9.50781 19.2484 9.50781 19.728C9.53148 20.1856 9.79938 20.5895 10.1705 20.8456L10.1695 20.8466C10.6495 21.2207 11.2127 21.4586 11.8025 21.544C12.1168 21.5872 12.4368 21.5852 12.7624 21.544C13.3513 21.4586 13.9145 21.2207 14.3945 20.8466L14.3935 20.8456C14.7646 20.5895 15.0325 20.1856 15.0562 19.728C15.0562 19.2484 14.616 19.0297 14.2089 18.9356Z" fill="#B89B51"/>
+                <circle cx="17.5363" cy="4.90737" r="3.81003" fill="#F26464" stroke="#FAFAFA" stroke-width="0.952507"/>
+                </svg>
+
+              </button>
+    </div>
+  </div>
+
+  <!-- Overlay Background -->
+  <div
+    x-show="open"
+    x-transition.opacity
+    @click="open = false"
+    class="fixed inset-0 bg-black/40 z-40"
+  ></div>
+
+  <!-- Sliding Sidebar -->
+  <div
+    x-show="open"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="-translate-x-full"
+    x-transition:enter-end="translate-x-0"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="translate-x-0"
+    x-transition:leave-end="-translate-x-full"
+    class="fixed top-0 left-0 h-full w-72 bg-white shadow-lg z-50 p-4 overflow-y-auto"
+  >
+    <!-- Close Button -->
+    <div class="flex justify-end">
+      <button @click="open = false" class="text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+    </div>
+
+    <!-- Sidebar Content -->
+    <div class="flex flex-col items-center">
+
+      <!-- Menu Items -->
+      <ul class="space-y-3 w-full text-gray-700 text-base">
+        <li><a href="./dashboard.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-home"></i> Dashboard</a></li>
+        <li><a href="./profile.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-user"></i> Profile</a></li>
+        <li><a href="./my-business.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-briefcase"></i> My Business</a></li>
+        <li><a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-credit-card"></i> Payments</a></li>
+        <li><a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-history"></i> Scanning History</a></li>
+        <li><a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-bullhorn"></i> Advertise</a></li>
+        <li><a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-info-circle"></i> Help Center</a></li>
+      </ul>
+
+      <!-- Profile Section -->
+      <div class="text-center mt-6">
+        <img src="../assets/images/Ellipse 1543.png" class="w-20 h-20 rounded-full mx-auto mb-2" />
+        <p class="font-medium">Haider Ali</p>
+        <button class="mt-2 px-4 py-2 rounded text-white flex gap-3 justify-center mx-auto" style="background-color: #B89B51;">
+          <img src="../assets/images/Logout.png" alt="" />
+          <span class="text-white">Logout</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="dashboard-header">
+      <div class="container mx-auto flex gap-5">
+
+
+        <aside class="w-full md:w-1/4 flex flex-col justify-start p-6 rounded-lg shadow-sm" style="max-height: fit-content; padding: 0px 10px 30px 10px;">
+          <div>
+            <div class="flex flex-col items-center mb-10">
+              <img src="../assets/images/newlogo.png" class="w-20 h-auto mb-2" />
+              <span class="text-xl font-bold">Mustakshif</span>
+            </div>
+            <nav class="space-y-2">
+              <a href="dashboard.html" class="flex gap-3 px-4 py-2 rounded active"><img  src="../assets/images/Control Panel (1).png"> <span>Dashboard</span></a>
+              <a href="profile.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Account.png"> <span>Profile</span></a>
+              <a href="my-business.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Small Business.png"> <span>My Business</span></a>
+              <a href="payments.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/payments.png"> <span>Payments</span></a>
+              <a href="scanning-history.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Time Machine.png"> <span>Scanning History</span></a>
+              <a href="advertise.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Advertise.png"> <span>Advertise With Mustakshif</span></a>
+              <a href="help.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Group 1000004819.png"> <span>Help Center</span></a>
+            </nav>
+          </div>
+
+          <div class="text-center">
+            <img src="../assets/images/Ellipse 1543.png" class="w-14 h-14 rounded-full mx-auto mb-2" />
+            <p class="font-medium">Haider Ali</p>
+            <button class="mt-2 px-4 py-2 rounded text-white flex gap-3 justify-center mx-auto" style="background-color: #B89B51;"><img src="../assets/images/Logout.png" alt=""><span class="text-white">Logout</span></button>
+          </div>
+        </aside>
+
+<main class="flex-1 p-6">
+      <div class="flex justify-between my-10 bg-white rounded-lg searchetc" style="align-items: center; padding: 20px 30px;">
+        <h1 class="" style="color: #B89B51; font-size: 26px;">Dashboard</h1>
+        <div class="search"><form class="w-full max-w-sm">
+  <div class="flex items-center border border-gray-200 rounded-md shadow-sm overflow-hidden">
+     <!-- Submit Button -->
+      <button type="submit" class="px-4 py-2 bg-blue-500 hover:bg-blue-600">
+        <svg class="w-5 h-5" fill="none" stroke="#E3E3EF" stroke-width="2" width="22px"
+             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 103.5 3.5a7.5 7.5 0 0013.15 13.15z" />
+        </svg>
+      </button>
+
+    <!-- Input -->
+    <input
+      type="text"
+      name="search"
+      placeholder="Enter keywords ..."
+      class="flex-grow px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" style="border: none;"
+      />
+      
+     
+
+  </div>
+
+  <!-- Bottom gradient line -->
+  <div class="h-1 mt-1 bg-gradient-to-r from-blue-500 via-yellow-400 to-orange-500"></div>
+</form>
+</div>
+        <div class="langandbtns flex justify-right gap-2" style="align-items: center;">
+          <div class="langselctor">
+            <div class="relative flex justify-center align-middle">
+  <select
+    class="appearance-none bg-white border border-gray-300 pr-10 pl-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer">
+    <option value="en">EN</option>
+    <option value="fr">FR</option>
+    <option value="de">DE</option>
+  </select>
+          </div>
+          </div>
+          <div class="lightmode">
+            <button class="p-2 flex items-center justify-center rounded-full" style="background-color: #FAFAFA;">
+  
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_13931_2496)">
+<path d="M11.9188 16.8141C14.5491 16.8141 16.6813 14.6819 16.6813 12.0516C16.6813 9.42132 14.5491 7.28906 11.9188 7.28906C9.28851 7.28906 7.15625 9.42132 7.15625 12.0516C7.15625 14.6819 9.28851 16.8141 11.9188 16.8141Z" fill="#B89B51"/>
+<path opacity="0.5" d="M11.9219 1.57422V3.47923" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M11.9219 20.625V22.53" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M4.50781 4.64062L5.86037 5.99318" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M17.9766 18.1094L19.3291 19.4619" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M1.44531 12.0508H3.35033" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M20.4922 12.0508H22.3972" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M4.50781 19.4619L5.86037 18.1094" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M17.9766 5.99318L19.3291 4.64062" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_13931_2496">
+<rect width="22.8602" height="22.8602" fill="white" transform="translate(0.492188 0.621094)"/>
+</clipPath>
+</defs>
+</svg>
+
+</button>
+
+          </div>
+          <div class="notification">
+             <button class="p-2 flex items-center justify-center rounded-full" style="background-color: #FAFAFA;">
+  
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6999 11.7146C19.0041 10.9021 18.688 10.1979 18.688 9.00168V8.59494C18.688 7.03607 18.3292 6.03168 17.5491 5.02729C16.3469 3.46746 14.3229 2.52734 12.3416 2.52734H12.2573C10.3176 2.52734 8.35707 3.42429 7.13398 4.9208C6.31134 5.94534 5.9109 6.9929 5.9109 8.59494V9.00168C5.9109 10.1979 5.61554 10.9021 4.89892 11.7146C4.37163 12.3132 4.20312 13.0826 4.20312 13.9152C4.20312 14.7489 4.47671 15.5384 5.02577 16.1801C5.74239 16.9495 6.75437 17.4407 7.78812 17.526C9.28479 17.6968 10.7815 17.7611 12.2999 17.7611C13.8174 17.7611 15.3141 17.6536 16.8117 17.526C17.8445 17.4407 18.8565 16.9495 19.5731 16.1801C20.1212 15.5384 20.3957 14.7489 20.3957 13.9152C20.3957 13.0826 20.2272 12.3132 19.6999 11.7146Z" fill="#B89B51"/>
+                <path opacity="0.4" d="M14.2089 18.9356C13.7328 18.834 10.8312 18.834 10.3551 18.9356C9.94801 19.0297 9.50781 19.2484 9.50781 19.728C9.53148 20.1856 9.79938 20.5895 10.1705 20.8456L10.1695 20.8466C10.6495 21.2207 11.2127 21.4586 11.8025 21.544C12.1168 21.5872 12.4368 21.5852 12.7624 21.544C13.3513 21.4586 13.9145 21.2207 14.3945 20.8466L14.3935 20.8456C14.7646 20.5895 15.0325 20.1856 15.0562 19.728C15.0562 19.2484 14.616 19.0297 14.2089 18.9356Z" fill="#B89B51"/>
+                <circle cx="17.5363" cy="4.90737" r="3.81003" fill="#F26464" stroke="#FAFAFA" stroke-width="0.952507"/>
+                </svg>
+
+              </button>
+
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg main-gri shadow-sm" style="padding: 20px 30px; margin-bottom: 25px;">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 mt-10">
+  <!-- Box 1: spans 2 columns on md+ -->
+  <div class="md:col-span-2 flex flex-col md:flex-row justify-between items-center py-4 px-6 rounded-xl" style="background-color: #f1ebdc;min-height: 136px;">
+    <img src="../assets/images/Ellipse 1543.png" alt="" style="height: 104px; width: 104px;">
+    <div class="namemail">
+      <p class="name">Haider Ali</p>
+      <p class="email">haiderali.x7@gmail.com</p>
+    </div>
+    <div class="verifybadge">Verified</div>
+  </div>
+
+  <!-- Box 2 -->
+  <div class="flex justify-start items-center py-4 px-6 rounded-xl gap-4" style="background-color: #BCA05B;min-height: 136px;">
+    <div style="background-color: #ae9767; padding: 15px;" class="rounded-full">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="40" height="40" fill="url(#pattern0_13931_2528)"/>
+<defs>
+<pattern id="pattern0_13931_2528" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_2528" transform="scale(0.01)"/>
+</pattern>
+<image id="image0_13931_2528" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+</defs>
+</svg>
+    </div>
+    <div class="scans">
+      <p class="text-white text-xl" style="font-family: 'Inter';">1478 286</p>
+      <p class="text-white font-medium text-wrap" style="font-size: 25px;">Total Scans</p>
+    </div>
+  </div>
+
+  <!-- Box 3 -->
+  <div class="flex justify-start items-center py-4 px-6 rounded-xl gap-4" style="background-color: #45C646;min-height: 136px;">
+    <div style="background-color: #43ba54; padding: 15px;" class="rounded-full">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="40" height="40" fill="url(#pattern0_13931_2512)"/>
+<defs>
+<pattern id="pattern0_13931_2512" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_2512" transform="scale(0.01)"/>
+</pattern>
+<image id="image0_13931_2512" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+</defs>
+</svg>
+    </div>
+    <div class="scans">
+      <p class="text-white text-xl" style="font-family: 'Inter';">1478 286</p>
+      <p class="text-white font-medium text-nowrap" style="font-size: 25px;">Halal Scans</p>
+    </div>
+  </div>
+
+  <!-- Box 4 -->
+  <div class="flex justify-start items-center py-4 px-6 rounded-xl gap-4" style="background-color: #F23936;min-height: 136px;">
+    <div style="background-color: #df3b45; padding: 15px;" class="rounded-full">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="40" height="40" fill="url(#pattern0_13931_2504)"/>
+<defs>
+<pattern id="pattern0_13931_2504" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_2504" transform="scale(0.01)"/>
+</pattern>
+<image id="image0_13931_2504" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACqklEQVR4nO3dzWoUQRiF4c/oxo1Bkhi8FcW1G3EvGvSeBMGVirgOSCADcePvDchAXYcGo5u8Uk43BBeT7uma6VMz57mAoapOqqprpvpLhJmZmZmZmZmZmZmZmZmZbRrgRlQIuALcjHUA3AXeA6fM/AE+Ak+BrRAFbAHPgM/A76btuQ+HwL2oDXAVeMF8OZjdEAPsNkHM8zz3MWoBvKSbKbAfIoD9pk1dvIoaAHeA846dkgmFfmG07oc64Khnp0YPhcXCyI6igieSdgOvIhQWDyP7kfscqoBrPZer/yXg9grbewv4PqC958pPi/8MmCErnSkDZ0brZ6gDThguLXOmFJgZreNQBzymjOkyZkqhmdF6FJUcCr8ohkLZMD7J7x8tYK9gx6clQikcRv6cvahJwXV68J6i1JZRKQwEAm2QMuaA4DB0BgaHoTNAOIxuVjFQOIx+ljlgOIzFLGPgcBhyB7Vpwc8a/QezURT+qy6h/nPGGoWSNj4MoVCSw9CZKclh6CxfyWHo7CnJYehs9Mlh6ISSHIZOKMlhDIAD0YGXLB14U9eBH3t14IOhDn91IsRfLgoRCKPlM4pQGK3NDcU/4QrxJQchvgYkxBflhPgqqRBfthbi1xGEKFzvRKANEpQGAqG2jALYUbtrS/m7xDtRg+a16IniXyNlZ8qHXEok1DWV2GSXBsqGchDqgG/qrwRQbvn6GsqaWoVnNWyalJkpv6SrOeTqnTW9LEOZmbIda1qeKY3xODlwplRRnmmyQSX+JqEOeFhTGANDeRA1AF7XeOql3/L1LmoBXAfeXtKhE8XTLrNvGS6rivcm9zFq0yxfxxc2+rOmuNkT5crQzL5tOMjnjAuP8adNX+pYproU45cuqTq/9G2V/0jAzMzMzMzMzMzMzMzMzMxiiL+QvnvzN6aydQAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
+    </div>
+    <div class="scans">
+      <p class="text-white text-xl" style="font-family: 'Inter';">1478 286</p>
+      <p class="text-white font-medium text-nowrap" style="font-size: 25px;">Haram Scans</p>
+    </div>
+  </div>
+  <!-- Box 5 -->
+  <div class="flex justify-start items-center py-4 px-6 rounded-xl gap-4" style="background-color: #EE6A2D;min-height: 136px;">
+    <div style="background-color: #db673d; padding: 15px;" class="rounded-full">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="40" height="40" fill="url(#pattern0_13931_2520)"/>
+<defs>
+<pattern id="pattern0_13931_2520" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_2520" transform="scale(0.01)"/>
+</pattern>
+<image id="image0_13931_2520" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEAUlEQVR4nO3dWagXVRwH8LG00miz1YwwIyoiQa0gI6OSyGh5Mh/a7KEwwrACCyKk9aUNkp7CKAiiKGgPWqCiCAmksgVC2oSyKC1Kss1PDHduDxFx7/+c8dyZ/+8D/4f7dM/vfGfm/59z5pypqhBCCCGEEEIIIYRxwe44AVdiDZ7FenyDLfjNiJ+bvzfiTTyKm3AuZkS3J8D+WI7n8Is8PsDdOCnCGXsQJ+NxbNeuT7AC0yKc/w5iDl60832LazA5ghkJYg/cgd+V9T7mD3UomIl1Jo7t9dlSDSMch69NTGuwSzVkYdTX7olsLSZVfYcD8YVuWF31WX0ZwGu6YwcWVX2Fq3TPJuxd9fRS9aNuuq3qG9zZUmf9ga3aVQ/dHFD1BfbCT5k653PcitOw77++nw7FBbi/hZCuq/oCyzJ0yBZcNtYhDuzZjPSOjgSn2lD1BV5N7IwPMWvA/z0X32UK5fCq6zA1ceR2Ew5LbEMdyq8ZArm86jqcmdgJizO1Y3WGQO6pug7XJ3TAK5l/WKSeJS9UXYcHEzrgosxtqWcfU6yruq4+ygcs/q/cd8i4KzGQj6uuw7sDFv9lC21ZlRjIR1XX4dMBi3+9hbbckhjI21XX4RwsGeBz6gT7Pqs9n7tNQw3vJQZyX+kaegPHNPMbJsqvvqGGh6Q7qnQdvYCzMpwd60vX0Qs4vhkpTnVt6Vo6DwvxfYYw6rmV6aXr6SxMwtUZ50JWla6pszCjHgSUT31jO7V0XV09Ky7NdIkaVY8Ozy1dW+fgWLwlr/pX2bLStXUKpuDmFtaS1GGsKF1fp+AgvCG/PyOMwe4tvmohjB9wdjuHUE/h6JaenH8HR5aur1NwcPMUSk7bsBK7lq6vc/B05jDqOfYjStfVSViaMYj6++f80jUN++TSqCdiXCo9jEXyPCW/PM/hMeSMLMJMUd84xs/ZjIFsSLzrXpqtMcMO0xJn+x4uXUOvYHZCGPXuEIeUrqFXsCAhkGdKt793cEZCIP1ZhtaTM2Rx6fb3DuYnBLKgdPv7Ohs4qHml2987mDVwHBFIa4tGlwz42a+FJoUQQgghhBBCCOEf9XYbOA+3N+vOH8MDuBGnxB7uOwn2qdeJN+8I+T+f4Yqh2AS58PO8G8c5sPgUdivd9t7B9AHCGLW2dPt7B/dKs7B0DX17BGhbYiBPlq6jN7BYnjXmsdQgUyAr5TEzS4OGnZEdrHOYU7qWXsANmQKZXbqWXsDFmZYhxKvxMm6TscOw75M4keDlxEBikU7mQOYl7OpTb+I/JWuDQlWHckmzw8J4bI515y3C6c1I7li8VL/cJQ7mlmEyLsQjzcuFtzZnzuZmB+16eP7ECCKEEEIIIYQQQghVFn8Dmj2NNMdFmwcAAAAASUVORK5CYII="/>
+</defs>
+</svg>
+    </div>
+    <div class="scans">
+      <p class="text-white text-xl" style="font-family: 'Inter';">1478 286</p>
+      <p class="text-white font-medium text-nowrap" style="font-size: 25px;">Mushbooh Scans</p>
+    </div>
+  </div>
+</div>
+
+      <div class="dashbanner">
+        <img src="../assets/images/dashboard-banner.png" alt="" style="width: 100%;height: 100%; margin-top: 25px;">
+
+      </div>
+      </div>
+      
+    </main>
+
+     
+
+      </div>
+
+    </section>
+    <section class="dashboard-main">
+      <div class="container mx-auto flex gap-5">
+
+
+        <aside class="w-full md:w-1/4 flex flex-col justify-start p-6 rounded-lg" style="max-height: fit-content; padding: 30px 10px;">
+         </aside>
+
+<main class="flex-1 p-6">
+      
+      
+      <div class="bg-white rounded-lg main-gri shadow-sm" style="padding: 20px 30px; margin-bottom: 25px;">
+        <div class="flex justify-between" style="align-items: center;">
+          <h3 style="font-size: 26px;">Latest Scan Product</h3>
+          <a href="#" style="color: #B89B51;">View All</a>
+        </div>
+
+        <table class="min-w-full w-full border-separate border-spacing-y-4 text-left">
+  <thead class="text-black font-semibold">
+    <tr>
+      <th class="px-4 py-2" style="font-size: 26px;">Name</th>
+      <th class="px-4 py-2" style="font-size: 26px;">Barcode</th>
+      <th class="px-4 py-2" style="font-size: 26px;">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="bg-white rounded " style="border-bottom: 2px solid #5a718449; ">
+      <td class="px-4 py-4 flex items-center gap-4">
+        <img src="../assets/images/Rectangle 34624389.png" alt="Product" class="w-12 h-12 object-contain">
+        <div>
+          <p class="font-medium" style="font-size: 18px; color: #5A7184;">Kettle Sweet Chilli & Sour Cream Potato <br>Chips 165g</p>
+        </div>
+      </td>
+      <td class="px-4 py-4">
+        <input type="text" readonly value="9310988019248"
+               class="rounded px-6 py-3 w-40 text-center" style="font-size: 18px; border: 1px solid #5a718440; color: #5A7184;">
+      </td>
+      <td class="px-4 py-4">
+        <span class="text-white text-center py-3 px-6 block" style="font-size: 18px; background-color: #00A650;border: 1px solid #00A650;">Halal Verified</span>
+      </td>
+    </tr>
+    <tr class="bg-white rounded " style="border-bottom: 2px solid #5a718449; ">
+      <td class="px-4 py-4 flex items-center gap-4">
+        <img src="../assets/images/Rectangle 34624389.png" alt="Product" class="w-12 h-12 object-contain">
+        <div>
+          <p class="font-medium" style="font-size: 18px; color: #5A7184;">Kettle Sweet Chilli & Sour Cream Potato <br>Chips 165g</p>
+        </div>
+      </td>
+      <td class="px-4 py-4">
+        <input type="text" readonly value="9310988019248"
+               class="rounded px-6 py-3 w-40 text-center" style="font-size: 18px; border: 1px solid #5a718440; color: #5A7184;">
+      </td>
+      <td class="px-4 py-4">
+        <span class="text-center py-3 px-6 block" style="font-size: 18px; background-color: #ADD13B;border: 1px solid #ADD13B;color: #036939;">Halal</span>
+      </td>
+    </tr>
+    <tr class="bg-white rounded " style="border-bottom: 2px solid #5a718449; ">
+      <td class="px-4 py-4 flex items-center gap-4">
+        <img src="../assets/images/Rectangle 34624389.png" alt="Product" class="w-12 h-12 object-contain">
+        <div>
+          <p class="font-medium" style="font-size: 18px; color: #5A7184;">Kettle Sweet Chilli & Sour Cream Potato <br>Chips 165g</p>
+        </div>
+      </td>
+      <td class="px-4 py-4">
+        <input type="text" readonly value="9310988019248"
+               class="rounded px-6 py-3 w-40 text-center" style="font-size: 18px; border: 1px solid #5a718440; color: #5A7184;">
+      </td>
+      <td class="px-4 py-4">
+        <span class="text-white text-center py-3 px-6 block" style="font-size: 18px; background-color: #8C171D;border: 1px solid #8C171D;">Haram</span>
+      </td>
+    </tr>
+    <tr class="bg-white rounded " style="border-bottom: 2px solid #5a718449; ">
+      <td class="px-4 py-4 flex items-center gap-4">
+        <img src="../assets/images/Rectangle 34624389.png" alt="Product" class="w-12 h-12 object-contain">
+        <div>
+          <p class="font-medium" style="font-size: 18px; color: #5A7184;">Kettle Sweet Chilli & Sour Cream Potato <br>Chips 165g</p>
+        </div>
+      </td>
+      <td class="px-4 py-4">
+        <input type="text" readonly value="9310988019248"
+               class="rounded px-6 py-3 w-40 text-center" style="font-size: 18px; border: 1px solid #5a718440; color: #5A7184;">
+      </td>
+      <td class="px-4 py-4">
+        <span class="text-white text-center py-3 px-6 block" style="font-size: 18px; background-color: #E71E26;border: 1px solid #E71E26;">Does Not Seem Halal</span>
+      </td>
+    </tr>
+   
+
+  </tbody>
+</table>
+
+      </div>
+    </main>
+
+     
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
+
+    <script src="/assets/script.js"></script>
+  </body>
+</html>

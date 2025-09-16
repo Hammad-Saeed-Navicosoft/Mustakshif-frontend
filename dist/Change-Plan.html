@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Plan</title>
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+  </head>
+  <body class="change-plan-page">
+
+   <!-- ========== HEADER ========== -->
+    <header class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200 home-header">
+      <nav class="relative container w-full mx-auto lg:flex md:items-center md:justify-between md:gap-3">
+        <div class="flex justify-between items-center gap-x-1 px-4 h-full">
+          <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80" href="index.html" aria-label="Brand">
+            <img class="mobilelogo-width hidden md:block" src="/assets/images/newlogo.png" alt="" srcset=""/>
+            <img class="mobilelogo-width md:hidden" src="/assets/images/logo 2.png" alt="" srcset=""/>
+          </a>
+           <!-- Collapse Button -->
+          <button type="button" class="hs-collapse-toggle lg:hidden relative size-9 flex justify-center items-center font-medium text-sm rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
+            <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <!-- End Collapse Button -->
+        </div>
+
+        <!-- Collapse -->
+        <div id="hs-header-base" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:block mobilebgheader"  aria-labelledby="hs-header-base-collapse" >
+          <div class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
+            <div class="py-2 md:py-0 flex flex-col lg:flex-row lg:items-center gap-0.5 md:gap-1">
+              <div class="grow">
+                <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-6 px-6">
+                  <a class="flex items-center text-base text-gray-800" href="./index.html" aria-current="page">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    Home 
+                  </a>
+
+                  <!-- Dropdown -->
+                  <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--adaptive:adaptive] [--is-collapse:true] md:[--is-collapse:false] ">
+                    <button id="hs-header-base-dropdown" type="button" class="hs-dropdown-toggle w-full flex items-center text-base text-gray-800" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                      <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 2.5-2.5L3 5"/><path d="m3 19 2.5-2.5L3 14"/><path d="M10 6h11"/><path d="M10 12h11"/><path d="M10 18h11"/></svg>
+                      Brands  
+                      <svg class="hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 shrink-0 size-4 ms-auto md:ms-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+
+                    <div class="hs-dropdown-menu main-sub-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 relative w-full md:w-52 hidden z-10 top-full ps-7 md:ps-0 md:bg-white md:rounded-lg md:shadow-md before:absolute before:-top-4 before:start-0 before:w-full before:h-5 md:after:hidden after:absolute after:top-1 after:start-4.5 after:w-0.5 after:h-[calc(100%-4px)] after:bg-gray-100" role="menu" aria-orientation="vertical" aria-labelledby="hs-header-base-dropdown">
+                      <div class="py-1 md:px-1 space-y-0.5">
+                        <a class="p-2 md:px-3 flex items-center text-base text-gray-800" href="#">
+                          About
+                        </a>
+
+                        <div class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] [--is-collapse:true] md:[--is-collapse:false] relative">
+                          <button id="hs-header-base-dropdown-sub" type="button" class="hs-dropdown-toggle w-full flex justify-between items-center text-base text-gray-800 p-2 md:px-3">
+                            Sub Menu
+                            <svg class="hs-dropdown-open:-rotate-180 md:hs-dropdown-open:-rotate-90 md:-rotate-90 duration-300 ms-auto shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                          </button>
+
+                          <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 relative md:w-48 hidden z-10 md:mt-2 md:mx-2.5! md:top-0 md:start-full ps-7 md:ps-0 md:bg-white md:rounded-lg md:shadow-md before:hidden md:before:block before:absolute before:-end-5 before:top-0 before:h-full before:w-5 md:after:hidden after:absolute after:top-1 after:start-4.5 after:w-0.5 after:h-[calc(100%-4px)] after:bg-gray-100" role="menu" aria-orientation="vertical" aria-labelledby="hs-header-base-dropdown-sub">
+                            <div class="p-1 space-y-1">
+                              <a class="p-2 md:px-3 flex items-center text-base text-gray-800" href="#">
+                                About
+                              </a>
+
+                              <a class="p-2 md:px-3 flex items-center text-base text-gray-800" href="#">
+                                Downloads
+                              </a>
+
+                              <a class="p-2 md:px-3 flex items-center text-base text-gray-800" href="#">
+                                Team Account
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <a class="p-2 md:px-3 flex items-center text-base text-gray-800" href="#">
+                          Downloads
+                        </a>
+
+                        <a class="p-2 md:px-3 flex items-center text-base text-gray-800" href="#">
+                          Team Account
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Shariah Board
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="#">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                    Subscription 
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="./How-mustakshif-works.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+                     How Mustakshif Work?
+                  </a>
+
+                  <div class="actions">
+
+                    <!-- Search icon -->
+                    <button class="icon-button" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+
+                    <!-- Language selector with flag images -->
+                    <div class="lang-dropdown">
+                      <button class="lang-toggle" onclick="toggleLangMenu()">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      </button>
+                      <div class="lang-menu" id="langMenu">
+                        <button onclick="setLanguage('en', 'us')">
+                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
+                        </button>
+                        <button onclick="setLanguage('ms', 'my')">
+                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
+                        </button>
+                        <button onclick="setLanguage('ar', 'sa')">
+                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
+                        </button>
+                        <button onclick="setLanguage('fr', 'fr')">
+                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
+                        </button>
+                        <button onclick="setLanguage('de', 'de')">
+                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Search Modal -->
+                    <div id="searchModal">
+                      <div class="modal-content flex items-center gap-6">
+                        <input type="text" placeholder="Search..." />
+                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Button Group -->
+              <div class="md:ms-auto md:mt-0 flex flex-wrap items-center gap-2 px-2">
+                <a class="bg-btn-gold py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  <i class="fa fa-user text-base" style="font-size: 16px;"></i> Log in
+                </a>
+                <a class="bg-btn-blue py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  Download
+                </a>
+              </div>
+              <!-- End Button Group -->
+            </div>
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+
+
+    <div class="mplans-section">
+      <div class="container mx-auto">
+        <div class="text-center px-5">
+          <h3 style="font-size: 32px;">Mustakshif Subscription Plan</h3>
+          <p style="font-size: 18px;">Given the abundance of forbidden and doubtful products, Muslims need to determine the permissibility <br>of ingredients according to Islamic dietary laws</p>
+        </div>
+
+        
+
+<div x-data="{
+  tab: 'Individual',
+  selectedCard: 0, // example: selected Family plan card at index 3
+  cards: [
+    {
+      category: 'Individual',
+      planType: 'Monthly Plan',
+      price: '$1.99',
+      duration: '/day',
+      features: [
+        'Unlock full access to 2.5M+ products',
+        'Expert insights & daily updates',
+        'Shariah Board Approved'
+      ]
+    },
+    {
+      category: 'Individual',
+      planType: 'Yearly Plan',
+      price: '$1.99',
+      duration: '/day',
+      features: [
+        'Unlock full access to 2.5M+ products',
+        'Expert insights & daily updates',
+        'Shariah Board Approved'
+      ]
+    },
+    {
+      category: 'Individual',
+      planType: 'Life Time Plan',
+      price: '$1.99',
+      duration: '/day',
+      features: [
+        'Unlock full access to 2.5M+ products',
+        'Expert insights & daily updates',
+        'Shariah Board Approved'
+      ],
+      offer:'LIMITED OFFER'
+    },
+    {
+      category: 'Family',
+      planType: 'Yearly Plan',
+      name: 'Yearly1',
+      option1:{
+      members: 'Up to 5 members',
+      price: '$101.99',
+      payment: 'One Time Full Payment'
+      },
+      option2:{
+      members: 'Up to 10 members',
+      price: '$100.99',
+      payment: 'One Time Full Payment'
+      }
+      
+    },
+    {
+      category: 'Family',
+      planType: 'Life Time Plan',
+      offer:'LIMITED OFFER',
+      name: 'lifetime2',
+      option1:{
+      members: 'Up to 5 members',
+      price: '$101.99',
+      payment: 'One Time Full Payment'
+      },
+      option2:{
+      members: 'Up to 10 members',
+      price: '$100.99',
+      payment: 'One Time Full Payment'
+      }
+    }
+  ]
+}" class="max-w-7xl mx-auto px-4 py-10 mblpadd">
+
+  <!-- Tabs -->
+  <div class="flex flex-wrap gap-3 justify-center tab-scroll-container" style="margin-bottom: 40px;">
+    <template x-for="category in ['Individual', 'Family']" :key="category">
+      <button
+        x-text="category"
+        @click="tab = category"
+        :class="tab === category ? 'custom-tab-active-plan text-white' : 'custom-tab-inactive-plan border'"
+        class="px-4 py-1 rounded-md text-sm font-medium transition"
+      ></button>
+    </template>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="flex flex-col lg:flex-row justify-center gap-6 priceplan" style="gap: 30px;">
+    <template x-for="(item, index) in cards.filter(card => tab === 'All' || card.category === tab)" :key="index">
+      <div class="bg-white rounded-xl shadow p-4 mainplanclass" style="padding: 25px 50px;">
+        <template x-if="item.offer || item.offer === ''">
+         <p class="text-center"> <span x-text="item.offer" class="planoffer mx-auto"></span></p>
+        </template>
+        <template x-if="!item.offer">
+          <span class="planoffer mx-auto invisible">&nbsp;</span>
+        </template>
+
+        <h3 x-text="item.planType" class="text-center" style="font-size: 30px;"></h3>
+        <p class="text-center" style="font-size: 18px; color: #7A7D9C;">Starting at just</p>
+        <div class="flex justify-center" style="align-items: center;">
+          <span class="text-center" style="color: #1B152B;font-size: 60px;" x-text="item.price"></span>
+          <span x-text="item.duration" class="text-center" style="font-size: 25px; color: #7A7D9C;">/day</span>
+        </div>
+
+        <template x-if="item.features">
+          <ul class="features">
+            <template x-for="(feature, i) in item.features" :key="i">
+              <li style="background-color: #f1ebdf;padding: 10px;margin-bottom: 15px;align-items: center;" class="flex justify-between">
+                <span x-text="feature" style=" color: #B89B51;"></span>
+                <img src="../assets/images/check 1 (Traced).png" alt="" style="height: 17px; width: 17px;">
+              </li>
+            </template>
+          </ul>
+        </template>
+
+       
+
+        <template x-if="item.category === 'Family'">
+  <div class="plan-group" x-data="{ selectedContent: 'content1' }">
+    <div class="plan-option flex flex-col text-start my-3 px-4 py-4" 
+         :class="{ 'changecolor': selectedContent === 'content1' }" 
+         style="background-color: #cdcdcd33;">
+      
+      <div class="flex gap-4 justify-between items-center mb-2">
+        <label for="content1" x-text="item.option1.members" class="font-bold" style="color: #B89B51;"></label>
+        <input type="radio" :name="item.name" x-model="selectedContent" value="content1" id="content1" checked>
+      </div>
+      <p x-text="item.option1.price" class="text-2xl text-black mb-2"></p>
+      <p x-text="item.option1.payment" style="color: #B89B51;"></p>
+    </div>
+
+    <div class="plan-option flex flex-col text-start my-3 px-4 py-4" 
+         :class="{ 'changecolor': selectedContent === 'content2' }" 
+         style="background-color: #cdcdcd33;">
+      
+      <div class="flex gap-4 justify-between items-center mb-2">
+        <label for="content2" x-text="item.option2.members" class="font-bold" style="color: #B89B51;"></label>
+        <input type="radio" :name="item.name" x-model="selectedContent" value="content2" id="content2">
+      </div>
+      <p x-text="item.option2.price" class="text-2xl text-black mb-2"></p>
+      <p x-text="item.option2.payment" style="color: #B89B51;"></p>
+    </div>
+  </div>
+</template>
+
+
+<!-- INDIVIDUAL PLANS LOGIC -->
+<template x-if="tab === 'Individual'">
+  <div>
+    <template x-if="index === 0">
+      <div></div> <!-- nothing -->
+    </template>
+
+    <template x-if="index === 1">
+      <label class="flex items-center justify-center space-x-2 text-[#B89B51] font-semibold" style="margin-top: 25px;">
+        <input type="checkbox" checked disabled class="accent-[#B89B51]">
+        <span style="color: #B89B51;">Your Current Plan</span>
+      </label>
+    </template>
+
+    <template x-if="index === 2">
+      <button class="custom-tab-inactive-plana rounded-md flex justify-between mx-auto" style="background-color: #B89B51; color:#fff;">
+        <span style="font-weight: 600;color: #fff;">Update Plan </span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </template>
+  </div>
+</template>
+
+<!-- FAMILY PLANS LOGIC -->
+<template x-if="tab === 'Family'">
+  <div>
+    <template x-if="index === selectedCard">
+      <label class="flex items-center justify-center space-x-2 text-[#B89B51] font-semibold" style="margin-top: 25px;">
+        <input type="checkbox" checked disabled class="accent-[#B89B51]">
+        <span style="color: #B89B51;">Your Current Plan</span>
+      </label>
+    </template>
+
+    <template x-if="index !== selectedCard">
+      <button class="custom-tab-inactive-plana rounded-md flex justify-between mx-auto mt-4" style="background-color: #B89B51; color:#fff;">
+        <span style="font-weight: 600;color: #fff;">Update Plan </span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </template>
+  </div>
+</template>
+
+        
+      </div>
+    </template>
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="mt-auto w-full container py-4 px-4 sm:px-6 lg:px-8 mx-auto">
+        <div class="text-center">
+          <h3 class="text-base font-medium" style="color: #677d99">
+            2025 @ Mustakshif, Design & Develop By Navicosoft
+          </h3>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
+
+    <script src="/assets/script.js"></script>
+  </body>
+</html>

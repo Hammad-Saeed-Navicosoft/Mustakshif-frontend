@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Business</title>
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<script src="//unpkg.com/alpinejs" defer></script>
+
+  </head>
+  <body class="mybusiness-page">
+
+<!-- Include Alpine.js -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+<!-- Mobile Header with Sidebar -->
+<div x-data="{ open: false }" class="md:hidden z-50 relative">
+
+  <!-- TOP BAR (Always Visible) -->
+  <div class="flex justify-between items-center px-4 py-3" style="background-color: #0D1E38;">
+    <!-- Hamburger Button -->
+    <button @click="open = true">
+      <svg width="34" height="19" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="7" width="28" height="5" rx="2.5" fill="white" />
+        <rect width="34" height="5" rx="2.5" fill="white" />
+        <rect y="14" width="23" height="5" rx="2.5" fill="white" />
+      </svg>
+    </button>
+
+    <!-- Logo -->
+    <img src="/assets/images/logo 2.png" alt="Mustakshif" class="h-8" />
+
+    <!-- Notification Bell with Dot -->
+    <div class="relative">
+      <button class="p-2 flex items-center justify-center rounded-full" style="background-color: #FAFAFA;">
+  
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6999 11.7146C19.0041 10.9021 18.688 10.1979 18.688 9.00168V8.59494C18.688 7.03607 18.3292 6.03168 17.5491 5.02729C16.3469 3.46746 14.3229 2.52734 12.3416 2.52734H12.2573C10.3176 2.52734 8.35707 3.42429 7.13398 4.9208C6.31134 5.94534 5.9109 6.9929 5.9109 8.59494V9.00168C5.9109 10.1979 5.61554 10.9021 4.89892 11.7146C4.37163 12.3132 4.20312 13.0826 4.20312 13.9152C4.20312 14.7489 4.47671 15.5384 5.02577 16.1801C5.74239 16.9495 6.75437 17.4407 7.78812 17.526C9.28479 17.6968 10.7815 17.7611 12.2999 17.7611C13.8174 17.7611 15.3141 17.6536 16.8117 17.526C17.8445 17.4407 18.8565 16.9495 19.5731 16.1801C20.1212 15.5384 20.3957 14.7489 20.3957 13.9152C20.3957 13.0826 20.2272 12.3132 19.6999 11.7146Z" fill="#B89B51"/>
+                <path opacity="0.4" d="M14.2089 18.9356C13.7328 18.834 10.8312 18.834 10.3551 18.9356C9.94801 19.0297 9.50781 19.2484 9.50781 19.728C9.53148 20.1856 9.79938 20.5895 10.1705 20.8456L10.1695 20.8466C10.6495 21.2207 11.2127 21.4586 11.8025 21.544C12.1168 21.5872 12.4368 21.5852 12.7624 21.544C13.3513 21.4586 13.9145 21.2207 14.3945 20.8466L14.3935 20.8456C14.7646 20.5895 15.0325 20.1856 15.0562 19.728C15.0562 19.2484 14.616 19.0297 14.2089 18.9356Z" fill="#B89B51"/>
+                <circle cx="17.5363" cy="4.90737" r="3.81003" fill="#F26464" stroke="#FAFAFA" stroke-width="0.952507"/>
+                </svg>
+
+              </button>
+    </div>
+  </div>
+
+  <!-- Overlay Background -->
+  <div
+    x-show="open"
+    x-transition.opacity
+    @click="open = false"
+    class="fixed inset-0 bg-black/40 z-40"
+  ></div>
+
+  <!-- Sliding Sidebar -->
+  <div
+    x-show="open"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="-translate-x-full"
+    x-transition:enter-end="translate-x-0"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="translate-x-0"
+    x-transition:leave-end="-translate-x-full"
+    class="fixed top-0 left-0 h-full w-72 bg-white shadow-lg z-50 p-4 overflow-y-auto"
+  >
+    <!-- Close Button -->
+    <div class="flex justify-end">
+      <button @click="open = false" class="text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+    </div>
+
+    <!-- Sidebar Content -->
+    <div class="flex flex-col items-center">
+
+      <!-- Menu Items -->
+      <ul class="space-y-3 w-full text-gray-700 text-base">
+        <li><a href="./dashboard.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-home"></i> Dashboard</a></li>
+        <li><a href="./profile.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-user"></i> Profile</a></li>
+        <li><a href="./my-business.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-briefcase"></i> My Business</a></li>
+        <li><a href="./subscription.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-credit-card"></i> Subscription</a></li>
+        <li><a href="./scanning-history.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-history"></i> Scanning History</a></li>
+        <li><a href="./advertise.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-bullhorn"></i> Advertise</a></li>
+        <li><a href="./Help-Center.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-info-circle"></i> Help Center</a></li>
+      </ul>
+
+      <!-- Profile Section -->
+      <div class="text-center mt-6">
+        <img src="../assets/images/Ellipse 1543.png" class="w-20 h-20 rounded-full mx-auto mb-2" />
+        <p class="font-medium">Haider Ali</p>
+        <button class="mt-2 px-4 py-2 rounded text-white flex gap-3 justify-center mx-auto" style="background-color: #B89B51;">
+          <img src="../assets/images/Logout.png" alt="" />
+          <span class="text-white">Logout</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="dashboard-header">
+      <div class="container mx-auto flex gap-5">
+
+
+        <aside class="w-full md:w-1/4 flex flex-col justify-start p-6 rounded-lg shadow-sm" style="max-height: fit-content; padding: 0px 10px 30px 10px;">
+          <div>
+            <div class="flex flex-col items-center mb-10">
+              <img src="../assets/images/newlogo.png" class="w-20 h-auto mb-2" />
+              <span class="text-xl font-bold">Mustakshif</span>
+            </div>
+            <nav class="space-y-2">
+              <a href="dashboard.html" class="flex gap-3 px-4 py-2 rounded "><img  src="../assets/images/Control Panel (1).png"> <span>Dashboard</span></a>
+              <a href="profile.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Account.png"> <span>Profile</span></a>
+              <a href="my-business.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded active"><img  src="../assets/images/Small Business.png"> <span>My Business</span></a>
+              <a href="subscription.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/payments.png"> <span>Subscription</span></a>
+              <a href="scanning-history.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Time Machine.png"> <span>Scanning History</span></a>
+              <a href="advertise.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Advertise.png"> <span>Advertise With Mustakshif</span></a>
+              <a href="Help-Center.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Group 1000004819.png"> <span>Help Center</span></a>
+            </nav>
+          </div>
+
+          <div class="text-center">
+            <img src="../assets/images/Ellipse 1543.png" class="w-14 h-14 rounded-full mx-auto mb-2" />
+            <p class="font-medium">Haider Ali</p>
+            <button class="mt-2 px-4 py-2 rounded text-white flex gap-3 justify-center mx-auto" style="background-color: #B89B51;"><img src="../assets/images/Logout.png" alt=""><span class="text-white">Logout</span></button>
+          </div>
+        </aside>
+
+<main class="flex-1 p-6">
+      <div class="flex justify-between my-10 bg-white rounded-lg searchetc" style="align-items: center; padding: 20px 30px;">
+        <h1 class="" style="color: #B89B51; font-size: 26px;">My Business</h1>
+        <div class="langandbtns flex justify-right gap-2" style="align-items: center;">
+          <div class="langselctor">
+            <div class="relative flex justify-center align-middle">
+  <select
+    class="appearance-none bg-white border border-gray-300 pr-10 pl-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer">
+    <option value="en">EN</option>
+    <option value="fr">FR</option>
+    <option value="de">DE</option>
+  </select>
+          </div>
+          </div>
+          <div class="lightmode">
+            <button class="p-2 flex items-center justify-center rounded-full" style="background-color: #FAFAFA;">
+  
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_13931_2496)">
+<path d="M11.9188 16.8141C14.5491 16.8141 16.6813 14.6819 16.6813 12.0516C16.6813 9.42132 14.5491 7.28906 11.9188 7.28906C9.28851 7.28906 7.15625 9.42132 7.15625 12.0516C7.15625 14.6819 9.28851 16.8141 11.9188 16.8141Z" fill="#B89B51"/>
+<path opacity="0.5" d="M11.9219 1.57422V3.47923" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M11.9219 20.625V22.53" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M4.50781 4.64062L5.86037 5.99318" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M17.9766 18.1094L19.3291 19.4619" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M1.44531 12.0508H3.35033" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M20.4922 12.0508H22.3972" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M4.50781 19.4619L5.86037 18.1094" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M17.9766 5.99318L19.3291 4.64062" stroke="#B89B51" stroke-width="1.90501" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_13931_2496">
+<rect width="22.8602" height="22.8602" fill="white" transform="translate(0.492188 0.621094)"/>
+</clipPath>
+</defs>
+</svg>
+
+</button>
+
+          </div>
+          <div class="notification">
+             <button class="p-2 flex items-center justify-center rounded-full" style="background-color: #FAFAFA;">
+  
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6999 11.7146C19.0041 10.9021 18.688 10.1979 18.688 9.00168V8.59494C18.688 7.03607 18.3292 6.03168 17.5491 5.02729C16.3469 3.46746 14.3229 2.52734 12.3416 2.52734H12.2573C10.3176 2.52734 8.35707 3.42429 7.13398 4.9208C6.31134 5.94534 5.9109 6.9929 5.9109 8.59494V9.00168C5.9109 10.1979 5.61554 10.9021 4.89892 11.7146C4.37163 12.3132 4.20312 13.0826 4.20312 13.9152C4.20312 14.7489 4.47671 15.5384 5.02577 16.1801C5.74239 16.9495 6.75437 17.4407 7.78812 17.526C9.28479 17.6968 10.7815 17.7611 12.2999 17.7611C13.8174 17.7611 15.3141 17.6536 16.8117 17.526C17.8445 17.4407 18.8565 16.9495 19.5731 16.1801C20.1212 15.5384 20.3957 14.7489 20.3957 13.9152C20.3957 13.0826 20.2272 12.3132 19.6999 11.7146Z" fill="#B89B51"/>
+                <path opacity="0.4" d="M14.2089 18.9356C13.7328 18.834 10.8312 18.834 10.3551 18.9356C9.94801 19.0297 9.50781 19.2484 9.50781 19.728C9.53148 20.1856 9.79938 20.5895 10.1705 20.8456L10.1695 20.8466C10.6495 21.2207 11.2127 21.4586 11.8025 21.544C12.1168 21.5872 12.4368 21.5852 12.7624 21.544C13.3513 21.4586 13.9145 21.2207 14.3945 20.8466L14.3935 20.8456C14.7646 20.5895 15.0325 20.1856 15.0562 19.728C15.0562 19.2484 14.616 19.0297 14.2089 18.9356Z" fill="#B89B51"/>
+                <circle cx="17.5363" cy="4.90737" r="3.81003" fill="#F26464" stroke="#FAFAFA" stroke-width="0.952507"/>
+                </svg>
+
+              </button>
+
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg main-gri shadow-sm" style="padding: 20px 30px; margin-bottom: 25px;">
+
+<h2 class="md:hidden" style="font-size: 26px;">My Business</h2>
+
+<div class="border rounded-md p-4 space-y-4 bg-white max-w-4xl mx-auto">
+
+  <div class="flex flex-col md:flex-row gap-5 border-b p-5 items-center justify-between mybusinesscards">
+    <div class="flex gap-4 flex-col md:flex-row">
+      <!-- Image Placeholder -->
+      <div class="w-16 h-16 rounded text-center mx-auto" style="background-color: #D9D9D9; height: 120px; width: 120px;"></div>
+
+      <!-- Text Content -->
+      <div>
+        <p class="font-medium cardh" style="font-size: 22px;line-height: 36px;">Display name Business on your</p>
+        <p class="text-gray-700">Display name Business on your Display name <br>Business on your</p>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex gap-2">
+      <button class="flex items-center text-white px-6 py-2  text-lg gap-2" style="background-color: #B89B51;padding: 10px 30px;">
+        
+<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="29" height="29" fill="url(#pattern0_13931_1132)"/>
+<defs>
+<pattern id="pattern0_13931_1132" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_1132" transform="scale(0.01)"/>
+</pattern>
+<image id="image0_13931_1132" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACnUlEQVR4nO3dT8gUdRzH8VELCSECE0Uk6gHDStI6qeCl7nWQp0t4qiQ8eukaQRSB4B8SukQnA0FQ6NTFLlFQQQQREU8UHZIOpnnItHrF4HMISlyf/e2z3539vGBuy+7M980wzC77m66LiIiIiIiIkeEuHMS7OIFFrBn9HaIZ3I9P/NcFbMqoVxG24Cu39g22JcrqxHgQ37m9H7A9USYbYwd+Mrqf8XiiTCbGk/jFnbuEPYnSNsZ+XLZyV/F0orSJ8dTyQMd1Dc8myngxnsHv2vkDzyXKymI8jxva+xMvJMqdxTiMv0zO3ziSKKPFeMXqeTNRbh1iDd6y+k7m+6//j3Hc9LyDtTlbbsZYh/dM3/u4e66jYD3OquMD3NPNI2zAh+r5CPd28wT34WN1fYaN3TzAZnypvq+xtRsyPIBvzY7vsdANER7CktnzIx7uhgQ7cdHsutgfQzcU+MLs+7wbCvxq9l3qhgKvmX2vdgP8TXxxhdvRBgM9OsbnPzHt+ZXi5lDGtTjt4xgMCVKLBKlFgtQiQWqRILVIkFokSC0SpBYJUosEqUWC1CJBapEgtUiQWiRILRKkFglSiwSpRYLUIkFqkSC1SJBaJEgtEqQWCVKLBKlFgtQiQWqRILVIkFokSC040OD/IQemfRyDgb0NgmRl0sZrvC+NEaNfeHldsx2Kro+yD7+tIMaV/gzLDCcACziFT/v/jd9m61/zdr+CRGJERERERERERERMER7rn7exvGj9mWxGmUE/qzfwaOsYL0/o8UPz4gZeahVjd2I0i7KrRZD+KczRxrEWQc432pngXIsg03wU0dA0OUN25RpS6BqyHOUQrrfZr7l0HS82ifGvKI/gdZzOPYhR78NOL89sR9MYERERERERXTv/AMU3xXdv6Xj2AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+        Bulk Upload
+      </button>
+      <button class="flex items-center text-white px-4 py-2  text-lg gap-2" style="background-color: #1A73E8;padding: 10px 30px;">
+       
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="25" height="24" fill="url(#pattern0_13931_1137)"/>
+<defs>
+<pattern id="pattern0_13931_1137" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_1137" transform="matrix(0.0096 0 0 0.01 0.02 0)"/>
+</pattern>
+<image id="image0_13931_1137" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgklEQVR4nO3dPW7UQByGcUuEe1BwACTalOngAKHhAghShhIBUraYa4CSwFEogS4nQGlDgeBFIxwBUbzr9doz78w8j+Qy/tif/p61EyldR4smaU/SStKlpAtJh8sekQaTdEfSO/3fL0nPh3+KUmKAYogBiiEGKKmSdDoS41+UZ8lOsLUkHUr6MQGFhX6pJD2V9HMCypPFTqr1NA3lIvd51/DQ92hGlG9pr6A+jA/9rebFTCgnaa+irq+272/c/492XOgj7t6Uk9mXdFzZdm/CZNxsE8q6STmfhNHv+JXqKuwwGbd1vOWkRNy7kzAqBAkzY2yL8nEnjMpAVjPcpoYac/s6nXybqhAkLDQZoydltioACYkwrnsJyHwYY9/a5kMpeEJWW64Z8avoXMU15TEg+Sdjt4e+SickVItRIEioGqMwkFA9RkEgoQmMQkBCMxgFgISmMMxBQnMYxiChSYyRIPEPih8m3B5kfAKPnWXDGAnyuTNMtU1GySCqFaNEENWMURqIascoCUR/FvC44GZbwCXdX/YqCwGRwWRIehs/q651EPlgxNoGkRdG2yDyw2ge5CzzAn5yyz6anhCnybgOkAwYb9bsC5DEt6nXG/YHSMoncElfNuwTkJSvQwBZU453U4CsKTVGf0xuWUOlxuiPCchQqTH6YwIyVGqM/piAOAWIWYCYBYhZgJgFiFmAmAWIWYCYBYhZgJgl6euG1zTt/oIqR4CYBYhZgJgFiFmAmAWIWYCYBYhZgJgFiFmAmAWIWYCYBYhZgJgFiFmAmFUKyJWkT41s30sAob8BYhYgZgFiFiBmAWIWIC2CHMT/58SmMZ/BweIgREREREREREREXZ5+Aw9JJWM8vSqYAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+        Edit
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row gap-5 border-b p-5 items-center justify-between mybusinesscards">
+    <div class="flex gap-4 flex-col md:flex-row">
+      <!-- Image Placeholder -->
+      <div class="w-16 h-16 rounded text-center mx-auto" style="background-color: #D9D9D9; height: 120px; width: 120px;"></div>
+
+      <!-- Text Content -->
+      <div>
+        <p class="font-medium cardh" style="font-size: 22px;line-height: 36px;">Display name Business on your</p>
+        <p class="text-gray-700">Display name Business on your Display name <br>Business on your</p>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex gap-2">
+      <button class="flex items-center text-white px-6 py-2  text-lg gap-2" style="background-color: #B89B51;padding: 10px 30px;">
+        
+<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="29" height="29" fill="url(#pattern0_13931_1132)"/>
+<defs>
+<pattern id="pattern0_13931_1132" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_1132" transform="scale(0.01)"/>
+</pattern>
+<image id="image0_13931_1132" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACnUlEQVR4nO3dT8gUdRzH8VELCSECE0Uk6gHDStI6qeCl7nWQp0t4qiQ8eukaQRSB4B8SukQnA0FQ6NTFLlFQQQQREU8UHZIOpnnItHrF4HMISlyf/e2z3539vGBuy+7M980wzC77m66LiIiIiIiIkeEuHMS7OIFFrBn9HaIZ3I9P/NcFbMqoVxG24Cu39g22JcrqxHgQ37m9H7A9USYbYwd+Mrqf8XiiTCbGk/jFnbuEPYnSNsZ+XLZyV/F0orSJ8dTyQMd1Dc8myngxnsHv2vkDzyXKymI8jxva+xMvJMqdxTiMv0zO3ziSKKPFeMXqeTNRbh1iDd6y+k7m+6//j3Hc9LyDtTlbbsZYh/dM3/u4e66jYD3OquMD3NPNI2zAh+r5CPd28wT34WN1fYaN3TzAZnypvq+xtRsyPIBvzY7vsdANER7CktnzIx7uhgQ7cdHsutgfQzcU+MLs+7wbCvxq9l3qhgKvmX2vdgP8TXxxhdvRBgM9OsbnPzHt+ZXi5lDGtTjt4xgMCVKLBKlFgtQiQWqRILVIkFokSC0SpBYJUosEqUWC1CJBapEgtUiQWiRILRKkFglSiwSpRYLUIkFqkSC1SJBaJEgtEqQWCVKLBKlFgtQiQWqRILVIkFokSC040OD/IQemfRyDgb0NgmRl0sZrvC+NEaNfeHldsx2Kro+yD7+tIMaV/gzLDCcACziFT/v/jd9m61/zdr+CRGJERERERERERERMER7rn7exvGj9mWxGmUE/qzfwaOsYL0/o8UPz4gZeahVjd2I0i7KrRZD+KczRxrEWQc432pngXIsg03wU0dA0OUN25RpS6BqyHOUQrrfZr7l0HS82ifGvKI/gdZzOPYhR78NOL89sR9MYERERERERXTv/AMU3xXdv6Xj2AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+        Bulk Upload
+      </button>
+      <button class="flex items-center text-white px-4 py-2  text-lg gap-2" style="background-color: #1A73E8;padding: 10px 30px;">
+       
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="25" height="24" fill="url(#pattern0_13931_1137)"/>
+<defs>
+<pattern id="pattern0_13931_1137" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_1137" transform="matrix(0.0096 0 0 0.01 0.02 0)"/>
+</pattern>
+<image id="image0_13931_1137" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgklEQVR4nO3dPW7UQByGcUuEe1BwACTalOngAKHhAghShhIBUraYa4CSwFEogS4nQGlDgeBFIxwBUbzr9doz78w8j+Qy/tif/p61EyldR4smaU/SStKlpAtJh8sekQaTdEfSO/3fL0nPh3+KUmKAYogBiiEGKKmSdDoS41+UZ8lOsLUkHUr6MQGFhX6pJD2V9HMCypPFTqr1NA3lIvd51/DQ92hGlG9pr6A+jA/9rebFTCgnaa+irq+272/c/492XOgj7t6Uk9mXdFzZdm/CZNxsE8q6STmfhNHv+JXqKuwwGbd1vOWkRNy7kzAqBAkzY2yL8nEnjMpAVjPcpoYac/s6nXybqhAkLDQZoydltioACYkwrnsJyHwYY9/a5kMpeEJWW64Z8avoXMU15TEg+Sdjt4e+SickVItRIEioGqMwkFA9RkEgoQmMQkBCMxgFgISmMMxBQnMYxiChSYyRIPEPih8m3B5kfAKPnWXDGAnyuTNMtU1GySCqFaNEENWMURqIascoCUR/FvC44GZbwCXdX/YqCwGRwWRIehs/q651EPlgxNoGkRdG2yDyw2ge5CzzAn5yyz6anhCnybgOkAwYb9bsC5DEt6nXG/YHSMoncElfNuwTkJSvQwBZU453U4CsKTVGf0xuWUOlxuiPCchQqTH6YwIyVGqM/piAOAWIWYCYBYhZgJgFiFmAmAWIWYCYBYhZgJgl6euG1zTt/oIqR4CYBYhZgJgFiFmAmAWIWYCYBYhZgJgFiFmAmAWIWYCYBYhZgJgFiFmAmFUKyJWkT41s30sAob8BYhYgZgFiFiBmAWIWIC2CHMT/58SmMZ/BweIgREREREREREREXZ5+Aw9JJWM8vSqYAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+        Edit
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row gap-5 p-5 items-center justify-between mybusinesscards">
+    <div class="flex gap-4 flex-col md:flex-row">
+      <!-- Image Placeholder -->
+      <div class="w-16 h-16 rounded text-center mx-auto" style="background-color: #D9D9D9; height: 120px; width: 120px;"></div>
+
+      <!-- Text Content -->
+      <div>
+        <p class="font-medium cardh" style="font-size: 22px;line-height: 36px;">Display name Business on your</p>
+        <p class="text-gray-700">Display name Business on your Display name <br>Business on your</p>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex gap-2">
+      <button class="flex items-center text-white px-6 py-2  text-lg gap-2" style="background-color: #B89B51;padding: 10px 30px;">
+        
+<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="29" height="29" fill="url(#pattern0_13931_1132)"/>
+<defs>
+<pattern id="pattern0_13931_1132" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_1132" transform="scale(0.01)"/>
+</pattern>
+<image id="image0_13931_1132" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACnUlEQVR4nO3dT8gUdRzH8VELCSECE0Uk6gHDStI6qeCl7nWQp0t4qiQ8eukaQRSB4B8SukQnA0FQ6NTFLlFQQQQREU8UHZIOpnnItHrF4HMISlyf/e2z3539vGBuy+7M980wzC77m66LiIiIiIiIkeEuHMS7OIFFrBn9HaIZ3I9P/NcFbMqoVxG24Cu39g22JcrqxHgQ37m9H7A9USYbYwd+Mrqf8XiiTCbGk/jFnbuEPYnSNsZ+XLZyV/F0orSJ8dTyQMd1Dc8myngxnsHv2vkDzyXKymI8jxva+xMvJMqdxTiMv0zO3ziSKKPFeMXqeTNRbh1iDd6y+k7m+6//j3Hc9LyDtTlbbsZYh/dM3/u4e66jYD3OquMD3NPNI2zAh+r5CPd28wT34WN1fYaN3TzAZnypvq+xtRsyPIBvzY7vsdANER7CktnzIx7uhgQ7cdHsutgfQzcU+MLs+7wbCvxq9l3qhgKvmX2vdgP8TXxxhdvRBgM9OsbnPzHt+ZXi5lDGtTjt4xgMCVKLBKlFgtQiQWqRILVIkFokSC0SpBYJUosEqUWC1CJBapEgtUiQWiRILRKkFglSiwSpRYLUIkFqkSC1SJBaJEgtEqQWCVKLBKlFgtQiQWqRILVIkFokSC040OD/IQemfRyDgb0NgmRl0sZrvC+NEaNfeHldsx2Kro+yD7+tIMaV/gzLDCcACziFT/v/jd9m61/zdr+CRGJERERERERERERMER7rn7exvGj9mWxGmUE/qzfwaOsYL0/o8UPz4gZeahVjd2I0i7KrRZD+KczRxrEWQc432pngXIsg03wU0dA0OUN25RpS6BqyHOUQrrfZr7l0HS82ifGvKI/gdZzOPYhR78NOL89sR9MYERERERERXTv/AMU3xXdv6Xj2AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+        Bulk Upload
+      </button>
+      <button class="flex items-center text-white px-4 py-2  text-lg gap-2" style="background-color: #1A73E8;padding: 10px 30px;">
+       
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="25" height="24" fill="url(#pattern0_13931_1137)"/>
+<defs>
+<pattern id="pattern0_13931_1137" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_1137" transform="matrix(0.0096 0 0 0.01 0.02 0)"/>
+</pattern>
+<image id="image0_13931_1137" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgklEQVR4nO3dPW7UQByGcUuEe1BwACTalOngAKHhAghShhIBUraYa4CSwFEogS4nQGlDgeBFIxwBUbzr9doz78w8j+Qy/tif/p61EyldR4smaU/SStKlpAtJh8sekQaTdEfSO/3fL0nPh3+KUmKAYogBiiEGKKmSdDoS41+UZ8lOsLUkHUr6MQGFhX6pJD2V9HMCypPFTqr1NA3lIvd51/DQ92hGlG9pr6A+jA/9rebFTCgnaa+irq+272/c/492XOgj7t6Uk9mXdFzZdm/CZNxsE8q6STmfhNHv+JXqKuwwGbd1vOWkRNy7kzAqBAkzY2yL8nEnjMpAVjPcpoYac/s6nXybqhAkLDQZoydltioACYkwrnsJyHwYY9/a5kMpeEJWW64Z8avoXMU15TEg+Sdjt4e+SickVItRIEioGqMwkFA9RkEgoQmMQkBCMxgFgISmMMxBQnMYxiChSYyRIPEPih8m3B5kfAKPnWXDGAnyuTNMtU1GySCqFaNEENWMURqIascoCUR/FvC44GZbwCXdX/YqCwGRwWRIehs/q651EPlgxNoGkRdG2yDyw2ge5CzzAn5yyz6anhCnybgOkAwYb9bsC5DEt6nXG/YHSMoncElfNuwTkJSvQwBZU453U4CsKTVGf0xuWUOlxuiPCchQqTH6YwIyVGqM/piAOAWIWYCYBYhZgJgFiFmAmAWIWYCYBYhZgJgl6euG1zTt/oIqR4CYBYhZgJgFiFmAmAWIWYCYBYhZgJgFiFmAmAWIWYCYBYhZgJgFiFmAmFUKyJWkT41s30sAob8BYhYgZgFiFiBmAWIWIC2CHMT/58SmMZ/BweIgREREREREREREXZ5+Aw9JJWM8vSqYAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+        Edit
+      </button>
+    </div>
+  </div>
+  
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      
+    </main>
+
+     
+
+      </div>
+
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
+
+    <script src="/assets/script.js"></script>
+  </body>
+</html>

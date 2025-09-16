@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+  </head>
+  <body class="blog-page">
+
+
+
+    <!-- ========== HEADER ========== -->
+    <header class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200 home-header">
+      <nav class="relative container w-full mx-auto md:flex md:items-center md:justify-between md:gap-3">
+        <div class="flex justify-between items-center gap-x-1 px-4 h-full mbldeskheaderchange">
+          <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80" href="index.html" aria-label="Brand">
+            <img class="mobilelogo-width hidden md:block" src="/assets/images/newlogo.png" alt="" srcset=""/>
+            <img class="mobilelogo-width md:hidden" src="/assets/images/logo 2.png" alt="" srcset=""/>
+          </a>
+
+          <!-- Collapse Button -->
+          <button type="button" class="hs-collapse-toggle lg:hidden relative size-9 justify-center items-center font-medium text-sm rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
+            <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <!-- End Collapse Button -->
+        </div>
+
+        <!-- Collapse -->
+        <div id="hs-header-base" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:flex mobilebgheader"  aria-labelledby="hs-header-base-collapse" >
+          <div class="w-full overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
+            <div class="py-2 md:py-0 flex flex-col lg:flex-row lg:items-center gap-0.5 md:gap-1 navbtns-parent">
+              <div class="grow">
+                <div class="onlymenu flex flex-col md:flex-row justify-center lg:items-center gap-6 xl:gap-3 2xl:gap-6 px-3">
+                  
+
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Halal Places
+                  </a>
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Products
+                  </a>
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Shariah Board
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="#">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                    Subscription 
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="./How-mustakshif-works.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+                     How Mustakshif Work?
+                  </a>
+
+                  <!-- <div class="actions">
+
+                    
+                    <button class="icon-button" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+
+                    
+                    <div class="lang-dropdown">
+                      <button class="lang-toggle" onclick="toggleLangMenu()">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      </button>
+                      <div class="lang-menu" id="langMenu">
+                        <button onclick="setLanguage('en', 'us')">
+                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
+                        </button>
+                        <button onclick="setLanguage('ms', 'my')">
+                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
+                        </button>
+                        <button onclick="setLanguage('ar', 'sa')">
+                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
+                        </button>
+                        <button onclick="setLanguage('fr', 'fr')">
+                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
+                        </button>
+                        <button onclick="setLanguage('de', 'de')">
+                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
+                        </button>
+                      </div>
+                    </div>
+
+                    
+                    <div id="searchModal">
+                      <div class="modal-content flex items-center gap-6">
+                        <input type="text" placeholder="Search..." />
+                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                      </div>
+                    </div>
+
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- Button Group -->
+              <div class="md:ms-auto md:mt-0 flex  items-center px-2 header-btnsss">
+                <div class="actions">
+
+                    <!-- Search icon -->
+                    <button class="icon-button mt-1" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+
+                    <!-- Language selector with flag images -->
+                    <div class="lang-dropdown">
+                      <button class="lang-toggle" onclick="toggleLangMenu()">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      </button>
+                      <div class="lang-menu" id="langMenu">
+                        <button onclick="setLanguage('en', 'us')">
+                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
+                        </button>
+                        <button onclick="setLanguage('ms', 'my')">
+                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
+                        </button>
+                        <button onclick="setLanguage('ar', 'sa')">
+                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
+                        </button>
+                        <button onclick="setLanguage('fr', 'fr')">
+                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
+                        </button>
+                        <button onclick="setLanguage('de', 'de')">
+                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Search Modal -->
+                    <div id="searchModal">
+                      <div class="modal-content flex items-center gap-6">
+                        <input type="text" placeholder="Search..." />
+                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                <a class="bg-btn-gold py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  <i class="fa fa-user text-base" style="font-size: 16px;"></i> Log in
+                </a>
+                <a class="bg-btn-blue py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  Download
+                </a>
+              </div>
+              <!-- End Button Group -->
+            </div>
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+
+
+
+    <div class="blog-page-top-banner">
+      <div class="container mx-auto">
+        <img src="../assets/images/blog-page-main-banner.png" alt="" style="z-index: -1;margin-top: -25px;">
+      </div>
+    </div>
+
+
+<div class="home-featured-blog-sec">
+        <div class="container mx-auto" style="padding: 40px 0px;">
+          
+          <div class="flex home-img-text-sec gap-5 flex-col md:flex-row">
+            <div class="img-sec-aa relative">
+              <img src="../assets/images/home-featured-blog-sec-main-img.png" alt="">
+              <span class="featured-tag">Featured</span>
+            </div>
+            <div class="text-sec-aa flex flex-col justify-center" >
+              <p class="text-gray-400 uppercase">Game Reviews</p>
+              <h3 class="t" >Melvin Gordon is making the right decision walking away from the Chargers</h3>
+              <div class="flex authordateee" style="gap: 50px;">
+                <div class="flex gap-3 align-middle">
+                <img src="../assets/images/home-featured-blog-sec-avatar.png" alt="">
+                <p>By Gabie <br>Sheber</p>
+              </div><p class="text-gray-400"> Mar. 28, 2020</p></div>
+            </div>
+          </div>
+          <div class="flex home-blog-cards my-5 gap-3 flex-col md:flex-row">
+            <div class="home-blog-card">
+              <div class="img-blok relative">
+                <img src="../assets/images/home-blog-card1.png" alt="">
+                <span class="featured-tag">Featured</span>
+              </div>
+              <div class="txt-blok">
+                <h4 class="text-2xl">Titans Post Elite PFF Tackling in 2019</h4>
+                <div class="flex" style="gap: 30px;">
+                  <p class="authorr">By Ben Sundock</p>
+                  <p class="text-gray-400"> Mar 1, 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="home-blog-card">
+              <div class="img-blok relative">
+                <img src="../assets/images/home-blog-card2.png" alt="">
+                <span class="featured-tag">Featured</span>
+              </div>
+              <div class="txt-blok">
+                <h4 class="text-2xl">Titans Post Elite PFF Tackling in 2019</h4>
+                <div class="flex" style="gap: 30px;">
+                  <p class="authorr">By Ben Sundock</p>
+                  <p class="text-gray-400"> Mar 1, 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="home-blog-card">
+              <div class="img-blok relative">
+                <img src="../assets/images/home-blog-card3.png" alt="">
+                <span class="featured-tag">Featured</span>
+              </div>
+              <div class="txt-blok">
+                <h4 class="text-2xl">Titans Post Elite PFF Tackling in 2019</h4>
+                <div class="flex" style="gap: 30px;">
+                  <p class="authorr">By Ben Sundock</p>
+                  <p class="text-gray-400"> Mar 1, 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="home-blog-card">
+              <div class="img-blok relative">
+                <img src="../assets/images/home-blog-card4.png" alt="">
+                <span class="featured-tag">Featured</span>
+              </div>
+              <div class="txt-blok">
+                <h4 class="text-2xl">Titans Post Elite PFF Tackling in 2019</h4>
+                <div class="flex" style="gap: 30px;">
+                  <p class="authorr">By Ben Sundock</p>
+                  <p class="text-gray-400"> Mar 1, 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-6 bg-image foodimgsblock" style="background-color: #FFFBF3;">
+        <div class="container mx-auto  py-10 mobilepadding10">
+          <div class="my-6 lg-grid-cols-4 gap-6 md-py-4">
+            <div
+            class="w-full relative"
+            >
+            <div>
+                <img src="/assets/images/imagerelativesec.png" alt="">
+            </div>
+            <div class="text-start textsecabsolute py-6  px-4" style="background-image: url('/assets/images/everybllockbg.png');">
+                <h3 class="text-xl font-medium text-black pt-2">Food
+                    </h3>
+                <p class="text-black text-sm">
+                2765 Articles
+                </p>
+            </div>
+
+            </div>
+            <div
+            class="w-full relative"
+            >
+            <div>
+                <img src="/assets/images/Health.png" alt="">
+            </div>
+            <div class="text-start textsecabsolute py-6  px-4" style="background-image: url('/assets/images/everybllockbg.png');">
+                <h3 class="text-xl font-medium text-black pt-2">Health
+                    </h3>
+                <p class="text-black text-sm">
+                2765 Articles
+                </p>
+            </div>
+
+            </div>
+            <div
+            class="w-full relative"
+            >
+            <div>
+                <img src="/assets/images/Business.png" alt="">
+            </div>
+            <div class="text-start textsecabsolute py-6  px-4" style="background-image: url('/assets/images/everybllockbg.png');">
+                <h3 class="text-xl font-medium text-black pt-2">Business
+                    </h3>
+                <p class="text-black text-sm">
+                2765 Articles
+                </p>
+            </div>
+
+            </div>
+            <div
+            class="w-full relative"
+            >
+            <div>
+                <img src="/assets/images/Marketing.png" alt="">
+            </div>
+            <div class="text-start textsecabsolute py-6  px-4" style="background-image: url('/assets/images/everybllockbg.png');">
+                <h3 class="text-xl font-medium text-black pt-2">Marketing
+                    </h3>
+                <p class="text-black text-sm">
+                2765 Articles
+                </p>
+            </div>
+
+            </div>
+            <div
+            class="w-full relative"
+            >
+            <div>
+                <img src="/assets/images/News.png" alt="">
+            </div>
+            <div class="text-start textsecabsolute py-6  px-4" style="background-image: url('/assets/images/everybllockbg.png');">
+                <h3 class="text-xl font-medium text-black pt-2">News
+                    </h3>
+                <p class="text-black text-sm">
+                2765 Articles
+                </p>
+            </div>
+
+            </div>
+            <div
+            class="w-full relative"
+            >
+            <div>
+                <img src="/assets/images/Tech.png" alt="">
+            </div>
+            <div class="text-start textsecabsolute py-6  px-4" style="background-image: url('/assets/images/everybllockbg.png');">
+                <h3 class="text-xl font-medium text-black pt-2">Tech 
+                    </h3>
+                <p class="text-black text-sm">
+                2765 Articles
+                </p>
+            </div>
+
+            </div>
+            <div
+            class="w-full relative"
+            >
+            <div>
+                <img src="/assets/images/Lifestyle.png" alt="">
+            </div>
+            <div class="text-start textsecabsolute py-6  px-4" style="background-image: url('/assets/images/everybllockbg.png');">
+                <h3 class="text-xl font-medium text-black pt-2">Lifestyle
+                    </h3>
+                <p class="text-black text-sm">
+                2765 Articles
+                </p>
+            </div>
+
+            </div>
+            <div
+            class="w-full relative"
+            >
+            <div>
+                <img src="/assets/images/Others.png" alt="">
+            </div>
+            <div class="text-start textsecabsolute py-6  px-4" style="background-image: url('/assets/images/everybllockbg.png');">
+                <h3 class="text-xl font-medium text-black pt-2">Others 
+                    </h3>
+                <p class="text-black text-sm">
+                2765 Articles
+                </p>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-page-banner-sec2 ">
+      <div class="container mx-auto">
+        <div class="flex gap-4">
+          <div class="blog-bann1">
+            <img src="../assets/images/blog-ban2-sec.png" alt="" >
+
+          </div>
+          <div class="blog-bann2 hidden md:block">
+            <img src="../assets/images/blog-ban2-sec.png" alt="" >
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+<div class="latest-blogs py-8">
+        <div class="container mx-auto">
+          <div class="flex justify-between" style="align-items: center;">
+            <h3 style="font-size: 32px;">Latest Blogs</h3>
+            <a href="#" class="underline hidden md:block" style="color: #B89B51;">View All</a>
+          </div>
+          <div class="grid grid-cols-2 lg:grid-cols-3 py-4 latest-grid">
+
+            <div class="rounded-lg">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card1.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card2.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card3.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card4.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card5.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card6.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card7.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card7.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card7.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card8.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card8.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card8.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg hidden md:block">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card9.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg hidden md:block">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card9.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg hidden md:block">
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div class="img-sideee">
+                  <img src="../assets/images/home-latest-blogs-card9.png" alt="Image">
+                </div>
+                <div class="text-sideee">
+                  <span class="news-tag">News</span>
+                  <h3 class="text-lg">Titans Post Elite PFF Tacking in 2019 Tacking</h3>
+                  <div class="flex" style="gap: 30px;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date"> Mar 1, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="flex md:hidden justify-end">
+            <a href="#" class="underline md-hidden text-right" style="color: #B89B51;">View All</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+<div class="blog-page-banner-sec3 ">
+      <div class="container mx-auto">
+        <div class="flex gap-4 flex-col md:flex-row">
+          <div class="blog-bann1">
+            <img src="../assets/images/blog-banner-sec3img2.png" alt="" >
+
+          </div>
+          <div class="blog-bann2">
+            <img src="../assets/images/blog-banner-sec3img1.png" alt="" >
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+<div class="lates-video-section my-5">
+  <div class="container mx-auto">
+    <div class="flex justify-between" style="align-items: center;">
+      <h3 style="font-size: 32px;">Latest Video</h3>
+      <a href="#" class="underline" style="color: #B89B51;">View All</a>
+    </div>
+     <div class="grid latest-video-grid py-4 gap-5">
+
+            <div class="rounded-lg">
+              <div class="">
+                  <img src="../assets/images/latest-video-sec-img1.png" alt="Image">
+                  <h3>Pietrangelo hopes he'll sign contract to remain with Blues</h3>
+                  <div class="flex" style="gap: 30px; align-items: center;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date text-xs"> Mar 1, 2020</p>
+                  </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="">
+                  <img src="../assets/images/latest-video-sec-img1.png" alt="Image">
+                  <h3>Pietrangelo hopes he'll sign contract to remain with Blues</h3>
+                  <div class="flex" style="gap: 30px; align-items: center;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date text-xs"> Mar 1, 2020</p>
+                  </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="">
+                  <img src="../assets/images/latest-video-sec-img1.png" alt="Image">
+                  <h3>Pietrangelo hopes he'll sign contract to remain with Blues</h3>
+                  <div class="flex" style="gap: 30px; align-items: center;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date text-xs"> Mar 1, 2020</p>
+                  </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="">
+                  <img src="../assets/images/latest-video-sec-img1.png" alt="Image">
+                  <h3>Pietrangelo hopes he'll sign contract to remain with Blues</h3>
+                  <div class="flex" style="gap: 30px; align-items: center;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date text-xs"> Mar 1, 2020</p>
+                  </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="">
+                  <img src="../assets/images/latest-video-sec-img1.png" alt="Image">
+                  <h3>Pietrangelo hopes he'll sign contract to remain with Blues</h3>
+                  <div class="flex" style="gap: 30px; align-items: center;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date text-xs"> Mar 1, 2020</p>
+                  </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="">
+                  <img src="../assets/images/latest-video-sec-img1.png" alt="Image">
+                  <h3>Pietrangelo hopes he'll sign contract to remain with Blues</h3>
+                  <div class="flex" style="gap: 30px; align-items: center;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date text-xs"> Mar 1, 2020</p>
+                  </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="">
+                  <img src="../assets/images/latest-video-sec-img1.png" alt="Image">
+                  <h3>Pietrangelo hopes he'll sign contract to remain with Blues</h3>
+                  <div class="flex" style="gap: 30px; align-items: center;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date text-xs"> Mar 1, 2020</p>
+                  </div>
+              </div>
+            </div>
+            <div class="rounded-lg">
+              <div class="">
+                  <img src="../assets/images/latest-video-sec-img1.png" alt="Image">
+                  <h3>Pietrangelo hopes he'll sign contract to remain with Blues</h3>
+                  <div class="flex" style="gap: 30px; align-items: center;">
+                      <p class="authorr text-xs">By Ben Sundock</p>
+                      <p class="text-gray-400 pub-date text-xs"> Mar 1, 2020</p>
+                  </div>
+              </div>
+            </div>
+            
+          
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="blog-page-last-banner py-5">
+      <div class="container mx-auto">
+        <img src="../assets/images/blog-page-last-bann.png" alt="" >
+      </div>
+
+    </div>
+
+
+
+
+<div class="  md-py-4 recent-articles-sec">
+        <div class="container mx-auto mt-6 pt-4" >  
+          <div
+          class="w-full mb-1"
+          >
+            <div class="flex flex-row items-end">
+              <h3 class="text-nowrap" style="font-size: 32px;">Recent Articles</h3>
+              <div class="w-full mx-2 mb-2" style="border-bottom: 1px solid #000"></div>
+            </div>
+
+            <div class="lg-grid-cols-5 gap-6 py-4">
+              <div class="text-start">
+                <div class="py-2">
+                  <img src="/assets/images/recentarticle1.png" width="100%" alt="">
+                </div>
+                <div>
+                  <a href="#"><h3 class="text-xl font-medium">Quick and Healthy<br>
+                      Meals for Busy Weeknights</h3></a>
+                  <div class="flex items-center py-2 gap-2">
+                    <p class="py-1 rounded-full text-sm">
+                        Dec 19, 2024
+                    </p>
+                  </div>
+                </div>  
+              </div>
+              <div class="text-start">
+                <div class="py-2">
+                  <img src="/assets/images/recentarticle8.png" width="100%" alt="">
+                </div>
+                <div>
+                  <a href="#"><h3 class="text-xl font-medium">Quick and Healthy<br>
+                    Meals for Busy Weeknights</h3></a>
+                  <div class="flex items-center py-2 gap-2">
+                    <p class="py-1 rounded-full text-sm">
+                        Dec 19, 2024
+                    </p>
+                  </div>
+                </div>  
+              </div>
+              <div class="text-start">
+                <div class="py-2">
+                  <img src="/assets/images/recentarticle2.png" width="100%" alt="">
+                </div>
+                <div>
+                  <a href="#"><h3 class="text-xl font-medium">Quick and Healthy<br>
+                    Meals for Busy Weeknights</h3></a>
+                  <div class="flex items-center py-2 gap-2">
+                    <p class="py-1 rounded-full text-sm">
+                        Dec 19, 2024
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-start">
+                  <div class="py-2">
+                    <img src="/assets/images/recentarticle3.png" width="100%" alt="">
+                  </div>
+                  <div>
+                    <a href="#"><h3 class="text-xl font-medium">Quick and Healthy<br>
+                        Meals for Busy Weeknights</h3></a>
+                    <div class="flex items-center py-2 gap-2">
+                    <p class="py-1 rounded-full text-sm">
+                        Dec 19, 2024
+                    </p>
+                    </div>
+                  </div>
+              </div>
+              <div class="text-start">
+                <div class="py-2">
+                  <img src="/assets/images/recentarticle3.png" width="100%" alt="">
+                </div>
+                <div>
+                  <a href="#"><h3 class="text-xl font-medium">Quick and Healthy<br>
+                      Meals for Busy Weeknights</h3></a>
+                  <div class="flex items-center py-2 gap-2">
+                  <p class="py-1 rounded-full text-sm">
+                      Dec 19, 2024
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-start">
+                <div class="py-2">
+                  <img src="/assets/images/recentarticle4.png" width="100%" alt="">
+                </div>
+                <div>
+                  <a href="#"><h3 class="text-xl font-medium">Quick and Healthy<br>
+                      Meals for Busy Weeknights</h3></a>
+                  <div class="flex items-center py-2 gap-2">
+                  <p class="py-1 rounded-full text-sm">
+                      Dec 19, 2024
+                  </p>
+                  </div>
+    
+                </div>
+                  
+              </div>
+              <div class="text-start">
+                  <div class="py-2">
+                  <img src="/assets/images/recentarticle5.png" width="100%" alt="">
+                  </div>
+                  <div>
+                  <a href="#"><h3 class="text-xl font-medium">Quick and Healthy<br>
+                      Meals for Busy Weeknights</h3></a>
+                  <div class="flex items-center py-2 gap-2">
+                  <p class="py-1 rounded-full text-sm">
+                      Dec 19, 2024
+                  </p>
+                  </div>
+                  </div>
+              </div>
+              <div class="text-start">
+                  <div class="py-2">
+                  <img src="/assets/images/recentarticle6.png" width="100%" alt="">
+                  </div>
+                  <div>
+                  <a href="#"><h3 class="text-xl font-medium">Quick and Healthy<br>
+                      Meals for Busy Weeknights</h3></a>
+                  <div class="flex items-center py-2 gap-2">
+                  <p class="py-1 rounded-full text-sm">
+                      Dec 19, 2024
+                  </p>
+                  </div>
+                  </div>
+              </div>
+              <div class="text-start">
+                  <div class="py-2">
+                  <img src="/assets/images/recentarticle7.png" width="100%" alt="">
+                  </div>
+                  <div>
+                  <a href="#"><h3 class="text-xl font-medium">Quick and Healthy<br>
+                      Meals for Busy Weeknights</h3></a>
+                  <div class="flex items-center py-2 gap-2">
+                  <p class="py-1 rounded-full text-sm">
+                      Dec 19, 2024
+                  </p>
+                  </div>
+                  </div>
+              </div>
+              <div class="text-start">
+                  <div class="py-2">
+                  <img src="/assets/images/recentarticle7.png" width="100%" alt="">
+                  </div>
+                  <div>
+                  <a href="#"><h3 class="text-xl font-medium">Quick and Healthy<br>
+                      Meals for Busy Weeknights</h3></a>
+                  <div class="flex items-center py-2 gap-2">
+                  <p class="py-1 rounded-full text-sm">
+                      Dec 19, 2024
+                  </p>
+                  </div>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    <footer>
+      <div class="mt-auto w-full container py-4 px-4 sm:px-6 lg:px-8 mx-auto">
+        <div class="text-center">
+          <h3 class="text-base font-medium" style="color: #677d99">
+            2025 @ Mustakshif, Design & Develop By Navicosoft
+          </h3>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
+
+    <script src="/assets/script.js"></script>
+  </body>
+</html>

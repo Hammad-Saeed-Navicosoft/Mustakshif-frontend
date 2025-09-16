@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mustakshif Product</title>
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="mustakshif-product-page">
+
+    <!-- ========== HEADER ========== -->
+   <header class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200 home-header">
+      <nav class="relative container w-full mx-auto md:flex md:items-center md:justify-between md:gap-3">
+        <div class="flex justify-between items-center gap-x-1 px-4 h-full mbldeskheaderchange">
+          <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80" href="index.html" aria-label="Brand">
+            <img class="mobilelogo-width hidden md:block" src="/assets/images/newlogo.png" alt="" srcset=""/>
+            <img class="mobilelogo-width md:hidden" src="/assets/images/logo 2.png" alt="" srcset=""/>
+          </a>
+
+          <!-- Collapse Button -->
+          <button type="button" class="hs-collapse-toggle lg:hidden relative size-9 justify-center items-center font-medium text-sm rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
+            <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <!-- End Collapse Button -->
+        </div>
+
+        <!-- Collapse -->
+        <div id="hs-header-base" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:flex mobilebgheader"  aria-labelledby="hs-header-base-collapse" >
+          <div class="w-full overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
+            <div class="py-2 md:py-0 flex flex-col lg:flex-row lg:items-center gap-0.5 md:gap-1 navbtns-parent">
+              <div class="grow">
+                <div class="onlymenu flex flex-col md:flex-row justify-center lg:items-center gap-6 xl:gap-3 2xl:gap-6 px-3">
+                  
+
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Halal Places
+                  </a>
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Products
+                  </a>
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Shariah Board
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="#">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                    Subscription 
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="./How-mustakshif-works.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+                     How Mustakshif Work?
+                  </a>
+
+                  <!-- <div class="actions">
+
+                    
+                    <button class="icon-button" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+
+                    
+                    <div class="lang-dropdown">
+                      <button class="lang-toggle" onclick="toggleLangMenu()">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      </button>
+                      <div class="lang-menu" id="langMenu">
+                        <button onclick="setLanguage('en', 'us')">
+                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
+                        </button>
+                        <button onclick="setLanguage('ms', 'my')">
+                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
+                        </button>
+                        <button onclick="setLanguage('ar', 'sa')">
+                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
+                        </button>
+                        <button onclick="setLanguage('fr', 'fr')">
+                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
+                        </button>
+                        <button onclick="setLanguage('de', 'de')">
+                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
+                        </button>
+                      </div>
+                    </div>
+
+                    
+                    <div id="searchModal">
+                      <div class="modal-content flex items-center gap-6">
+                        <input type="text" placeholder="Search..." />
+                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                      </div>
+                    </div>
+
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- Button Group -->
+              <div class="md:ms-auto md:mt-0 flex  items-center px-2 header-btnsss">
+                <div class="actions">
+
+                    <!-- Search icon -->
+                    <button class="icon-button mt-1" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+
+                    <!-- Language selector with flag images -->
+                    <div class="lang-dropdown">
+                      <button class="lang-toggle" onclick="toggleLangMenu()">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      </button>
+                      <div class="lang-menu" id="langMenu">
+                        <button onclick="setLanguage('en', 'us')">
+                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
+                        </button>
+                        <button onclick="setLanguage('ms', 'my')">
+                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
+                        </button>
+                        <button onclick="setLanguage('ar', 'sa')">
+                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
+                        </button>
+                        <button onclick="setLanguage('fr', 'fr')">
+                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
+                        </button>
+                        <button onclick="setLanguage('de', 'de')">
+                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Search Modal -->
+                    <div id="searchModal">
+                      <div class="modal-content flex items-center gap-6">
+                        <input type="text" placeholder="Search..." />
+                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                <a class="bg-btn-gold py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  <i class="fa fa-user text-base" style="font-size: 16px;"></i> Log in
+                </a>
+                <a class="bg-btn-blue py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  Download
+                </a>
+              </div>
+              <!-- End Button Group -->
+            </div>
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+    <div class="advertisement-sec rounded-xl md:hidden" style="background-color: #EDEDED; margin-top: -25px; height: 100px;"></div> 
+    <div class="container mx-auto px-4 hidden md:block"> 
+      <div class="advertisement-sec rounded-xl" style="background-color: #EDEDED; margin-top: -25px; height: 250px;">
+
+      </div> 
+    </div>
+
+    <div class="relative overflow-hidden dashboard-container">
+
+      <div class="container mx-auto px-4">
+        <div class="py-4 w-full">
+
+          <div class="md:py-4 px-3 md:px-0">
+            <h3 class="font-medium phead">Smith's Crinkle Cut Potato Chips Cheese & Onion 170g</h3>
+          </div>
+
+
+          <div class="flex flex-col lg:flex-row  gap-6 justify-center items-start my-4">          
+              
+
+            <div class="text-center p-4 rounded-xl border w-full" style="border-color: #E0DFDC;">
+              
+                <img class="p-4 mx-auto productFeaturedimg" src="/assets/images/product-img.png" width="auto" alt="">
+
+            </div>
+
+            <div class="text-center border w-full hidden md:block" style="background-color: #f1ebdc;">
+
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4 py-6 my-4">
+                <div class="qrcodesec">
+                    <a href="#"><img src="/assets/images/qrcodeimg.png" width="100%" alt=""></a>
+                </div>
+
+                <div class="flex flex-col gap-4 py-4">
+                
+                    <div class="text-center py-1 px-4 border bg-applebtn" style="border-color: #000; border-radius: 50px;">
+                    <a class="flex flex-row items-center justify-between gap-2 w-full" href="#">
+                        <div class="img-sec-features"><img src="/assets/images/Apple-Inc.png" width="100%" alt=""></div>
+                        <p class="text-base font-medium">App Store</p>
+
+                        <p class="text-xl font-medium">&#8594;</p>
+                        
+                    </a>
+                    </div>
+        
+                    <div class="text-center py-1 px-4 border bg-googlebtn" style="border-color: #000; border-radius: 50px;">
+                    <a class="flex flex-row items-center justify-center gap-2 w-full" href="#">
+                        <div class="img-sec-features"><img src="/assets/images/Google-Play.png" width="100%" alt=""></div>
+                        <p class="text-base font-medium">Google Play</p>
+                        <p class="text-xl font-medium">&#8594;</p>
+                    </a>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="img-scan-sec text-center flex justify-center">
+                    <div class="relative">
+                        <img class="mobileimgscan" src="/assets/images/scanning-phoneimg.png"  alt="">
+                        <img class="mx-auto scancodeimg" src="/assets/images/scanningcodeing.png" width="auto"  alt="">
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+                
+
+          </div>
+
+           <div class="flex lg:flex-row flex-col gap-6 justify-center items-start">          
+ 
+                <div class="w-full margin-top-neg">
+
+                  <div class="text-center w-full">               
+                      <img src="/assets/images/advertising-img.png" width="100%">
+
+                      <div class="my-4 text-center">
+                          <a class="button-bg-gold py-2 px-6 inline-flex items-center text-base font-medium text-white" style="border-radius: 20px;" href="#">
+                          Advertise with us
+                          
+                          </a>
+                      </div>
+                  </div>
+
+                  <div class="rounded-xl border w-full my-4" style="border-color: #E0DFDC;">
+                      <div class="p-4 border-b" style="border-color: #E0DFDC">
+                          <h3 class="text-2xl font-medium">Ingredients</h3>
+                      </div>
+                      <div class="p-4">
+                          
+                          <div class="text-content-scroll">
+                
+                              <p class="ingre">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the </p>
+                
+                          </div>
+                          
+                      </div>
+                  </div>
+                  <div class="text-center border w-full md:hidden" style="background-color: #f1ebdc;">
+
+                <div class="flex flex-row items-center justify-center gap-4 py-6 my-4 px">
+                <div class="qrcodesec md:w-full w-28">
+                    <a href="#"><img src="/assets/images/qrcodeimg.png" width="100%" alt=""></a>
+                </div>
+
+                <div class="flex flex-col gap-4 py-4">
+                
+                    <div class="text-center py-1 px-4 border bg-applebtn" style="border-color: #000; border-radius: 50px;">
+                    <a class="flex flex-row items-center justify-between gap-2 w-full" href="#">
+                        <div class="img-sec-features"><img src="/assets/images/Apple-Inc.png" width="100%" alt=""></div>
+                        <p class="text-base font-medium">App Store</p>
+
+                        <p class="text-xl font-medium">&#8594;</p>
+                        
+                    </a>
+                    </div>
+        
+                    <div class="text-center py-1 px-4 border bg-googlebtn" style="border-color: #000; border-radius: 50px;">
+                    <a class="flex flex-row items-center justify-center gap-2 w-full" href="#">
+                        <div class="img-sec-features"><img src="/assets/images/Google-Play.png" width="100%" alt=""></div>
+                        <p class="text-base font-medium">Google Play</p>
+                        <p class="text-xl font-medium">&#8594;</p>
+                    </a>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="img-scan-sec text-center flex justify-center">
+                    <div class="relative">
+                        <img class="mobileimgscan" src="/assets/images/scanning-phoneimg.png"  alt="">
+                        <img class="mx-auto scancodeimg" src="/assets/images/scanningcodeing.png" width="auto"  alt="">
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+                  <div class="rounded-xl border w-full my-4" style="border-color: #E0DFDC;">
+                      <div class="p-4 border-b" style="border-color: #E0DFDC">
+                          <h3 class="text-2xl font-medium">Prohibitions</h3>
+                      </div>
+                      <div class="p-4 mb-4 spacing-sec">
+                          
+                          <div class="flex flex-col md:flex-row gap-4 flex-wrap items-start md:items-center py-4 mb-4">
+            
+                              <div class="text-center py-1 px-2 rounded-lg" style="background-color: #B85151;">
+                              
+                                  <p class="text-xl font-medium px-2 text-white">Snacks & Confectionery</p>
+                              
+                              </div>
+
+                              <div class="text-center py-1 px-2 rounded-lg" style="background-color: #B85151;">
+                              
+                                  <p class="text-xl font-medium px-2 text-white">Chips</p>
+                              
+                              </div>
+
+                              <div class="text-center py-1 px-2 rounded-lg" style="background-color: #B85151;">
+                              
+                                  <p class="text-xl font-medium px-2 text-white">Biscuit and Crackers</p>
+                              
+                              </div>
+
+                          </div>
+                          
+                      </div>
+                  </div>
+
+                  <div class="rounded-xl border w-full my-4 p-4" style="border-color: #E0DFDC;">
+                      <div class="md:p-4 flex md:flex-row flex-col items-start md:items-center justify-between">
+                          <h3 class="text-2xl font-medium px-4">Product Status:</h3>
+
+                          <img class="p-4" src="/assets/images/verified-halal-img.png" width="auto">
+
+                      </div>
+                      
+                  </div>
+
+                  <div class="rounded-xl border w-full py-2" style="border-color: #E0DFDC;">
+                      <div class="flex md:flex-row flex-col items-center justify-between">
+                          <div class="px-4 w-full text-center">
+                              <img src="/assets/images/halal-certified-badges-img.png" width="auto" class="mx-auto">                          
+                          </div>
+
+                          <div class="py-4 w-full">
+                              <div class="flex items-center gap-4 mb-2">
+                                  <h4 class="text-xl font-medium px-4" style="text-wrap: nowrap;">Brand:</h4>
+                                  <p class="py-2 text-xl w-full px-4 text-white" style="background-color: #B89B51; border-radius: 10px 0px 0px 10px;">Smith's</p> 
+                              </div>
+
+                              <div class="flex items-center gap-4 mb-2">
+                                  <h4 class="text-xl font-medium px-4" style="text-wrap: nowrap;">Manufactured In:</h4>
+                                  <p class="py-2 text-xl w-full px-4 text-white" style="background-color: #B89B51; border-radius: 10px 0px 0px 10px;">Australia </p> 
+                              </div>
+
+                              <div class="flex items-center gap-4 mb-2">
+                                  <h4 class="text-xl font-medium px-4" style="text-wrap: nowrap;">Sold In:</h4>
+                                  <p class="py-2 text-xl w-full px-4 text-white" style="background-color: #B89B51; border-radius: 10px 0px 0px 10px;">Australia </p> 
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+
+                </div>
+
+                <div class="w-full my-4">
+  
+                    <div class="rounded-xl border w-full" style="border-color: #E0DFDC;">
+                        <div class="p-4 border-b" style="border-color: #E0DFDC">
+                            <h3 class="text-2xl font-medium">Reason for Change</h3>
+                        </div>
+                        <div class="p-4">
+                            <div class="spacing-sec">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-xl border w-full my-4" style="border-color: #E0DFDC;">
+                        <div class="p-4 border-b" style="border-color: #E0DFDC">
+                            <h3 class="text-2xl font-medium">Description</h3>
+                        </div>
+                        <div class="p-4">
+                            <div class="spacing-sec">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-xl border w-full my-4" style="border-color: #E0DFDC;">
+                        <div class="p-4 border-b" style="border-color: #E0DFDC">
+                            <h3 class="text-2xl font-medium">Category:</h3>
+                        </div>
+                        <div class="p-4">
+                            
+                            <div class="flex flex-col md:flex-row gap-4 flex-wrap items-start md:items-center py-4">
+              
+                                <div class="text-center py-1 px-2 rounded-lg" style="background-color: #B89B51;">
+                                
+                                    <p class="text-xl font-medium px-2 text-white">Snacks & Confectionery</p>
+                                
+                                </div>
+
+                                <div class="text-center py-1 px-2 rounded-lg" style="background-color: #B89B51;">
+                               
+                                    <p class="text-xl font-medium px-2 text-white">Chips</p>
+                                
+                                </div>
+
+                                <div class="text-center py-1 px-2 rounded-lg" style="background-color: #B89B51;">
+                                
+                                    <p class="text-xl font-medium px-2 text-white">Biscuit and Crackers</p>
+                                
+                                </div>
+
+                            </div>
+
+                             <div class="rounded-xl md:border w-full md:p-4 mb-4">
+                 
+                                <p class="text-xl md:p-4">Smith's Crinkle Cut Potato Chips Original 170g is marked as Halal Suitable by Halal Shariah Board</p>
+                  
+                            </div>
+
+
+                            
+                        </div>
+                    </div>
+
+                     <div class="text-center w-full">               
+                        <img src="/assets/images/advertising-img.png" width="100%">
+
+                        <div class="mt-4 text-center">
+                            <a class="button-bg-gold py-2 px-6 inline-flex items-center text-base font-medium text-white" style="border-radius: 20px;" href="#">
+                            Advertise with us
+                            
+                            </a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+
+      </div>
+
+      <div class="most-viewedVx-sec" style="background-color: #FFFBF3; ">
+
+        <div class="container mx-auto" style=" padding: 50px 0px 80px 0px;">
+          <h3 class="text-center md:py-4" style="font-size: 32px;font-weight: 400;">Viral Mustakshif Trends</h3>
+          <div class="tiles flex mostviewedVidx-sec" style="gap: 25px;margin-top: 20px;">
+    <!-- Column 1 -->
+    <div class="t t1 relative" >
+      <img src="../assets/images/newvideoimg1.png" alt="" class="w-full h-full object-cover rounded-lg">
+      <span class="duration absolute top-2 left-2 text-white text-xs px-2 py-1 rounded" style="background-color: #484A4A;">HD 1:20</span>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <svg class="w-10 h-10 text-white p-2 rounded-full" style="background-color: #484A4A;opacity: 0.8;" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M6 4l10 6-10 6V4z" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="t t2 relative">
+      <img src="../assets/images/newvideoimg4.png" alt="" class="w-full h-full object-cover rounded-lg">
+      <span class="duration absolute top-2 left-2 text-white text-xs px-2 py-1 rounded" style="background-color: #484A4A;">HD 1:20</span>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <svg class="w-10 h-10 text-white p-2 rounded-full" style="background-color: #484A4A;opacity: 0.8;" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M6 4l10 6-10 6V4z" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Column 3 -->
+    
+    <div class="t t3 relative">
+      <img src="../assets/images/newvideoimg7.png" alt="" class="w-full h-full object-cover rounded-lg">
+      <span class="duration absolute top-2 left-2 text-white text-xs px-2 py-1 rounded" style="background-color: #484A4A;">HD 1:20</span>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <svg class="w-10 h-10 text-white p-2 rounded-full" style="background-color: #484A4A;opacity: 0.8;" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M6 4l10 6-10 6V4z" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Column 4 -->
+   <div class="t t4 relative" >
+      <img src="../assets/images/newvideoimg1.png" alt="" class="w-full h-full object-cover rounded-lg">
+      <span class="duration absolute top-2 left-2 text-white text-xs px-2 py-1 rounded" style="background-color: #484A4A;">HD 1:20</span>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <svg class="w-10 h-10 text-white p-2 rounded-full" style="background-color: #484A4A;opacity: 0.8;" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M6 4l10 6-10 6V4z" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Column 5 -->
+    <div class="t t5 relative">
+      <img src="../assets/images/newvideoimg7.png" alt="" class="w-full h-full object-cover rounded-lg">
+      <span class="duration absolute top-2 left-2 text-white text-xs px-2 py-1 rounded" style="background-color: #484A4A;">HD 1:20</span>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <svg class="w-10 h-10 text-white p-2 rounded-full" style="background-color: #484A4A;opacity: 0.8;" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M6 4l10 6-10 6V4z" />
+        </svg>
+      </div>
+    </div>
+          </div>
+          <button class="text-white uppercase mx-auto text-center rounded-lg" style="background-color: #0B1A31;padding: 15px 40px;display: block;margin-top: 40px;">More Videos</button>
+
+        </div>
+      </div>
+
+      <div class="container mx-auto my-6 px-4">
+        <div class="rounded-xl border w-full my-2" style="border-color: #E0DFDC;">
+            <div class="p-4 border-b" style="border-color: #E0DFDC">
+              <h3 class="text-2xl font-medium">Disclaimer</h3>
+            </div>
+            <div class="p-4 scrollable-mbl">
+              <p class="text-xl">Mustakshif determines its best to include up-to-date pictures, accurate ingredients, nutritional information, country of origin, and other relevant information about Folgers The Coffee Co. Or Hot or Ice 4 x 30g. However, Pauls Folgers The Coffee Co. Or Hot or Ice 4 x 30g detail and 025500936109 so is the status of Folgers The Coffee Co. Or Hot or Ice 4 x 30g (Halal, Haram, Mushbooh, and Permissible), may change over time. We spare no effort to update Folgers The Coffee Co. Or Hot or Ice 4 x 30g lists from pictures to ingredients, barcode 025500936109 labels, and status. Still, we may experience delays in making updates for Folgers The Coffee Co. Or Hot or Ice 4 x 30g. So we recommend checking precise information from brand with manufacturing region Australia of Folgers The Coffee Co. Or Hot or Ice 4 x 30g. For cosmetic and therapeutic goods, always read Folgers The Coffee Co. Or Hot or Ice 4 x 30g label carefully and follow the directions for use mentioned on the packaging. Further, anyone with food allergies, dietary restrictions, or certain medical condition(s) should check all food packaging & labels of Folgers The Coffee Co. Or Hot or Ice 4 x 30g to meet their health needs. Users are solely responsible for relying on information listed on the website and our mobile application with the barcode 025500936109. Mustakshif does not, through this app/website, seek to represent or promote any product/ brand/ company. Therefore, under no circumstance shall Mustakshif have any responsibility for any ingredients, labels, and status of Folgers The Coffee Co. Or Hot or Ice 4 x 30g provided on the website and mobile app. In addition, we are neither responsible for Third Party Ads nor premises status (especially restaurants)</p>  
+            </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto my-6 px-4">
+        <div class="rounded-xl border w-full" style="border-color: #E0DFDC;">
+            <div class="py-4 px-6 border-b" style="border-color: #E0DFDC">
+              <h3 class="text-2xl font-medium">Dietary Profile</h3>
+            </div>
+            <div class="py-4 px-6">
+              <div class="grid gap-4 lg:grid-cols-2 my-4">
+              
+                <div class="py-4 px-6 border rounded-xl" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                  <h4 class="text-xl font-medium my-2">Is Folgers The Coffee Co. Or Hot or Ice 4 x 30g Halal ?</h4>
+                  <p class="text-base font-medium my-2">No,Folgers The Coffee Co. Or Hot or Ice 4 x 30g is not Halal</p>  
+                </div>
+
+                <div class="py-4 px-6 border rounded-xl" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                  <h4 class="text-xl font-medium my-2">Is Folgers The Coffee Co. Or Hot or Ice 4 x 30g Halal ?</h4>
+                  <p class="text-base font-medium my-2">No,Folgers The Coffee Co. Or Hot or Ice 4 x 30g is not Halal</p>  
+                </div>
+
+                <div class="py-4 px-6 border rounded-xl" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                  <h4 class="text-xl font-medium my-2">Is Folgers The Coffee Co. Or Hot or Ice 4 x 30g Halal ?</h4>
+                  <p class="text-base font-medium my-2">No,Folgers The Coffee Co. Or Hot or Ice 4 x 30g is not Halal</p>  
+                </div>
+
+                <div class="py-4 px-6 border rounded-xl" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                  <h4 class="text-xl font-medium my-2">Is Folgers The Coffee Co. Or Hot or Ice 4 x 30g Halal ?</h4>
+                  <p class="text-base font-medium my-2">No,Folgers The Coffee Co. Or Hot or Ice 4 x 30g is not Halal</p>  
+                </div>
+
+                <div class="py-4 px-6 border rounded-xl" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                  <h4 class="text-xl font-medium my-2">Is Folgers The Coffee Co. Or Hot or Ice 4 x 30g Halal ?</h4>
+                  <p class="text-base font-medium my-2">No,Folgers The Coffee Co. Or Hot or Ice 4 x 30g is not Halal</p>  
+                </div>
+
+                <div class="py-4 px-6 border rounded-xl" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                  <h4 class="text-xl font-medium my-2">Is Folgers The Coffee Co. Or Hot or Ice 4 x 30g Halal ?</h4>
+                  <p class="text-base font-medium my-2">No,Folgers The Coffee Co. Or Hot or Ice 4 x 30g is not Halal</p>  
+                </div>
+
+                <div class="py-4 px-6 border rounded-xl" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                  <h4 class="text-xl font-medium my-2">Is Folgers The Coffee Co. Or Hot or Ice 4 x 30g Halal ?</h4>
+                  <p class="text-base font-medium my-2">No,Folgers The Coffee Co. Or Hot or Ice 4 x 30g is not Halal</p>  
+                </div>
+
+                <div class="py-4 px-6 border rounded-xl" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                  <h4 class="text-xl font-medium my-2">Is Folgers The Coffee Co. Or Hot or Ice 4 x 30g Halal ?</h4>
+                  <p class="text-base font-medium my-2">No,Folgers The Coffee Co. Or Hot or Ice 4 x 30g is not Halal</p>  
+                </div>
+
+                <div class="py-4 px-6 border rounded-xl" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                  <h4 class="text-xl font-medium my-2">Is Folgers The Coffee Co. Or Hot or Ice 4 x 30g Halal ?</h4>
+                  <p class="text-base font-medium my-2">No,Folgers The Coffee Co. Or Hot or Ice 4 x 30g is not Halal</p>  
+                </div>
+
+                <div class="py-4 px-6 border rounded-xl" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                  <h4 class="text-xl font-medium my-2">Is Folgers The Coffee Co. Or Hot or Ice 4 x 30g Halal ?</h4>
+                  <p class="text-base font-medium my-2">No,Folgers The Coffee Co. Or Hot or Ice 4 x 30g is not Halal</p>  
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto my-6 px-4 hidden md:block">
+        <div class="rounded-xl border w-full" style="border-color: #E0DFDC;">
+            <div class="px-6 py-4">
+              <h3 class=" font-medium" style="font-size: 28px;">Most Scanned Products of the Day</h3>
+            </div>
+            <div class="px-6 py-4">
+              <div class="grid lg-grid-cols-5 md-grid-col-2 gap-4 pgrd">
+              
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center imgconnn" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img1.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center imgconnn" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img2.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center imgconnn" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img3.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center imgconnn" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img3.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center imgconnn" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img3.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto my-6 px-4 hidden md:block">
+        <div class="rounded-xl border w-full" style="border-color: #E0DFDC;">
+            <div class="px-6 my-6">
+              <h3 class="font-medium" style="font-size: 28px;">Related Searches</h3>
+            </div>
+            <div class="px-6 my-6">
+              <div class="grid gap-4 lg:grid-cols-3 ">
+              
+                <a href="#">
+                  <div class="py-4 px-4 border rounded-lg" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                    <p class="text-base font-medium">Halal Products in Australia</p>
+                  </div>
+                </a>  
+
+                <a href="#">
+                  <div class="py-4 px-4 border rounded-lg" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                    <p class="text-base font-medium">Halal Snacks & Confectionery in Australia</p>
+                  </div>
+                </a> 
+
+                <a href="#">
+                  <div class="py-4 px-4 border rounded-lg" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                    <p class="text-base font-medium">Halal Snacks & Confectionery by Mother Earth in Australia</p>
+                  </div>
+                </a> 
+
+                <a href="#">
+                  <div class="py-4 px-4 border rounded-lg" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                    <p class="text-base font-medium">Vegetarian Products in Australia</p>
+                  </div>
+                </a> 
+
+                <a href="#">
+                  <div class="py-4 px-4 border rounded-lg" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                    <p class="text-base font-medium">Vegetarian Products in Australia</p>
+                  </div>
+                </a> 
+
+                <a href="#">
+                  <div class="py-4 px-4 border rounded-lg" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                    <p class="text-base font-medium">Halal Products in Australia</p>
+                  </div>
+                </a> 
+
+                <a href="#">
+                  <div class="py-4 px-4 border rounded-lg" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                    <p class="text-base font-medium">Halal Products in Australia</p>
+                  </div>
+                </a> 
+
+                <a href="#">
+                  <div class="py-4 px-4 border rounded-lg" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                    <p class="text-base font-medium">Halal Products in Australia</p>
+                  </div>
+                </a> 
+
+                <a href="#">
+                  <div class="py-4 px-4 border rounded-lg" style="border-color: #E0DFDC; background-color: #e0dfdc33;">
+                    <p class="text-base font-medium">Vegetarian Products by Mother Earth in Australia</p>
+                  </div>
+                </a> 
+
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+   
+    <footer>
+      <div class="mt-4 w-full container py-4 px-4 sm:px-6 lg:px-8 mx-auto">
+        <div class="text-center">
+          <h3 class="text-base font-medium" style="color: #677d99">
+            2025 @ Mustakshif, Design & Develop By Navicosoft
+          </h3>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
+    <script src="/assets/script.js"></script>
+  </body>
+</html>

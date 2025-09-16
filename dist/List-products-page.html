@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Products Page</title>
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+  </head>
+  <body class="list-product-page" style="background-color: #f9fafb;">
+
+
+
+    <!-- ========== HEADER ========== -->
+    <header class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200 home-header">
+      <nav class="relative container w-full mx-auto md:flex md:items-center md:justify-between md:gap-3">
+        <div class="flex justify-between items-center gap-x-1 px-4 h-full mbldeskheaderchange">
+          <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80" href="index.html" aria-label="Brand">
+            <img class="mobilelogo-width hidden md:block" src="/assets/images/newlogo.png" alt="" srcset=""/>
+            <img class="mobilelogo-width md:hidden" src="/assets/images/logo 2.png" alt="" srcset=""/>
+          </a>
+
+          <!-- Collapse Button -->
+          <button type="button" class="hs-collapse-toggle lg:hidden relative size-9 justify-center items-center font-medium text-sm rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
+            <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <!-- End Collapse Button -->
+        </div>
+
+        <!-- Collapse -->
+        <div id="hs-header-base" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:flex mobilebgheader"  aria-labelledby="hs-header-base-collapse" >
+          <div class="w-full overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
+            <div class="py-2 md:py-0 flex flex-col lg:flex-row lg:items-center gap-0.5 md:gap-1 navbtns-parent">
+              <div class="grow">
+                <div class="onlymenu flex flex-col md:flex-row justify-center lg:items-center gap-6 xl:gap-3 2xl:gap-6 px-3">
+                  
+
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Halal Places
+                  </a>
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Products
+                  </a>
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Shariah Board
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="#">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                    Subscription 
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="./How-mustakshif-works.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+                     How Mustakshif Work?
+                  </a>
+
+                  <!-- <div class="actions">
+
+                    
+                    <button class="icon-button" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+
+                    
+                    <div class="lang-dropdown">
+                      <button class="lang-toggle" onclick="toggleLangMenu()">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      </button>
+                      <div class="lang-menu" id="langMenu">
+                        <button onclick="setLanguage('en', 'us')">
+                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
+                        </button>
+                        <button onclick="setLanguage('ms', 'my')">
+                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
+                        </button>
+                        <button onclick="setLanguage('ar', 'sa')">
+                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
+                        </button>
+                        <button onclick="setLanguage('fr', 'fr')">
+                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
+                        </button>
+                        <button onclick="setLanguage('de', 'de')">
+                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
+                        </button>
+                      </div>
+                    </div>
+
+                    
+                    <div id="searchModal">
+                      <div class="modal-content flex items-center gap-6">
+                        <input type="text" placeholder="Search..." />
+                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                      </div>
+                    </div>
+
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- Button Group -->
+              <div class="md:ms-auto md:mt-0 flex  items-center px-2 header-btnsss">
+                <div class="actions">
+
+                    <!-- Search icon -->
+                    <button class="icon-button mt-1" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+
+                    <!-- Language selector with flag images -->
+                    <div class="lang-dropdown">
+                      <button class="lang-toggle" onclick="toggleLangMenu()">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      </button>
+                      <div class="lang-menu" id="langMenu">
+                        <button onclick="setLanguage('en', 'us')">
+                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
+                        </button>
+                        <button onclick="setLanguage('ms', 'my')">
+                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
+                        </button>
+                        <button onclick="setLanguage('ar', 'sa')">
+                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
+                        </button>
+                        <button onclick="setLanguage('fr', 'fr')">
+                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
+                        </button>
+                        <button onclick="setLanguage('de', 'de')">
+                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Search Modal -->
+                    <div id="searchModal">
+                      <div class="modal-content flex items-center gap-6">
+                        <input type="text" placeholder="Search..." />
+                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                <a class="bg-btn-gold py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  <i class="fa fa-user text-base" style="font-size: 16px;"></i> Log in
+                </a>
+                <a class="bg-btn-blue py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  Download
+                </a>
+              </div>
+              <!-- End Button Group -->
+            </div>
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+
+
+
+    <div class="list-product-top-banner" style="background-color: #f9fafb;">
+      <div class="container mx-auto">
+        <img src="../assets/images/blog-page-main-banner.png" alt="" style="z-index: -1;margin-top: -25px;">
+      </div>
+    </div>
+
+
+<div class="list-product-page-filters-sec">
+  <div class="container mx-auto">
+    <div class="flex justify-start md:justify-between flex-col md:flex-row headingdiv" >
+      <h3 style="font-size: 32px;">List Of Products Categorised</h3>
+      <div class="filterss flex gap-2" style="align-items: center;">
+        <div class="filters-text underline">Filters</div>
+        <div class="filters-icon"><img src="../assets/images/filter.svg" alt="" style="height: 10px;width: 30px;"></div>
+      </div>
+    </div>
+    <div class="filter-form-grid grid grid-cols-1 md:grid-cols-3 gap-6 my-4">
+      <div class="flex flex-col">
+        <label for="name1">NAME</label>
+        <input type="text" name="name" id="name1" placeholder="Name">
+      </div>
+      <div class="flex flex-col">
+        <label for="barcode">BARCODE</label>
+        <input type="text" name="barcode" id="barcode" placeholder="Barcode">
+      </div>
+      <div class="flex flex-col">
+        <label for="brand">BRAND</label>
+        <select name="brand" id="brand">
+          <option value="N/A">N/A</option>
+          <option value="abc">ABC</option>
+        </select>
+      </div>
+    </div>
+    <div class="flex justify-end gap-2 btnsdiv">
+      <button class="clearbtn uppercase rounded-full text-center font-bold" style="background-color: #e3ddc7;">Clear</button>
+      <button class="findnow-btn uppercase rounded-full text-center font-bold text-white" style="background-color: #B89B51;">Find it now</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+      <div class="container mx-auto my-6 px-4 ">
+        <div class="rounded-xl border w-full" style="border-color: #E0DFDC;background-color: #fff;">
+            <div class="px-6 py-4">
+              <h3 class=" font-medium" style="font-size: 28px;">Most Scanned Products of the Day</h3>
+            </div>
+            <div class="px-6 py-4">
+              <div class="grid lg-grid-cols-5 md-grid-col-2 gap-4 pgrd">
+              
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center imgconnn" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img1.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center imgconnn" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img2.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center imgconnn" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img3.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center imgconnn" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img3.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center imgconnn" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img3.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+<div class="list-product-banner-sec3 hidden md:block">
+      <div class="container mx-auto">
+        <div class="flex gap-4 flex-col md:flex-row">
+          <div class="blog-bann1">
+            <img src="../assets/images/blog-banner-sec3img2.png" alt="" >
+
+          </div>
+          <div class="blog-bann2">
+            <img src="../assets/images/blog-banner-sec3img1.png" alt="" >
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+<div class="container mx-auto my-6 hidden md:block" >
+        <div class="rounded-xl border w-full" style="border-color: #E0DFDC;background-color: #fff;">
+            <div class="px-6 py-4">
+              <h3 class="font-medium" style="font-size: 28px;">Most Scanned Products of the Day</h3>
+            </div>
+            <div class="px-6 py-4">
+              <div class="grid lg-grid-cols-5 md-grid-col-2 gap-4">
+              
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img1.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img2.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img3.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img3.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+                <div>
+                  <div class="py-4 px-6 border rounded-xl flex justify-center" style="border-color: #E0DFDC;">
+                    <img class="py-6" src="/assets/images/prod-scan-img3.png" width="auto">
+                  </div>
+                  <h3 class="text-xl font-medium my-4 text-center">Doritos Corn Chips <br> Cheese <br>Supreme Share 170g</h3>
+                  
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="mbl-bottom-bar-list-product md:hidden">
+        <div class="container mx-auto">
+          <div class="gridmbl-bottom">
+            <button>
+              <img src="../assets/images/Shop.png" alt="">
+            </button>
+            <button>
+              <img src="../assets/images/Fast Moving Consumer Goods.png" alt="">
+            </button>
+            <button style="background-color: #B89B51;">
+              <img src="../assets/images/Bar Code.png" alt="">
+            </button>
+            <button>
+              <img src="../assets/images/Pricing.png" alt="">
+            </button>
+            <button>
+              <img src="../assets/images/Downloading Updates.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <footer>
+      <div class="mt-auto w-full container py-4 px-4 sm:px-6 lg:px-8 mx-auto">
+        <div class="text-center">
+          <h3 class="text-base font-medium" style="color: #677d99">
+            2025 @ Mustakshif, Design & Develop By Navicosoft
+          </h3>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
+
+    <script src="/assets/script.js"></script>
+  </body>
+</html>

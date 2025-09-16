@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs Single</title>
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="blog-Single">
+
+
+
+    <!-- ========== HEADER ========== -->
+    <header class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200 home-header">
+      <nav class="relative container w-full mx-auto md:flex md:items-center md:justify-between md:gap-3">
+        <div class="flex justify-between items-center gap-x-1 px-4 h-full mbldeskheaderchange">
+          <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80" href="index.html" aria-label="Brand">
+            <img class="mobilelogo-width hidden md:block" src="/assets/images/newlogo.png" alt="" srcset=""/>
+            <img class="mobilelogo-width md:hidden" src="/assets/images/logo 2.png" alt="" srcset=""/>
+          </a>
+
+          <!-- Collapse Button -->
+          <button type="button" class="hs-collapse-toggle lg:hidden relative size-9 justify-center items-center font-medium text-sm rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
+            <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <!-- End Collapse Button -->
+        </div>
+
+        <!-- Collapse -->
+        <div id="hs-header-base" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:flex mobilebgheader"  aria-labelledby="hs-header-base-collapse" >
+          <div class="w-full overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
+            <div class="py-2 md:py-0 flex flex-col lg:flex-row lg:items-center gap-0.5 md:gap-1 navbtns-parent">
+              <div class="grow">
+                <div class="onlymenu flex flex-col md:flex-row justify-center lg:items-center gap-6 xl:gap-3 2xl:gap-6 px-3">
+                  
+
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Halal Places
+                  </a>
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Products
+                  </a>
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Shariah Board
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="#">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                    Subscription 
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="./How-mustakshif-works.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+                     How Mustakshif Work?
+                  </a>
+
+                  <!-- <div class="actions">
+
+                    
+                    <button class="icon-button" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+
+                    
+                    <div class="lang-dropdown">
+                      <button class="lang-toggle" onclick="toggleLangMenu()">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      </button>
+                      <div class="lang-menu" id="langMenu">
+                        <button onclick="setLanguage('en', 'us')">
+                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
+                        </button>
+                        <button onclick="setLanguage('ms', 'my')">
+                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
+                        </button>
+                        <button onclick="setLanguage('ar', 'sa')">
+                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
+                        </button>
+                        <button onclick="setLanguage('fr', 'fr')">
+                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
+                        </button>
+                        <button onclick="setLanguage('de', 'de')">
+                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
+                        </button>
+                      </div>
+                    </div>
+
+                    
+                    <div id="searchModal">
+                      <div class="modal-content flex items-center gap-6">
+                        <input type="text" placeholder="Search..." />
+                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                      </div>
+                    </div>
+
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- Button Group -->
+              <div class="md:ms-auto md:mt-0 flex  items-center px-2 header-btnsss">
+                <div class="actions">
+
+                    <!-- Search icon -->
+                    <button class="icon-button mt-1" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+
+                    <!-- Language selector with flag images -->
+                    <div class="lang-dropdown">
+                      <button class="lang-toggle" onclick="toggleLangMenu()">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      </button>
+                      <div class="lang-menu" id="langMenu">
+                        <button onclick="setLanguage('en', 'us')">
+                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
+                        </button>
+                        <button onclick="setLanguage('ms', 'my')">
+                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
+                        </button>
+                        <button onclick="setLanguage('ar', 'sa')">
+                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
+                        </button>
+                        <button onclick="setLanguage('fr', 'fr')">
+                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
+                        </button>
+                        <button onclick="setLanguage('de', 'de')">
+                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Search Modal -->
+                    <div id="searchModal">
+                      <div class="modal-content flex items-center gap-6">
+                        <input type="text" placeholder="Search..." />
+                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                <a class="bg-btn-gold py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  <i class="fa fa-user text-base" style="font-size: 16px;"></i> Log in
+                </a>
+                <a class="bg-btn-blue py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  Download
+                </a>
+              </div>
+              <!-- End Button Group -->
+            </div>
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+<!-- Main Page -->
+
+
+
+ <div class="featured-blog-banner-sec">
+
+
+<div class="container mx-auto rounded-xl shadow flex flex-col md:flex-row gap-6 mt-10 bg-white" style="border: 1px solid #EFF0F6;">
+  <!-- Left Content -->
+  <div class="Text-side" style="padding: 30px;">
+    <div class="flex items-center gap-5" style="margin-top:10px; margin-left: 20px;">
+      <span class="text-white px-2 rounded-full taggg">Healthcare</span>
+      <span class="dattte">Feb 24, 2023</span>
+    </div>
+    <h2 class="font-semibold">
+      How to check Halal product in the Afghanistan? How to check Halal product in the Afghanistan?
+    </h2>
+    <!-- Tags -->
+    <div class="mt-4 text-base tags">
+      <span class="font-semibold">Popular Tags :</span>
+      <span class="px-5 py-2 rounded text-sm" style="color: #B89B51;background-color: #f8f5ee;">Design</span>
+      <span class="px-5 py-2 rounded text-sm" style="color: #B89B51;background-color: #f8f5ee;">User Experience</span>
+      <span class="px-5 py-2 rounded text-sm" style="color: #B89B51;background-color: #f8f5ee;">User Interfaces</span>
+    </div>
+  </div>
+
+  <!-- Right Image -->
+  <div class="image-side" style="margin-right: -10px;">
+    <img src="../assets/images/Blog-list-top-featured-banner.png" alt="Halal Shopping" class="rounded-lg w-full h-auto object-cover" style="margin-bottom:-30px;">
+  </div>
+</div>
+ </div>
+
+
+ <div class="blog-main my-5">
+  <div class="container mx-auto flex" style="gap: 1%;">
+    <div class="blog-main-content rounded-xl shadow py-3" style="width: 75%; border: 1px solid #EFF0F6;">
+      <div class="p-5">
+      <h3 style="font-size: 32px;">How to check Halal product in the Afghanistan?</h3>
+      <p style="font-size: 18px;">Given the abundance of forbidden and doubtful products, Muslims need to determine the permissibility of ingredients according to Islamic dietary laws. As the demand for Halal products continues to grow, it becomes increasingly essential for Muslims in the Afghanistan to ensure they check Halal product they consume align with their religious beliefs.</p>
+      <p style="font-size: 18px;">So do you also want to keep your religious commitments safe and eat Halal from food to beverages? Here we will help you find out how to check Halal products in the Afghanistan and make informed decisions.
+      </p><br>
+      <p style="font-size: 18px;">All major cities in the Afghanistan have Halal food and Halal stores and restaurants. You just need to find Halal foods and restaurants near you. It is now more accessible and convenient to find the Halal status of all snacks and confectionery in the Afghanistan with a Halal Scanner app. The app will scan the barcode of Product and mention the status. You can also scan any product label, from food to non-food products, and order it online in Afghanistan.
+      </p>
+
+      <img src="../assets/images/blog-single-img1.png" alt="" style="margin: 20px 0px;" class="w-full">
+
+      
+      <p style="font-size: 18px;">Given the abundance of forbidden and doubtful products, Muslims need to determine the permissibility of ingredients according to Islamic dietary laws. As the demand for Halal products continues to grow, it becomes increasingly essential for Muslims in the Afghanistan to ensure they check Halal product they consume align with their religious beliefs.</p>
+      <p style="font-size: 18px;">So do you also want to keep your religious commitments safe and eat Halal from food to beverages? Here we will help you find out how to check Halal products in the Afghanistan and make informed decisions.
+      </p><br>
+      <p style="font-size: 18px;">All major cities in the Afghanistan have Halal food and Halal stores and restaurants. You just need to find Halal foods and restaurants near you. It is now more accessible and convenient to find the Halal status of all snacks and confectionery in the Afghanistan with a Halal Scanner app. The app will scan the barcode of Product and mention the status. You can also scan any product label, from food to non-food products, and order it online in Afghanistan.
+      </p>
+      </div>
+
+      <div class="p-5" style="background-color: #F7F5ED;">
+        <h3 style="font-size: 32px;">How to check Halal product in the Afghanistan?</h3>
+      <p style="font-size: 18px;">Given the abundance of forbidden and doubtful products, Muslims need to determine the permissibility of ingredients according to Islamic dietary laws. As the demand for Halal products continues to grow, it becomes increasingly essential for Muslims in the Afghanistan to ensure they check Halal product they consume align with their religious beliefs.</p>
+      <p style="font-size: 18px;">So do you also want to keep your religious commitments safe and eat Halal from food to beverages? Here we will help you find out how to check Halal products in the Afghanistan and make informed decisions.
+      </p><br>
+      <p style="font-size: 18px;">All major cities in the Afghanistan have Halal food and Halal stores and restaurants. You just need to find Halal foods and restaurants near you. It is now more accessible and convenient to find the Halal status of all snacks and confectionery in the Afghanistan with a Halal Scanner app. The app will scan the barcode of Product and mention the status. You can also scan any product label, from food to non-food products, and order it online in Afghanistan.
+      </p>
+
+      <img src="../assets/images/blog-single-img1.png" alt="" class="w-full" style="margin: 10px 0px;">
+      </div>
+
+       <div class="p-5">
+      <h3 style="font-size: 32px;">How to check Halal product in the Afghanistan?</h3>
+      <p style="font-size: 18px;">Given the abundance of forbidden and doubtful products, Muslims need to determine the permissibility of ingredients according to Islamic dietary laws. As the demand for Halal products continues to grow, it becomes increasingly essential for Muslims in the Afghanistan to ensure they check Halal product they consume align with their religious beliefs.</p>
+      <p style="font-size: 18px;">So do you also want to keep your religious commitments safe and eat Halal from food to beverages? Here we will help you find out how to check Halal products in the Afghanistan and make informed decisions.
+      </p><br>
+      <p style="font-size: 18px;">All major cities in the Afghanistan have Halal food and Halal stores and restaurants. You just need to find Halal foods and restaurants near you. It is now more accessible and convenient to find the Halal status of all snacks and confectionery in the Afghanistan with a Halal Scanner app. The app will scan the barcode of Product and mention the status. You can also scan any product label, from food to non-food products, and order it online in Afghanistan.
+      </p>
+      </div>
+
+
+    </div>
+    <div class="blog-sidebar rounded-xl shadow p-4" style="width: 24%; height: fit-content;">
+      <h3 style="font-size: 32px; margin-bottom: 10px;">Latest Blogs</h3>
+      <div class="grid grid-cols-1" style="gap: 30px;">
+      <div class=" ">
+        <img src="../assets/images/Blog-single-sidebar.png" alt="Blog Image" class="rounded-lg w-full h-44 object-cover">
+        <span class="inline-block px-2 py-1 mb-2" style="font-size: 15px;background-color: #FFCE32; margin-top: 10px;">News</span>
+        <h3 class="text-black" style="font-size: 15px;font-weight: 500;">Titans Post Elite PFF Tackling in 2019 Tackling </h3>
+        <div class="flex gap-5">
+          <p class="mt-2 text-xs"  >By Ben Sundock</p>
+          <p class="mt-2 text-xs" style="color: #8B857F;">Mar 7, 2020</p>
+        </div>
+      </div>
+      <div class=" ">
+        <img src="../assets/images/Blog-single-sidebar.png" alt="Blog Image" class="rounded-lg w-full h-44 object-cover">
+        <span class="inline-block px-2 py-1 mb-2" style="font-size: 15px;background-color: #FFCE32; margin-top: 10px;">News</span>
+        <h3 class="text-black" style="font-size: 15px;font-weight: 500;">Titans Post Elite PFF Tackling in 2019 Tackling </h3>
+        <div class="flex gap-5">
+          <p class="mt-2 text-xs"  >By Ben Sundock</p>
+          <p class="mt-2 text-xs" style="color: #8B857F;">Mar 7, 2020</p>
+        </div>
+      </div>
+      <div class=" ">
+        <img src="../assets/images/Blog-single-sidebar.png" alt="Blog Image" class="rounded-lg w-full h-44 object-cover">
+        <span class="inline-block px-2 py-1 mb-2" style="font-size: 15px;background-color: #FFCE32; margin-top: 10px;">News</span>
+        <h3 class="text-black" style="font-size: 15px;font-weight: 500;">Titans Post Elite PFF Tackling in 2019 Tackling </h3>
+        <div class="flex gap-5">
+          <p class="mt-2 text-xs"  >By Ben Sundock</p>
+          <p class="mt-2 text-xs" style="color: #8B857F;">Mar 7, 2020</p>
+        </div>
+      </div>
+      <div class=" ">
+        <img src="../assets/images/Blog-single-sidebar.png" alt="Blog Image" class="rounded-lg w-full h-44 object-cover">
+        <span class="inline-block px-2 py-1 mb-2" style="font-size: 15px;background-color: #FFCE32; margin-top: 10px;">News</span>
+        <h3 class="text-black" style="font-size: 15px;font-weight: 500;">Titans Post Elite PFF Tackling in 2019 Tackling </h3>
+        <div class="flex gap-5">
+          <p class="mt-2 text-xs"  >By Ben Sundock</p>
+          <p class="mt-2 text-xs" style="color: #8B857F;">Mar 7, 2020</p>
+        </div>
+      </div>
+      
+      <a href="#" class="text-base my-3 block text-right" style="color: #B89B51;text-align: center;text-decoration: underline;">View All</a>
+ 
+  </div>
+    </div>
+
+  </div>
+ </div>
+
+
+   
+
+    <footer>
+      <div class="mt-auto w-full container py-4 px-4 sm:px-6 lg:px-8 mx-auto">
+        <div class="text-center">
+          <h3 class="text-base font-medium" style="color: #677d99">
+            2025 @ Mustakshif, Design & Develop By Navicosoft
+          </h3>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
+
+    <script src="/assets/script.js"></script>
+  </body>
+</html>

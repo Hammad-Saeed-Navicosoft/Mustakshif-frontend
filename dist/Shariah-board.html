@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shariah Board</title>
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="shariah-board">
+
+
+
+    <!-- ========== HEADER ========== -->
+    <header class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200 home-header">
+      <nav class="relative container w-full mx-auto md:flex md:items-center md:justify-between md:gap-3">
+        <div class="flex justify-between items-center gap-x-1 px-4 h-full mbldeskheaderchange">
+          <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80" href="index.html" aria-label="Brand">
+            <img class="mobilelogo-width hidden md:block" src="/assets/images/newlogo.png" alt="" srcset=""/>
+            <img class="mobilelogo-width md:hidden" src="/assets/images/logo 2.png" alt="" srcset=""/>
+          </a>
+
+          <!-- Collapse Button -->
+          <button type="button" class="hs-collapse-toggle lg:hidden relative size-9 justify-center items-center font-medium text-sm rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
+            <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <!-- End Collapse Button -->
+        </div>
+
+        <!-- Collapse -->
+        <div id="hs-header-base" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:flex mobilebgheader"  aria-labelledby="hs-header-base-collapse" >
+          <div class="w-full overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
+            <div class="py-2 md:py-0 flex flex-col lg:flex-row lg:items-center gap-0.5 md:gap-1 navbtns-parent">
+              <div class="grow">
+                <div class="onlymenu flex flex-col md:flex-row justify-center lg:items-center gap-6 xl:gap-3 2xl:gap-6 px-3">
+                  
+
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Halal Places
+                  </a>
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Products
+                  </a>
+                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Shariah Board
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="#">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                    Subscription 
+                  </a>
+
+                  <a class="flex items-center text-base text-gray-800" href="./How-mustakshif-works.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+                     How Mustakshif Work?
+                  </a>
+
+                  <!-- <div class="actions">
+
+                    
+                    <button class="icon-button" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+
+                    
+                    <div class="lang-dropdown">
+                      <button class="lang-toggle" onclick="toggleLangMenu()">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      </button>
+                      <div class="lang-menu" id="langMenu">
+                        <button onclick="setLanguage('en', 'us')">
+                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
+                        </button>
+                        <button onclick="setLanguage('ms', 'my')">
+                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
+                        </button>
+                        <button onclick="setLanguage('ar', 'sa')">
+                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
+                        </button>
+                        <button onclick="setLanguage('fr', 'fr')">
+                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
+                        </button>
+                        <button onclick="setLanguage('de', 'de')">
+                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
+                        </button>
+                      </div>
+                    </div>
+
+                    
+                    <div id="searchModal">
+                      <div class="modal-content flex items-center gap-6">
+                        <input type="text" placeholder="Search..." />
+                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                      </div>
+                    </div>
+
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- Button Group -->
+              <div class="md:ms-auto md:mt-0 flex  items-center px-2 header-btnsss">
+                <div class="actions">
+
+                    <!-- Search icon -->
+                    <button class="icon-button mt-1" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+
+                    <!-- Language selector with flag images -->
+                    <div class="lang-dropdown">
+                      <button class="lang-toggle" onclick="toggleLangMenu()">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      </button>
+                      <div class="lang-menu" id="langMenu">
+                        <button onclick="setLanguage('en', 'us')">
+                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
+                        </button>
+                        <button onclick="setLanguage('ms', 'my')">
+                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
+                        </button>
+                        <button onclick="setLanguage('ar', 'sa')">
+                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
+                        </button>
+                        <button onclick="setLanguage('fr', 'fr')">
+                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
+                        </button>
+                        <button onclick="setLanguage('de', 'de')">
+                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Search Modal -->
+                    <div id="searchModal">
+                      <div class="modal-content flex items-center gap-6">
+                        <input type="text" placeholder="Search..." />
+                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                <a class="bg-btn-gold py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  <i class="fa fa-user text-base" style="font-size: 16px;"></i> Log in
+                </a>
+                <a class="bg-btn-blue py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                  Download
+                </a>
+              </div>
+              <!-- End Button Group -->
+            </div>
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+<!-- Main Page -->
+ <div class="main-banner-secx">
+  <img src="../assets/images/shariah-main-banner.png" alt="">
+ </div>
+
+
+ <div class="shariah-full-width-text-sec" style="background-color: #F7F5ED;">
+  <div class="container mx-auto text-center" style="padding: 60px 20px;">
+    <h3 style="font-size: 32px;">Shariah Board</h3>
+    <p style="font-size: 18px;">Mustakshif not only explores and empowers Muslims to make informed choices about their dietary preferences but also fosters a greater understanding and appreciation of the significance of halal principles. So we, with our groundbreaking Halal Scanner app, provide a trusted resource for Muslims worldwide to navigate the complexities of halal and haram ingredients to keep their religious commitments unwavering.</p>
+    <br>
+    <p style="font-size: 18px;">To stay true to the trust that the Muslim community places in our company and reinforce our app and website's absolute adherence to Islamic Shariah, we have a Shariah Board comprising internationally-renowned scholars. Mufti Abdullah Patel Sahib is the chairman of our Shariah Board.</p>
+    <br>
+    <p style="font-size: 18px;">Our distinguished panel of ULAMA-E-KARAM and ISLAMIC SCHOLARS diligently serves as our guiding light in upholding the principles of Islamic dietary laws and ensuring the purity and permissibility of the ingredients in the millions of products. Further, our Shariah committee undertakes to meticulously examine the source and assess the permissibility status of every ingredient with dedication and a deep understanding of Islamic jurisprudence.</p>
+    <br>
+    <p style="font-size: 18px;">Further, our Shariah committee undertakes to meticulously examine the source and assess the permissibility status of every ingredient with dedication and a deep understanding of Islamic jurisprudence.</p>
+
+    <div class="text-center mx-auto flex justify-center my-6">
+      <img src="../assets/images/Shariah-first-sec-img1.png" alt="">
+    </div>
+     <p style="font-size: 18px;"> Most of our members have Takhasus in Halal (Halal specialization) and are serving to uphold the sanctity of Halal in the USA, Australia, Canada, the UK, Europe, and other countries. So we are truly privileged to work alongside such distinguished scholars in our efforts to ensure "Halal For All" and contribute to the spiritual well-being and peace of mind of countless individuals, allowing them to consume what is clean and permissible according to the highest standards of Islamic law.</p>
+    <br>
+    <p style="font-size: 18px;">Mustakshif data is increasing exponentially, given the ever-evolving landscape of food production & consumption and frequent new product launches. However, their diligent scrutiny, alongside their collective expertise, knowledge, & unwavering commitment, are instrumental in ensuring the utmost accuracy & reliability of our app. Before verifying the ingredients/ products as Halal/ Haram/ Mushbooh, our panel analyze all the source, manufacturing, & packaging.</p>
+    <br>
+    <p style="font-size: 18px;">Only after the board approves the "Verified Halal" status, we tag the product as Halal-Certified. Still, if a consumer reaches out to us for the inaccurate status of an ingredient or product, our Shariah Board double-checks the permissibility status in light of Islamic laws.</p>
+    <br>
+    <p style="font-size: 18px;">We extend our heartfelt gratitude and utmost respect to each member for their invaluable contributions to Mustakshif and the broader Muslim community. May Allah (SWT) bless each member of this esteemed panel abundantly, showering His mercy and granting them continued wisdom in their noble pursuit. We are honored and humbled to have these scholars' presence, wisdom, guidance, dedication, and support in our efforts to build a better future for the global Muslim community.</p>
+  </div>
+ </div>
+
+
+
+
+
+ <div class="text-image-sidebysidesecx textimgsec1x">
+  <div class="container mx-auto flex flex-col md:flex-row align-middle justify-center gap-5" style="padding: 70px 20px;">
+    <div class="imgside w-1/2 flex align-middle justify-center">
+      <img src="../assets/images/shariah-text-img-sec1-img.png" alt="">
+    </div>
+    <div class="textside w-1/2 flex flex-col align-middle justify-center">
+      <h3 style="font-size: 32px; align-items: center;" class="flex gap-5">Mufti Abdullah Patel Sahib</h3>
+      <br><p style="font-size: 18px;">    Mufti Abdullah completed his full secular education and Hifz-ul-Qur'an at the local Madrasah before 1985. His 'Aalim Faadhil Course first year at the local Madrasah under Sheikh Moulana Aiyyub Surty Sahib (DB) follows the course completion at Darul-Uloom Azaadville South Africa by 1992.</p>
+      <br>
+      <p style="font-size: 18px;">Mufti Abdullah further embarked on a remarkable journey to Darul Uloom Deoband, India, to acquire comprehensive knowledge of Islamic jurisprudence. He repeated the final year and made his way into Iftaa (Higher Islamic Jurisprudence) and completed Iftaa the following year.</p>
+      <br>
+      <p style="font-size: 18px;">Mufti Abdullah has Mufti Nizaamuddin Sahib (R.A), Mufti Zafeeruddin Sb, Mufti Habeebur-Rahman (Sb), Mufti Kafeelur-Rahman Sb. (Damat Barakaatuhum) as his teachers. Currently, he is serving as:</p>
+      <h4 style="font-size: 25px; font-weight: 500; margin: 10px 0px;">Currently, he is serving as:</h4>
+      <ul class="golden-tick-list">
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>Principal of Gloucestershire Islamic Secondary School for Girls.</p></li>
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span  class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>The Editor of the 'Light of Islam' monthly community newsletter.</p></li>
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span  class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>Director of Gloucestershire Islamic Academy.</p></li>
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span  class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>Teaches Arabic/Aalim courses (1-3 years) and general Deeniyat classes at Madrasah Noor-ul-Islam – (Local Madrasah.)</p></li>
+      </ul>
+
+    </div>
+  </div>
+ </div>
+
+ <div class="text-image-sidebysidesecx textimgsec2x" style="background-color: #F7F5ED;padding: 70px 20px;">
+  <div class="container mx-auto flex md:flex-row align-middle justify-center gap-5">
+    <div class="textside w-1/2 flex flex-col align-middle justify-center">
+      <h3 style="font-size: 32px; align-items: center;" class="flex gap-5">Mufti Faisal al Mahmudi</h3>
+      <br><p style="font-size: 18px;">Shaykh Mufti Faisal Al-Mahmudi, originally from Pakistan, embarked on a journey to pursue higher education in Accounting and Finance. After completing his Bachelor's and Master's degrees at the University of Regina, later his passion convinced him to move to South Africa to study Islamic studies at Madrasah In'aamiyyah. Over six years, he excelled in his Alim course, specializing in Usool al-Fiqh, Fiqh, Usool al-Hadeeth, Hadeeth (authenticated ijazah in Sihah Sittah), and Tafseer.</p>
+      <br>
+      <p style="font-size: 18px;">Notably, he stands among a select few who have undertaken a comprehensive study of Sahih al Bukhari, cover to cover, under Mufti Ebrahim Desai from <a href="https://www.askimam.org" style="color: #b79950;">https://www.askimam.org</a>. Following his Alim course, Shaykh Faisal sought further mentorship from Mufti Ebrahim Desai, focusing on Iftaa (issuing juristic verdicts).</p>
+      <br>
+      <p style="font-size: 18px;" >In 2012, he successfully completed a two-year Iftaa program, obtaining a Master's degree in Islamic Theology and a Master's Diploma with a specialization in Islamic Finance. He served as an Administrator under Mufti Ebrahim Desai's guidance for Darul Ifta' al Mahmudiya for two years and headed the Computer Department for four years.
+</p>
+    </div>
+    <div class="imgside w-1/2 flex align-middle justify-center">
+      <img src="../assets/images/shariah-text-img-sec2-img.png" alt="">
+    </div>
+  </div>
+  <div class="container mx-auto flex flex-col md:flex-row below-img-dbl-list mt-3">
+    <div class="w-1/2">
+      <h4 style="font-size: 25px; font-weight: 500; margin: 10px 0px;">Since then, Shaykh Faisal has established and managed:</h4>
+      <ol class="ordered-list">
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><p style="font-size: 18px;">Darul Iftaa Canada [Fatawa, Mediation, Counseling] <a href="https://www.fatwa.ca" style="color: #b79950;"> (https://www.fatwa.ca)</a></p></li><br><br class="hidden md:block">
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><p style="font-size: 18px;">ilmHub Center [Qur'an School(s), Islamic Studies Courses, Online Hadeeth and Fiqh Courses etc.]<br> 
+       <a href="https://www.ilmhub.com" style="color: #b79950;">(https://www.ilmhub.com)</a></p></li><br><br class="hidden md:block">
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><p style="font-size: 18px;">AskHalal [Halal Foods & Ingredients] <br>
+       <a href="https://www.askhalal.ca" style="color: #b79950;">(https://www.askhalal.ca)</a></p></li>
+      </ol>
+    </div>
+
+    <div class="w-1/2">
+      <h4 style="font-size: 25px; font-weight: 500; margin: 10px 0px;">Shaykh Faisal also serves as:</h4>
+      <ul class="golden-tick-list">
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>CEO/Principal for all ilmHub activities.</p></li>
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span  class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>Ameer for Darul Qadhaa Alberta.</p></li>
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span  class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>Shariah Advisory for Islamic Medical Forum (IIMF).</p></li>
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span  class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>Shariah Advisory for Mustakshif (Explore Halal).</p></li>
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span  class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>Executive Board Member for CIFB (Canadian Islamic Finance Board).</p></li>
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span  class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>Regular teacher for Tajweed Sciences under ilmHub using QSI's Qur'an Learning Management System.</p></li>
+      </ul>
+    </div>
+  </div>
+ </div>
+
+
+  <div class="text-image-sidebysidesecx textimgsec3x" >
+  <div class="container mx-auto flex flex-col md:flex-row align-middle justify-center px-5 md:px-0">
+    <img src="../assets/images/shariah-text-img-sec3-img-mbl.png" alt="" class="md:hidden" style="margin: 30px 0px 0px 0px;">
+    <div class="imgside w-1/2 flex align-middle justify-center">
+      <img src="../assets/images/shariah-text-img-sec3-img.png" alt="" class="hidden md:block">
+    </div>
+    <div class="textside w-1/2 flex flex-col align-middle justify-center">
+      <h3 style="font-size: 32px; align-items: center;" class="flex gap-5">Dr. Mufti Abdul Karim Usman (Pakistan)</h3>
+      <br><p style="font-size: 18px;">Mufti Abdul Karim Usman is an esteemed scholar with a robust background in Islamic jurisprudence and education. Holding a Ph.D. in Shariah from the International Islamic University, Islamabad, with a focus on "Transmutation: Nature, Rules, and its Application on the Shariah Rulings," written in Arabic, he demonstrates a profound understanding of Islamic law. His educational journey includes a Master of Arts in Islamic Studies and Islamic Jurisprudence, a Bachelor of Arts in Journalism/Education, and completion of the Mufti Course (Specialization in Islamic Fiqh and Fatwa) at JAMIA DARUL ULOOM, Karachi, which granted him a Post Graduate Degree of Advanced Specialization in Islamic Jurisprudence and the Issuance of Legal Opinion (Fatwas).</p>
+      <br>
+      <p style="font-size: 18px;">Dr. Usman also holds the Shahadah al-‘Alamiyyah fi al-Uloom al-Islamiyyah wa al-‘Arabiyyah, an international degree in Arabic and Islamic Sciences, granted upon completion of the classical curriculum of Islamic learning known as the Dars-e-Nizami from JAMIA ASHRAFIA, Lahore.</p>
+      <br>
+      <p style="font-size: 18px;">With over 20 years of teaching experience, he has served in various capacities at the International Islamic University, Islamabad, evolving from a Research Investigator to an Assistant Professor. Dr. Usman has actively participated in international conferences and workshops, presenting thought-provoking papers on diverse topics such as "Fatwa as a Non-State Legal System" and "Halal Food: Principles, Shariah Standards and Contemporary Issues."</p>
+ 
+    </div>
+  </div>
+    <div class="container mx-auto flex flex-row align-middle justify-center px-5 md:px-0 text-center" style="margin:-50px auto 70px auto;">
+  <p style="font-size: 18px;">He has authored multiple articles and papers published in reputable journals, contributing significantly to the field. Moreover, Dr. Usman has supervised several Ph.D. and MS/LLM theses, fostering the next generation of scholars in the realm of Islamic jurisprudence. Beyond academia, he has delivered lectures on Islamic law and social responsibilities, engaging diverse audiences. His involvement in Shariah advisory roles for Islamic financial institutions and memberships in organizations like the National Commission on the Status of Women in Pakistan exemplifies his commitment to both academia and social impact.</p>
+  </div>
+ </div>
+
+
+  <div class="text-image-sidebysidesecx textimgsec4x" style="background-color: #F7F5ED; padding: 70px 20px;">
+  <div class="container mx-auto flex flex-row align-middle justify-center gap-5">
+    <div class="textside w-1/2 flex flex-col align-middle justify-center">
+      <h3 style="font-size: 32px; align-items: center;" class="flex gap-5">Molana Eshfaq Akbar</h3>
+      <br><p style="font-size: 18px;">Molana Eshfaq Akbar was Born in Brisbane to one of the oldest Muslim families in Queensland and studied for 6 years in Darul Uloom Karachi and 2 years in Labasa, Fiji. He has a passion for instilling a traditional Islamic identity in future generations, especially the youth.</p>
+      <br>
+      <h4 style="font-size: 25px; font-weight: 500; margin: 10px 0px;">Shaykh Faisal also serves as:</h4>
+      <ul class="golden-tick-list">
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>Running his own community centre and Madrasah in Lakemba.</p></li>
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span  class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>Well known for answering Islamic queries, especially in regard to food products.</p></li>
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span  class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>He has been the Imam of Mackay masjid for 2 years and Imam in Lakemba, Sydney, since 2019.</p></li> 
+      </ul>
+    </div>
+    <div class="imgside w-1/2 flex align-middle justify-center">
+      <img src="../assets/images/shariah-text-img-sec4-img.png" alt="">
+    </div>
+  </div>
+ </div>
+   
+
+<div class="text-image-sidebysidesecx textimgsec5x px-5 md:px-0" style="margin-top: -70px;padding-bottom: 10px;">
+  <div class="container mx-auto flex flex-col md:flex-row align-middle justify-center ">
+    <img src="../assets/images/shariah-text-img-sec5-img-mbl.png" alt="" class="md:hidden" style="margin: 70px 0px 20px 0px;">
+    <div class="imgside w-1/2 flex align-middle justify-center">
+      <img src="../assets/images/shariah-text-img-sec5-img.png" alt="" class="hidden md:block">
+    </div>
+    <div class="textside w-1/2 flex flex-col align-middle justify-center" style="padding-top: 80px;">
+      <h3 style="font-size: 32px; align-items: center; padding-top: 0px;" class="flex gap-5">Mufti Abdul Kareem (Australia)</h3>
+      <br><p style="font-size: 18px;">Mufti Abdul Kareem, based in Sydney, Australia, is an Imam, scholar, and teacher who has made contributions to the local Muslim community. With a passion for Islamic knowledge and a strong commitment to serving others, he is part of the religious landscape of Sydney.</p>
+      <br>
+      <p style="font-size: 18px;">Mufti Abdul Kareem, based in Sydney, Australia, is an Imam, scholar, and teacher who has made contributions to the local Muslim community. With a passion for Islamic knowledge and a strong commitment to serving others, he is part of the religious landscape of Sydney.</p>
+      <br>
+      <p style="font-size: 18px;">Originally from Fiji & raised in Sydney, Mufti Abdul Kareem embarked on a lifelong pursuit of knowledge from an early age.</p>
+      <br>
+      <p style="font-size: 18px;">At Nadwatul Ulama in Lucknow, India, Mufti Abdul Kareem focused on the memorization of the Quran, laying a strong foundation for his spiritual journey. He then continued his studies at Al Jameatul Islamia Fiji, deepening his understanding of Islamic theology, jurisprudence, and Prophetic traditions under the guidance of esteemed scholars.</p>
+      <br>
+      <p style="font-size: 18px;">Seeking advanced knowledge, Mufti Abdul Kareem pursued further studies at Darul Uloom Deoband, renowned as one of the world's oldest and most prestigious Islamic seminaries. Returning to Sydney, Mufti Abdul Kareem dedicated himself to serving the Muslim community as an Imam.</p>
+      <ul class="golden-tick-list mt-3">
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>He leads prayers, delivers sermons, & offers valuable spiritual guidance to the community.</p></li>
+      </ul>
+    </div>
+  </div>
+ </div>
+
+
+  <div class="text-image-sidebysidesecx textimgsec6x" style="background-color: #F7F5ED;padding: 70px 20px;">
+  <div class="container mx-auto flex flex-row align-middle justify-center gap-5">
+    <div class="textside w-1/2 flex flex-col align-middle justify-center">
+      <h3 style="font-size: 32px; align-items: center;" class="flex gap-5">Mufti Umar Syed</h3>
+      <br><p style="font-size: 18px;">In addition to his role as an Imam, Mufti Abdul Kareem is a teacher at Daar Ibn Umar, an esteemed Islamic educational institution in Sydney.</p>
+      <br>
+      <br><p style="font-size: 18px;">Mufti Umar Syed completed Hifz-ul-Qur'an in 2007 from Jamiyah Quraniyah Karachi, Pakistan. He has also completed his 'Ālimiyyah Studies (Islamic Sciences) from Darul Ulum College of Victoria in Melbourne, Australia.</p>
+      <br>
+      <br><p style="font-size: 18px;">He travelled to Pakistan to complete specialisation in Ifta from Mahad Al Faqeer Al Islami. In addition, Mufti Umar has completed programming through the University of Michigan, USA, and done a Bachelor of Computer Science from La Trobe University, Victoria.</p>
+      <br>
+      <ul class="golden-tick-list">
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>Currently, he is serving as:</p></li>
+        <li class="flex gap-5" style="align-items: center; margin-bottom: 10px;"><span  class="tick-span"><img src="../assets/images/shariah-tick.png" alt="" style="width: 24px; height: 24px; max-width: 24px;"></span> <p>Director for Darul Hikmah, Australia.</p></li>
+      </ul>
+    </div>
+    <div class="imgside w-1/2 flex align-middle justify-center">
+      <img src="../assets/images/shariah-text-img-sec6-img.png" alt="">
+    </div>
+  </div>
+ </div>
+
+ <div class="text-image-sidebysidesecx textimgsec7x px-5 md:px-0" style="margin: -30px 0px;">
+  <div class="container mx-auto flex flex-col md:flex-row align-middle justify-center ">
+    <img src="../assets/images/shariah-text-img-sec7-img-mbl.png" alt="" class="md:hidden" style="margin-top: 60px;">
+    <div class="imgside w-1/2 flex align-middle justify-center">
+      <img src="../assets/images/shariah-text-img-sec7-img.png" alt="" class="hidden md:block">
+    </div>
+    <div class="textside w-1/2 flex flex-col align-middle justify-center">
+      <h3 style="font-size: 32px; align-items: center;" class="flex gap-5">Mufti Muhammad Saad Qazi</h3>
+      <br><p style="font-size: 18px;">Since 2018, Mufti Umar has been involved in research work for Australia Halal Research Organisation.</p>
+      <br>
+      <p style="font-size: 18px;">Sheikh Qazi Saad began studying the sacred Islamic sciences at a young age. He completed Hifz-ul-Qur'an at the age of 12. After, he studied Islamic education in various subjects such as Arabic, Tafsir, Hadith, and Fiqh (Islamic Jurisprudence) for the next 6 years at Darul Ulum College of Victoria.</p>
+      <br>
+      <p style="font-size: 18px;">To acquire a wealth of Islamic expertise, he pursued further Islamic studies at world-renowned institutes in Pakistan, including Darul Uloom Karachi. He also has one of the famed and well-recognized scholars, Mufti Taqi Uthmani (DB), as his teacher.</p>
+      <br>
+      <p style="font-size: 18px;">Sheikh completed his Mufti course (with a specialisation in Hanafi Jurisprudence) in Pakistan. In addition, he got a firm grounding in Fiqhi matters found within the food industry. Further, Mufti Muhammad Saad Qazi also holds a Bachelor of Islamic studies from Charles Sturt University in Australia.</p>
+    </div>
+  </div>
+ </div>
+
+
+
+   
+
+    <footer>
+      <div class="mt-auto w-full container py-4 px-4 sm:px-6 lg:px-8 mx-auto">
+        <div class="text-center">
+          <h3 class="text-base font-medium" style="color: #677d99">
+            2025 @ Mustakshif, Design & Develop By Navicosoft
+          </h3>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
+
+    <script src="/assets/script.js"></script>
+  </body>
+</html>
