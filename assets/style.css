@@ -455,24 +455,6 @@ body.home-page .home-header{
   background-color: #b79950;
   color: #fff;
 }
-.overflow-auto-sec {
-  overflow: auto;
-}
-.overflow-auto-sec::-webkit-scrollbar {
-  height: 6px;
-}
-.overflow-auto-sec::-webkit-scrollbar-thumb {
-  background-color: #000000 !important;
-  border-radius: 10px;
-}
-.overflow-auto-sec::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)!important;
-  border-radius: 10px;
-  background-color:#dde4ea;
-}
-.min-width-features{
-  min-width:272px;
-}
 .multilangbgimg{
   background-image: url('/assets/images/bg-multilang.png');
   background-repeat: no-repeat;
@@ -490,22 +472,6 @@ body.home-page .home-header{
 }
 .main-sub-menu{
   inset: 0px auto auto !important;
-}
-.beforeafterthing .beforething h3{
-  width: fit-content;
-  position: relative;
-  z-index: 1;
-}
-.beforeafterthing .beforething h3::before {
-  content: ' ';
-  background: #ffc95480;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: 0;
-  border-radius: 50%;
-  top: 3px;
-  z-index: -1;
 }
 .scancodeimg {
   position: absolute;
@@ -565,7 +531,6 @@ body.home-page .home-header{
   position: absolute;
   bottom: -15px;
 }
-
 button.slick-arrow.slick-next {
   position: absolute;
   right: 36px;
@@ -718,7 +683,6 @@ button.slick-prev.slick-arrow {
   .mobile-flex-col{
     flex-direction: column;
   }
-  
   .contentbox {
     max-width: 1126px;
     color: #000;
@@ -787,17 +751,13 @@ button.slick-prev.slick-arrow {
     border: 1px solid #000;
   }
 }
-
 .marquee-slider img {
   width: 100%;
   display: block;
 }
-
 .marquee-slider .slick-slide {
   margin: 0 10px;
 }
-
-
 /* ############# New CSS ################ */
 @media screen and (max-width:768px){
   nav{
@@ -859,7 +819,6 @@ h3.text-2xl.font-medium {
     left: unset;
     top: -30px;
 }
-
 /* Business Page */
 .productFeaturedimg{
   padding: 15px 50px;
@@ -940,7 +899,6 @@ h3.text-2xl.font-medium {
   margin-top: 10px;
 }
 }
-
 /********************* Shariah Board ***********************/
 .shariah-board .text-image-sidebysidesecx .textside,
 .shariah-board .text-image-sidebysidesecx .imgside{
@@ -1030,7 +988,6 @@ font-size: 18px;
   padding-bottom: 70px !important;
 }
 }
-
 /************************** Blog List ***************************/
 .featured-blog-banner-sec .Text-side,
 .featured-blog-banner-sec .image-side{
@@ -1096,7 +1053,6 @@ font-size: 18px;
 .featured-blog-banner-sec .image-side img{
   margin-top: 10px;
 }
-
     .tab-scroll-container {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -1109,25 +1065,15 @@ font-size: 18px;
     scrollbar-width: none;
     justify-content: normal;
   }
-
   .tab-scroll-container::-webkit-scrollbar {
     display: none;
   }
-
   .tab-scroll-container button {
     flex-shrink: 0;
     white-space: nowrap;
   }
-
 }
-
 /******************** Home New Sections *********************/
-.most-viewedVx-sec .duration {
-    top: 15px;
-    left: 15px;
-    border-radius: 20px;
-    padding: 7px 15px;
-}
 .home-featured-blog-sec .img-sec-aa,
 .home-featured-blog-sec .text-sec-aa{
   width: 50%;
@@ -1341,9 +1287,6 @@ font-size: 18px;
 }
 }
 @media screen and (max-width:1024px){
-  .most-viewedVx-sec .tiles{
-    flex-direction: column;
-  }
   .most-viewedVx-sec .t{
     display: none;
   }
@@ -1555,23 +1498,6 @@ font-size: 18px;
 }
 .gridmbl-bottom button{
   padding: 10px;
-}
-.beforething .text-4xl.pt-2.font-bold.counter {
-    font-size: 45px;
-}
-.beforeafterthing{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.beforething{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.counter-slidermbl{
-  padding-top: 10px;
 }
 .centermbltxt{
   text-align: center;
@@ -2211,24 +2137,6 @@ color: #000;
 .counter-sec {
     width: 60.5%;
 }
-.excellentcateghead h3{
-  font-size: 32px;
-  font-weight: 500;
-}
-.excellentcateghead p{
-  font-size: 22px;
-  font-weight: 500;
-  color: #606060;
-}
-.mostauthenticscann h3{
-    font-size: 32px;
-  font-weight: 400;
-}
-.mostauthenticscann p{
-font-size: 22px;
-  font-weight: 500;
-  opacity: 0.5;
-}
 .slider-slick-certificates{
   padding: 0px 100px;
 }
@@ -2673,10 +2581,6 @@ line-height: 46px;
 font-size: 30px;
 line-height: 36px;
 }
-.mostviewedVidx-sec .t{
-  margin-right: 10px;
-  margin-left: 10px;
-}
 .smallmobileblockitems{
   align-items: flex-start;
 }
@@ -2781,18 +2685,6 @@ line-height: 36px;
 .hs-collapse-toggle{
   display: flex;
   background-color: #fff;
-}
-.excellentcateghead h3{
-  font-weight: 400;
-}
-.excellentcateghead p{
-  font-size: 18px;
-  font-weight: 400;
-}
-.mostauthenticscann p{
-font-size: 18px;
-  font-weight: 400;
-  opacity: 0.5;
 }
 .home-blog-card{
   width: 100%;
