@@ -99,7 +99,7 @@ footer a:hover, footer button:hover{
 }
 .button-bg-gold:hover{
   background-color: var(--button-bg-hover);
-  color: #fff ;
+  color: #fff;
 }
 .category-side button:hover{
   background-color: var(--button-bg-color);
@@ -325,15 +325,6 @@ form.otherforms input {
 .min-width-reviews{
   min-width:380px;
 }
-.textsecabsolute{
-  background-image: url("/assets/images/absolutetextbackimage.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .lg-grid-cols-4{
   display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -412,22 +403,6 @@ form.otherforms input {
 body.home-page .home-header{
   position: absolute;
   z-index: 1;
-}
-.contentbox {
-  max-width:1126px;
-  color: #000;
-  padding: 15px;
-  background-color: #fff;
-  border-radius: 10px;
-  border: 2px solid #d9e7f2;
-  margin: 30px auto;      
-}
-.table_scroll { 
-  height: 490px!important;
-  overflow: auto!important;
-  color: #000;
-  padding: 30px 20px;
-  background-color: #fff;
 }
 .table_scroll::-webkit-scrollbar {
   width: 10px;
@@ -682,22 +657,6 @@ button.slick-prev.slick-arrow {
   }
   .mobile-flex-col{
     flex-direction: column;
-  }
-  .contentbox {
-    max-width: 1126px;
-    color: #000;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: 2px solid #d9e7f2;
-    margin: 0px 10px;
-  }
-  .table_scroll {
-    height: 490px !important;
-    overflow: auto !important;
-    color: #000;
-    padding: 30px 20px 30px 10px;
-    background-color: #fff;
   }
   .mobilebgheader {
     background-color: #fff;
@@ -1074,59 +1033,6 @@ font-size: 18px;
   }
 }
 /******************** Home New Sections *********************/
-.home-featured-blog-sec .img-sec-aa,
-.home-featured-blog-sec .text-sec-aa{
-  width: 50%;
-}
-.home-featured-blog-sec span.featured-tag {
-    background-color: #FFCE32;
-    padding: 4px 20px;
-    position: absolute;
-    top: 20px;
-    left: 0px;
-}
-.home-featured-blog-sec .img-blok span.featured-tag {
-    font-size: 12px;
-    padding: 2px 12px;
-    top: 25px;
-}
-.home-featured-blog-sec .img-blok{
-  margin-bottom: 20px;
-}
-.home-featured-blog-sec{
-  margin-bottom: -25px;
-}
-.latest-blogs .img-sideee{
-  width: 40%;
-}
-.latest-blogs .text-sideee{
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.latest-blogs .text-sideee h3{
-  line-height: 25px;
-  margin: 5px 0px;
-}
-.latest-blogs .news-tag {
-    background-color: #FFCE32;
-    padding: 3px 10px;
-}
-.latest-blogs .pub-date{
-  font-size: 12px;
-}
-.latest-blogs .latest-grid {
-    gap: 24px;
-}
-.grow-business-sec {
-    background: url('../assets/images/home-grow-your-business-bg.png');
-    padding: 90px 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .custom-tab-active-plan{
   padding: 10px 20px;
   background-color: #B89B51;
@@ -1165,14 +1071,6 @@ font-size: 18px;
   padding:5px 10px;
   font-size: 14px;
   border-radius: 20px;
-}
-.mplans-section{
-  background: url('../assets/images/Wave.png');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
-  padding-bottom: 20px;
-  padding-top: 20px;
 }
 .inactivefaq{
   font-size: 32px;
@@ -1267,15 +1165,6 @@ font-size: 18px;
     color: #b89b51 !important;
     background-image: none;
 } */
-.mplans-section{
-  /* background-image: url("/assets/images/BG.png"); */
-  background-repeat: no-repeat;
-  /* background-position: top; */
-  /* background-size: cover; */
-  margin-top: -25px;
-  padding-top: 60px;
-  /* background-color: #ffede9; */
-}
 
 .changecolor {
     background-color: rgb(184, 155, 81, 0.2) !important;
@@ -1304,47 +1193,11 @@ font-size: 18px;
   }
 }
   @media screen and (max-width:768px){
-  .foodimgsblock .lg-grid-cols-4{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  
-  .home-featured-blog-sec .img-sec-aa,
-.home-featured-blog-sec .text-sec-aa{
-  width: 100%;
-}
-.home-featured-blog-sec{
-  padding: 0px 20px;
-}
 .home-featured-blog-sec .text-sec-aa > div{
   align-items: center;
 }
-.home-featured-blog-sec .container{
-    padding: 20px 0px !important;
-}
-  .latest-blogs .img-sideee,
-  .latest-blogs .text-sideee{
-  width: 100%;
-}
-.latest-blogs {
-    padding: 0px 20px 20px 20px !important;
-}
-.latest-blogs .latest-grid {
-    gap: 12px;
-}
-.latest-blogs .latest-grid .rounded-lg > .flex{
-    gap: 12px;
-}
-  .mplans-section{
-    background: none;
-  }
   .mblpadd{
     padding: 0px;
-  }
-  .mplans-section .tab-scroll-container{
-    justify-content: center;
-  }
-  .mplans-section .bg-white.rounded-xl{
-    padding: 25px 30px !important;
   }
   .home-faq-section h3.text-nowrap{
     text-wrap: wrap !important;
@@ -1356,32 +1209,12 @@ font-size: 18px;
     display: flex;
     align-items: flex-start;
 }
-.textsecabsolute {
-    padding-top: 15px !important;
-    padding-bottom: 10px !important;
-    padding-left: 10px !important;
-}
-.textsecabsolute h3 {
-    font-size: 16px !important;
-    line-height: 18px !important;
-}
-.textsecabsolute p {
-    font-size: 10px !important;
-    line-height: 12px !important;
-}
-}
-
-.people-love-card{
-  margin: 20px;
-  padding: 50px;
-  border-radius: 10px;
 }
 @media screen and (max-width:768px){
   .people-love-grid2{
     display: none !important;
   }
 }
-
 /********************* Blog Single ************************/
 @media screen and (max-width:768px){
   .blog-Single .featured-blog-banner-sec{
@@ -2137,49 +1970,8 @@ color: #000;
 .counter-sec {
     width: 60.5%;
 }
-.slider-slick-certificates{
-  padding: 0px 100px;
-}
 .home-blog-card{
   width: 25%;
-}
-.home-featured-blog-sec h3.t{
-  overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-line-clamp: 3;
--webkit-box-orient: vertical;
-font-size: 44px;
-line-height: 55px;
-}
-.home-featured-blog-sec h4{
-  overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-line-clamp: 2;
--webkit-box-orient: vertical;
-width: 100%;
-}
-.home-featured-blog-sec .authordateee{
-  margin: 24px 0px;
-}
-.latest-blogs .latest-grid h3{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-line-clamp: 2;
--webkit-box-orient: vertical;
-}
-.people-love-grid .reviewtext-al{
-  overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-line-clamp: 3;
--webkit-box-orient: vertical;
 }
 .endorsementss h3{
   font-size: 32px;
@@ -2378,12 +2170,6 @@ line-clamp: 1;
 .home-header nav{
   gap: 15px;
 }
-.home-featured-blog-sec{
-  margin: 0px 20px -25px 20px;
-}
-.foodimgsblock {
-  padding: 20px;
-}
 .most-viewedVx-sec{
   padding-left: 20px;
   padding-right: 20px;
@@ -2400,15 +2186,8 @@ line-clamp: 1;
   padding-left: 20px;
   padding-right: 20px;
 }
-.blog-page .foodimgsblock {
-    padding: 0px 20px;
-}
 .blog-page .blog-page-banner-sec2  {
     padding-left: 20px;
-  padding-right: 20px;
-}
-.blog-page .latest-blogs  {
-  padding-left: 20px;
   padding-right: 20px;
 }
 .blog-page .blog-page-banner-sec3  {
@@ -2448,16 +2227,9 @@ line-clamp: 1;
 .home-page .main-banner-sec .home-main-text-cont{
   max-width:712px !important;
 }
-.img-sideee{
-  padding: 0px 20px;
-}
 .counter-sec {
     width: 62.5%;
 }
-.latest-grid .img-sideee{
-  padding: 0px;
-}
-
 }
 @media screen and (min-width:1024px) and (max-width:1400px){
 .mustakship-business-page .imgsidebus {
@@ -2495,13 +2267,6 @@ line-clamp: 1;
 }
 .home-page .main-banner-sec .home-main-text-cont{
   max-width:600px !important;
-}
-.home-featured-blog-sec h3.t{
-font-size: 40px;
-line-height: 46px;
-}
-.home-featured-blog-sec .authordateee{
-  margin: 15px 0px;
 }
 .counter-sec {
     width: 80.5%;
@@ -2573,13 +2338,6 @@ line-height: 46px;
 }
 .counter-sec {
     width: 100%;
-}
-.home-featured-blog-sec .authordateee{
-  margin: 5px 0px;
-}
-.home-featured-blog-sec h3.t{
-font-size: 30px;
-line-height: 36px;
 }
 .smallmobileblockitems{
   align-items: flex-start;
@@ -2689,12 +2447,6 @@ line-height: 36px;
 .home-blog-card{
   width: 100%;
 }
-.latest-blogs .latest-grid .img-sideee img{
-    width: 100%;
-}
-.mplans-section {
-    background: none;
-}
 .onlymenu {
     gap: 20px;
 }
@@ -2739,12 +2491,7 @@ line-height: 36px;
   width: 100% !important;
   margin: 0px auto;
 }
-.slider-slick-certificates{
-  padding: 0px 40px;
-}
-.home-featured-blog-sec{
-  margin: 0px 0px -25px 0px;
-}
+
 .home-featured-blog-sec img{
   width: 100%;
 }
@@ -2757,9 +2504,6 @@ line-height: 36px;
 }
 .icon-button {
     margin-top: 2px;
-}
-.foodimgsblock .mobilepadding10{
-  padding: 0px;
 }
 .mustakshif-product-page .phead{
   font-size: 26px;
@@ -2804,9 +2548,6 @@ line-height: 36px;
 .blog-page .blog-page-top-banner{
   padding-left: 0px;
   padding-right: 0px;
-}
-.blog-page .foodimgsblock {
-    padding: 20px 20px;
 }
 .blog-page .recent-articles-sec .lg-grid-cols-5 {
     display: grid;

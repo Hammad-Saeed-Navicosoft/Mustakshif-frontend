@@ -172,170 +172,166 @@
 
 
 
-    <div class="mplans-section">
+    <div class="mplans-section bg-none lg:bg-[url('../assets/images/Wave.png')] bg-no-repeat bg-bottom bg-contain pb-[20px] pt-[20px]">
       <div class="container mx-auto">
         <div class="text-center px-5">
-          <h3 style="font-size: 32px;">Mustakshif Subscription Plan</h3>
-          <p style="font-size: 18px;">Given the abundance of forbidden and doubtful products, Muslims need to determine the permissibility <br>of ingredients according to Islamic dietary laws</p>
+          <h3 class="sec-heading">Mustakshif Subscription Plan</h3>
+          <p class="sec-text">Given the abundance of forbidden and doubtful products, Muslims need to determine the permissibility <br>of ingredients according to Islamic dietary laws</p>
         </div>
 
-        
+        <div x-data="{
+          tab: 'Individual',
+          cards: [
+            {
+              category: 'Individual',
+              planType: 'Monthly Plan',
+              price: '$1.99',
+              duration: '/day',
+              features: [
+                'Unlock full access to 2.5M+ products',
+                'Expert insights & daily updates',
+                'Shariah Board Approved'
+              ]
+            },
+            {
+              category: 'Individual',
+              planType: 'Yearly Plan',
+              price: '$1.99',
+              duration: '/day',
+              features: [
+                'Unlock full access to 2.5M+ products',
+                'Expert insights & daily updates',
+                'Shariah Board Approved'
+              ]
+            },
+            {
+              category: 'Individual',
+              planType: 'Life Time Plan',
+              price: '$1.99',
+              duration: '/day',
+              features: [
+                'Unlock full access to 2.5M+ products',
+                'Expert insights & daily updates',
+                'Shariah Board Approved'
+              ],
+              offer:'LIMITED OFFER'
+            },
+            {
+              category: 'Family',
+              planType: 'Yearly Plan',
+              name: 'Yearly1',
+              option1:{
+              members: 'Up to 5 members',
+              price: '$101.99',
+              payment: 'One Time Full Payment'
+              },
+              option2:{
+              members: 'Up to 10 members',
+              price: '$100.99',
+              payment: 'One Time Full Payment'
+              }
+              
+            },
+            {
+              category: 'Family',
+              planType: 'Life Time Plan',
+              offer:'LIMITED OFFER',
+              name: 'lifetime2',
+              option1:{
+              members: 'Up to 5 members',
+              price: '$101.99',
+              payment: 'One Time Full Payment'
+              },
+              option2:{
+              members: 'Up to 10 members',
+              price: '$100.99',
+              payment: 'One Time Full Payment'
+              }
+            }
+          ]
+        }" class="max-w-7xl mx-auto px-4 py-10 mblpadd">
 
-<div x-data="{
-  tab: 'Individual',
-  cards: [
-    {
-      category: 'Individual',
-      planType: 'Monthly Plan',
-      price: '$1.99',
-      duration: '/day',
-      features: [
-        'Unlock full access to 2.5M+ products',
-        'Expert insights & daily updates',
-        'Shariah Board Approved'
-      ]
-    },
-    {
-      category: 'Individual',
-      planType: 'Yearly Plan',
-      price: '$1.99',
-      duration: '/day',
-      features: [
-        'Unlock full access to 2.5M+ products',
-        'Expert insights & daily updates',
-        'Shariah Board Approved'
-      ]
-    },
-    {
-      category: 'Individual',
-      planType: 'Life Time Plan',
-      price: '$1.99',
-      duration: '/day',
-      features: [
-        'Unlock full access to 2.5M+ products',
-        'Expert insights & daily updates',
-        'Shariah Board Approved'
-      ],
-      offer:'LIMITED OFFER'
-    },
-    {
-      category: 'Family',
-      planType: 'Yearly Plan',
-      name: 'Yearly1',
-      option1:{
-      members: 'Up to 5 members',
-      price: '$101.99',
-      payment: 'One Time Full Payment'
-      },
-      option2:{
-      members: 'Up to 10 members',
-      price: '$100.99',
-      payment: 'One Time Full Payment'
-      }
-      
-    },
-    {
-      category: 'Family',
-      planType: 'Life Time Plan',
-      offer:'LIMITED OFFER',
-      name: 'lifetime2',
-      option1:{
-      members: 'Up to 5 members',
-      price: '$101.99',
-      payment: 'One Time Full Payment'
-      },
-      option2:{
-      members: 'Up to 10 members',
-      price: '$100.99',
-      payment: 'One Time Full Payment'
-      }
-    }
-  ]
-}" class="max-w-7xl mx-auto px-4 py-10 mblpadd">
-
-  <!-- Tabs -->
-  <div class="flex flex-wrap gap-3 justify-center tab-scroll-container" style="margin-bottom: 40px;">
-    <template x-for="category in ['Individual', 'Family']" :key="category">
-      <button
-        x-text="category"
-        @click="tab = category"
-        :class="tab === category ? 'custom-tab-active-plan text-white' : 'custom-tab-inactive-plan border'"
-        class="px-4 py-1 rounded-md text-sm font-medium transition"
-      ></button>
-    </template>
-  </div>
-
-  <!-- Cards Grid -->
-  <div class="flex flex-col lg:flex-row justify-center gap-6 priceplan" style="gap: 30px;">
-    <template x-for="(item, index) in cards.filter(card => tab === 'All' || card.category === tab)" :key="index">
-      <div class="bg-white rounded-xl shadow p-4 mainplanclass" style="padding: 25px 50px;">
-        <template x-if="item.offer || item.offer === ''">
-         <p class="text-center"> <span x-text="item.offer" class="planoffer mx-auto"></span></p>
-        </template>
-        <template x-if="!item.offer">
-          <span class="planoffer mx-auto invisible">&nbsp;</span>
-        </template>
-
-        <h3 x-text="item.planType" class="text-center" style="font-size: 30px;"></h3>
-        <p class="text-center" style="font-size: 18px; color: #7A7D9C;">Starting at just</p>
-        <div class="flex justify-center" style="align-items: center;">
-          <span class="text-center" style="color: #1B152B;font-size: 60px;" x-text="item.price"></span>
-          <span x-text="item.duration" class="text-center" style="font-size: 25px; color: #7A7D9C;">/day</span>
-        </div>
-
-        <template x-if="item.features">
-          <ul class="features">
-            <template x-for="(feature, i) in item.features" :key="i">
-              <li style="background-color: #f1ebdf;padding: 10px;margin-bottom: 15px;align-items: center;" class="flex justify-between">
-                <span x-text="feature" style=" color: #B89B51;"></span>
-                <img src="../assets/images/check 1 (Traced).png" alt="" style="height: 17px; width: 17px;">
-              </li>
+          <!-- Tabs -->
+          <div class="flex flex-wrap gap-3 justify-center tab-scroll-container" style="margin-bottom: 40px;">
+            <template x-for="category in ['Individual', 'Family']" :key="category">
+              <button
+                x-text="category"
+                @click="tab = category"
+                :class="tab === category ? 'custom-tab-active-plan text-white' : 'custom-tab-inactive-plan border'"
+                class="px-4 py-1 rounded-md text-sm font-medium transition"
+              ></button>
             </template>
-          </ul>
+          </div>
+
+          <!-- Cards Grid -->
+          <div class="flex flex-col lg:flex-row justify-center gap-6 priceplan" style="gap: 30px;">
+            <template x-for="(item, index) in cards.filter(card => tab === 'All' || card.category === tab)" :key="index">
+              <div class="bg-white rounded-xl shadow py-[25px] px-[30px] md:p-4 mainplanclass" style="padding: 25px 50px;">
+                <template x-if="item.offer || item.offer === ''">
+                <p class="text-center"> <span x-text="item.offer" class="planoffer mx-auto"></span></p>
+                </template>
+                <template x-if="!item.offer">
+                  <span class="planoffer mx-auto invisible">&nbsp;</span>
+                </template>
+
+                <h3 x-text="item.planType" class="text-center" style="font-size: 30px;"></h3>
+                <p class="text-center" style="font-size: 18px; color: #7A7D9C;">Starting at just</p>
+                <div class="flex justify-center" style="align-items: center;">
+                  <span class="text-center" style="color: #1B152B;font-size: 60px;" x-text="item.price"></span>
+                  <span x-text="item.duration" class="text-center" style="font-size: 25px; color: #7A7D9C;">/day</span>
+                </div>
+
+                <template x-if="item.features">
+                  <ul class="features">
+                    <template x-for="(feature, i) in item.features" :key="i">
+                      <li style="background-color: #f1ebdf;padding: 10px;margin-bottom: 15px;align-items: center;" class="flex justify-between">
+                        <span x-text="feature" style=" color: #B89B51;"></span>
+                        <img src="../assets/images/check 1 (Traced).png" alt="" style="height: 17px; width: 17px;">
+                      </li>
+                    </template>
+                  </ul>
+                </template>
+
+              
+
+                <template x-if="item.category === 'Family'">
+          <div class="plan-group" x-data="{ selectedContent: 'content1' }">
+            <div class="plan-option flex flex-col text-start my-3 px-4 py-4" 
+                :class="{ 'changecolor': selectedContent === 'content1' }" 
+                style="background-color: #cdcdcd33;">
+              
+              <div class="flex gap-4 justify-between items-center mb-2">
+                <label for="content1" x-text="item.option1.members" class="font-bold" style="color: #B89B51;font-style: italic;"></label>
+                <input type="radio" :name="item.name" x-model="selectedContent" value="content1" id="content1" checked>
+              </div>
+              <p x-text="item.option1.price" class="text-2xl text-black mb-2"></p>
+              <p x-text="item.option1.payment" style="color: #B89B51;"></p>
+            </div>
+
+            <div class="plan-option flex flex-col text-start my-3 px-4 py-4" 
+                :class="{ 'changecolor': selectedContent === 'content2' }" 
+                style="background-color: #cdcdcd33;">
+              
+              <div class="flex gap-4 justify-between items-center mb-2">
+                <label for="content2" x-text="item.option2.members" class="font-bold" style="color: #B89B51;font-style: italic;"></label>
+                <input type="radio" :name="item.name" x-model="selectedContent" value="content2" id="content2">
+              </div>
+              <p x-text="item.option2.price" class="text-2xl text-black mb-2"></p>
+              <p x-text="item.option2.payment" style="color: #B89B51;"></p>
+            </div>
+          </div>
         </template>
 
-       
-
-        <template x-if="item.category === 'Family'">
-  <div class="plan-group" x-data="{ selectedContent: 'content1' }">
-    <div class="plan-option flex flex-col text-start my-3 px-4 py-4" 
-         :class="{ 'changecolor': selectedContent === 'content1' }" 
-         style="background-color: #cdcdcd33;">
-      
-      <div class="flex gap-4 justify-between items-center mb-2">
-        <label for="content1" x-text="item.option1.members" class="font-bold" style="color: #B89B51;"></label>
-        <input type="radio" :name="item.name" x-model="selectedContent" value="content1" id="content1" checked>
-      </div>
-      <p x-text="item.option1.price" class="text-2xl text-black mb-2"></p>
-      <p x-text="item.option1.payment" style="color: #B89B51;"></p>
-    </div>
-
-    <div class="plan-option flex flex-col text-start my-3 px-4 py-4" 
-         :class="{ 'changecolor': selectedContent === 'content2' }" 
-         style="background-color: #cdcdcd33;">
-      
-      <div class="flex gap-4 justify-between items-center mb-2">
-        <label for="content2" x-text="item.option2.members" class="font-bold" style="color: #B89B51;"></label>
-        <input type="radio" :name="item.name" x-model="selectedContent" value="content2" id="content2">
-      </div>
-      <p x-text="item.option2.price" class="text-2xl text-black mb-2"></p>
-      <p x-text="item.option2.payment" style="color: #B89B51;"></p>
-    </div>
-  </div>
-</template>
 
 
-
-        <!-- Buy Now Button -->
-        <button class="custom-tab-inactive-plana rounded-md flex justify-between mx-auto">
-          <span style="color: #B89B51;font-weight: 600;">Buy Now </span><i class="fa-solid fa-arrow-right"></i></i>
-        </button>
-      </div>
-    </template>
-  </div>
-</div>
-
-
+                <!-- Buy Now Button -->
+                <button class="custom-tab-inactive-plana rounded-md flex justify-between mx-auto">
+                  <span style="color: #B89B51;font-weight: 600;">Buy Now </span><i class="fa-solid fa-arrow-right"></i></i>
+                </button>
+              </div>
+            </template>
+          </div>
+        </div>
 
       </div>
     </div>
