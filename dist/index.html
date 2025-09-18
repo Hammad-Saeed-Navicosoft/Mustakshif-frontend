@@ -18,20 +18,17 @@
 
   </head>
   <body class="home-page">
-
-
-
     <!-- ========== HEADER ========== -->
-    <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-white border-0 border-gray-200 home-header absolute z-[1] lg:bg-transparent">
-      <nav class="relative container w-full mx-auto md:flex md:items-center md:justify-between md:gap-3">
-        <div class="flex justify-between items-center gap-x-1 px-4 h-full mbldeskheaderchange">
+    <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full border-0 border-gray-200 home-header absolute z-[1] bg-[#0d1e38] md:bg-transparent">
+      <nav class="relative container w-full mx-auto lg:flex lg:items-center lg:justify-between md:gap-3">
+        <div class="w-full lg:w-auto flex justify-between items-center py-2 md:py-0 gap-x-1 px-4">
           <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80" href="index.html" aria-label="Brand">
-            <img class="mobilelogo-width hidden md:block" src="/assets/images/newlogo.png" alt="" srcset=""/>
-            <img class="mobilelogo-width md:hidden" src="/assets/images/logo 2.png" alt="" srcset=""/>
+            <img class="hidden md:block" src="/assets/images/newlogo.png" alt="" srcset=""/>
+            <img class="w-[100px] md:hidden" src="/assets/images/logo 2.png" alt="" srcset=""/>
           </a>
 
           <!-- Collapse Button -->
-          <button type="button" class="hs-collapse-toggle lg:hidden relative size-9 justify-center items-center font-medium text-sm rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
+          <button type="button" class="hs-collapse-toggle lg:hidden relative size-9 flex justify-center items-center font-medium text-sm rounded-lg bg-white border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
             <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
             <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
             <span class="sr-only">Toggle navigation</span>
@@ -40,121 +37,107 @@
         </div>
 
         <!-- Collapse -->
-        <div id="hs-header-base" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:flex mobilebgheader"  aria-labelledby="hs-header-base-collapse" >
+        <div id="hs-header-base" class="hs-collapse hidden overflow-hidden transition-all  duration-300 basis-full grow lg:flex p-4 lg-p-0 bg-white lg:bg-transparent"  aria-labelledby="hs-header-base-collapse" >
           <div class="w-full overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
-            <div class="py-2 md:py-0 flex flex-col lg:flex-row lg:items-center gap-0.5 md:gap-1 navbtns-parent">
+            <div class="py-2 md:py-0 flex flex-col xl:flex-row items-start lg:items-center gap-0.5 md:gap-1">
               <div class="grow">
-                <div class="onlymenu flex flex-col md:flex-row justify-center lg:items-center gap-6 xl:gap-3 2xl:gap-6 px-3">
+                <div class="flex flex-col lg:flex-row justify-center lg:items-center gap-6 xl:gap-3 2xl:gap-6 px-3">
                   
 
-                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                  <a class="flex items-center text-base text-black font-sen font-semibold uppercase hover:text-[#b79950]" href="#">
                     <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                     Halal Places
                   </a>
-                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                  <a class="flex items-center text-base text-black font-sen font-semibold uppercase hover:text-[#b79950]" href="#">
                     <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                     Products
                   </a>
-                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
+                  <a class="flex items-center text-base text-black font-sen font-semibold uppercase hover:text-[#b79950]" href="./Shariah-board.html">
                     <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                     Shariah Board
                   </a>
 
-                  <a class="flex items-center text-base text-gray-800" href="#">
+                  <a class="flex items-center text-base text-black font-sen font-semibold uppercase hover:text-[#b79950]" href="#">
                     <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
                     Subscription 
                   </a>
 
-                  <a class="flex items-center text-base text-gray-800" href="./How-mustakshif-works.html">
+                  <a class="flex items-center text-base text-black font-sen font-semibold uppercase hover:text-[#b79950]" href="./How-mustakshif-works.html">
                     <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
                      How Mustakshif Work?
                   </a>
 
-                  <!-- <div class="actions">
-
-                    
-                    <button class="icon-button" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
-
-                    
-                    <div class="lang-dropdown">
-                      <button class="lang-toggle" onclick="toggleLangMenu()">
-                        <img src="https://flagcdn.com/w40/us.png" alt="English">
-                      </button>
-                      <div class="lang-menu" id="langMenu">
-                        <button onclick="setLanguage('en', 'us')">
-                          <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
-                        </button>
-                        <button onclick="setLanguage('ms', 'my')">
-                          <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
-                        </button>
-                        <button onclick="setLanguage('ar', 'sa')">
-                          <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
-                        </button>
-                        <button onclick="setLanguage('fr', 'fr')">
-                          <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
-                        </button>
-                        <button onclick="setLanguage('de', 'de')">
-                          <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
-                        </button>
-                      </div>
-                    </div>
-
-                    
-                    <div id="searchModal">
-                      <div class="modal-content flex items-center gap-6">
-                        <input type="text" placeholder="Search..." />
-                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
-                      </div>
-                    </div>
-
-                  </div> -->
                 </div>
               </div>
 
               <!-- Button Group -->
-              <div class="md:ms-auto md:mt-0 flex  items-center px-2 header-btnsss">
-                <div class="actions">
-
+              <div class="md:mt-0 md:flex items-center gap-4 xl:gap-2 2xl:gap-4 px-2">
+                <div class="flex items-center gap-4 xl:gap-3 2xl:gap-6 my-4 lg:my-0">
                     <!-- Search icon -->
-                    <button class="icon-button mt-1" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+                    <!-- <button class="text-[18px]" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button> -->
+
+
+                    <!-- Toggle Checkbox (hidden) -->
+                    <input type="checkbox" id="searchToggle" class="peer hidden" />
+
+                    <!-- Search Button -->
+                    <label for="searchToggle" class="text-[18px] cursor-pointer inline-flex items-center">
+                    <img src="/assets/images/searchmodule.png" alt="search" />
+                    </label>
+
+                    <!-- Search Modal -->
+                    <div class="fixed inset-0 z-[1000] hidden peer-checked:block bg-black/50 px-2">
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-6 bg-white my-[5%] mx-auto p-[20px] w-full md:w-[80%] max-w-[970px] rounded-[10px]">
+                        
+                        <!-- Search Input -->
+                        <input type="text" 
+                            class="w-full p-[10px] text-[16px] rounded-[20px] shadow-none focus:outline-none focus:ring-0 focus:border-black" 
+                            placeholder="Search..." />
+                        
+                        <!-- Close Button -->
+                        <label for="searchToggle" 
+                            class="px-[50px] py-[10px] flex items-center gap-2 text-[16px] rounded-[20px] border border-black cursor-pointer">
+                        <span>&#10006;</span> Close
+                        </label>
+                    </div>
+                    </div>
 
                     <!-- Language selector with flag images -->
                     <div class="lang-dropdown">
-                      <button class="lang-toggle" onclick="toggleLangMenu()">
-                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      <button class="lang-toggle bg-none border-0" onclick="toggleLangMenu()">
+                        <img class="w-[28px] h-[28px] rounded-full" src="https://flagcdn.com/w40/us.png" alt="English">
                       </button>
-                      <div class="lang-menu" id="langMenu">
-                        <button onclick="setLanguage('en', 'us')">
+                      <div class="lang-menu absolute top-auto right-auto bg-white border border-gray-300 hidden flex-col min-w-[150px] z-10" id="langMenu">
+                        <button class="flex items-center gap-2 bg-transparent border-0 px-3 py-2 text-left cursor-pointer hover:bg-[#f0f0f0]" onclick="setLanguage('en', 'us')">
                           <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
                         </button>
-                        <button onclick="setLanguage('ms', 'my')">
+                        <button  class="flex items-center gap-2 bg-transparent border-0 px-3 py-2 text-left cursor-pointer hover:bg-[#f0f0f0]" onclick="setLanguage('ms', 'my')">
                           <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
                         </button>
-                        <button onclick="setLanguage('ar', 'sa')">
+                        <button  class="flex items-center gap-2 bg-transparent border-0 px-3 py-2 text-left cursor-pointer hover:bg-[#f0f0f0]" onclick="setLanguage('ar', 'sa')">
                           <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
                         </button>
-                        <button onclick="setLanguage('fr', 'fr')">
+                        <button  class="flex items-center gap-2 bg-transparent border-0 px-3 py-2 text-left cursor-pointer hover:bg-[#f0f0f0]" onclick="setLanguage('fr', 'fr')">
                           <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
                         </button>
-                        <button onclick="setLanguage('de', 'de')">
+                        <button  class="flex items-center gap-2 bg-transparent border-0 px-3 py-2 text-left cursor-pointer hover:bg-[#f0f0f0]" onclick="setLanguage('de', 'de')">
                           <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
                         </button>
                       </div>
                     </div>
 
                     <!-- Search Modal -->
-                    <div id="searchModal">
-                      <div class="modal-content flex items-center gap-6">
-                        <input type="text" placeholder="Search..." />
-                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                    <!-- <div id="searchModal" class="hidden fixed z-[1000] inset-0 w-full h-full bg-black/50 px-2">
+                      <div class="modal-content flex flex-col md:flex-row items-start md:items-center gap-6 bg-white my-[5%] mx-auto p-[20px] px-[20px] w-full md:w-[80%] max-w-[970px] rounded-[10px]">
+                        <input type="text" class="w-full p-[10px] text-[16px] rounded-[20px] shadow-none focus:outline-none focus:ring-0 focus:border-black focus:shadow-none" placeholder="Search..."/>
+                        <button class="px-4 flex items-center gap-2 px-[50px] py-[10px] text-[16px] rounded-[20px] border border-black" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
                       </div>
-                    </div>
-
-                  </div>
-                <a class="bg-btn-gold py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                    </div> -->
+                </div>
+                <a class="inline-flex items-center gap-2 text-white bg-[#a28537] hover:bg-[#c7ad6b] rounded-[30px] py-[10px] xl:py-[15px] px-[20px] xl:px-[14px] 2xl:px-[20px] font-sen text-sm font-normal whitespace-nowrap uppercase" href="#">
                   <i class="fa fa-user text-base" style="font-size: 16px;"></i> Log in
                 </a>
-                <a class="bg-btn-blue py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                <a class="inline-flex items-center gap-2 text-white bg-[#0B1A31] hover:bg-[#b79950] rounded-[30px] py-[10px] xl:py-[15px] px-[28px] xl:px[16px] 2xl:px-[28px] font-sen text-sm font-normal whitespace-nowrap uppercase" href="#">
                   Download
                 </a>
               </div>
@@ -844,7 +827,7 @@
           </div>
           <div class="flex home-img-text-sec gap-5 flex-col md:flex-row">
             <div class="relative w-full">
-              <img src="../assets/images/home-featured-blog-sec-main-img.png" alt="">
+              <img src="../assets/images/home-featured-blog-sec-main-img.png" width="100%" alt="">
               <span class="text-base absolute top-[20px] left-0 bg-[#FFCE32] py-[4px] px-[20px]">Featured</span>
             </div>
             <div class="flex flex-col justify-center w-full" >
@@ -860,7 +843,7 @@
           <div class="flex home-blog-cards my-5 gap-3 flex-col md:flex-row">
             <div class="w-full">
               <div class="relative mb-4">
-                <img src="../assets/images/home-blog-card1.png" alt="">
+                <img src="../assets/images/home-blog-card1.png" width="100%" alt="">
                 <span class="absolute left-0 bg-[#FFCE32] text-[12px] py-[2px] px-[12px] top-[25px]">Featured</span>
               </div>
               <div>
@@ -873,7 +856,7 @@
             </div>
             <div class="w-full">
               <div class="relative mb-4">
-                <img src="../assets/images/home-blog-card2.png" alt="">
+                <img src="../assets/images/home-blog-card2.png" width="100%" alt="">
                 <span class="absolute left-0 bg-[#FFCE32] text-[12px] py-[2px] px-[12px] top-[25px]">Featured</span>
               </div>
               <div>
@@ -886,7 +869,7 @@
             </div>
             <div class="w-full">
               <div class="relative mb-4">
-                <img src="../assets/images/home-blog-card3.png" alt="">
+                <img src="../assets/images/home-blog-card3.png" width="100%" alt="">
                 <span class="absolute left-0 bg-[#FFCE32] text-[12px] py-[2px] px-[12px] top-[25px]">Featured</span>
               </div>
               <div>
@@ -899,7 +882,7 @@
             </div>
             <div class="w-full">
               <div class="relative mb-4">
-                <img src="../assets/images/home-blog-card4.png" alt="">
+                <img src="../assets/images/home-blog-card4.png" width="100%" alt="">
                 <span class="absolute left-0 bg-[#FFCE32] text-[12px] py-[2px] px-[12px] top-[25px]">Featured</span>
               </div>
               <div>
@@ -1669,27 +1652,27 @@
       </div>
     </div>
 
-    <footer class="bg-[#061A2C] text-white pt-[40px] pb-[10px]">
+    <footer class="bg-[#061A2C] text-white pt-[40px] pb-[10px] px-4 md:px-2">
       <div class="container mx-auto py-4">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
     
     <!-- Logo & Description -->
-    <div>
+    <div class="text-center mt-4 md:mt-0 lg:text-left ">
       <img src="../assets/images/logo 2.png" alt="Mustakshif Logo" class="mb-4 mx-auto" style="height: 90px;">
       <p class="text-white text-lg">Our halal ingredient checker heeds all-inclusive Halal standards and Islamic dietary laws</p>
     </div>
 
     <!-- Customer Support -->
-    <div>
-      <h4 class="mb-2 text-3xl text-white">Customer Support</h4>
-      <p class="mb-1 text-white text-lg flex gap-2 items-center">
+    <div class="text-center lg:text-left mt-4 md:mt-0">
+      <h4 class="mb-2 text-xl lg:text-3xl text-white">Customer Support</h4>
+      <p class="mb-1 text-white text-lg flex gap-2 justify-center lg:justify-start items-center">
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.36 3.33333C4.4 3.92667 4.5 4.50667 4.66 5.06L3.86 5.86C3.58667 5.06 3.41333 4.21333 3.35333 3.33333L4.36 3.33333ZM10.9333 11.3467C11.5 11.5067 12.08 11.6067 12.6667 11.6467V12.64C11.7867 12.58 10.94 12.4067 10.1333 12.14L10.9333 11.3467ZM5 2L2.66667 2C2.3 2 2 2.3 2 2.66667C2 8.92667 7.07333 14 13.3333 14C13.7 14 14 13.7 14 13.3333L14 11.0067C14 10.64 13.7 10.34 13.3333 10.34C12.5067 10.34 11.7 10.2067 10.9533 9.96C10.8872 9.936 10.817 9.92469 10.7467 9.92667C10.5733 9.92667 10.4067 9.99333 10.2733 10.12L8.80667 11.5867C6.91695 10.6203 5.37974 9.08305 4.41333 7.19333L5.88 5.72667C6.06667 5.54 6.12 5.28 6.04667 5.04667C5.79377 4.2787 5.66548 3.4752 5.66667 2.66667C5.66667 2.3 5.36667 2 5 2Z" fill="white"/>
 </svg> <span class="text-white text-lg">(+1) 123 456 7893</span></p>
-      <p class="mb-4 text-white text-lg flex gap-2 items-center"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <p class="mb-4 text-white text-lg flex gap-2 justify-center lg:justify-start items-center"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.3359 0.667969L1.66927 0.667969C0.935938 0.667969 0.342604 1.26797 0.342604 2.0013L0.335937 10.0013C0.335937 10.7346 0.935938 11.3346 1.66927 11.3346L12.3359 11.3346C13.0693 11.3346 13.6693 10.7346 13.6693 10.0013L13.6693 2.0013C13.6693 1.26797 13.0693 0.667969 12.3359 0.667969ZM12.3359 3.33464L7.0026 6.66797L1.66927 3.33464L1.66927 2.0013L7.0026 5.33464L12.3359 2.0013V3.33464Z" fill="white"/>
 </svg><span class="text-white text-lg">name@email.com</span> </p>
-      <div class="flex gap-3">
+      <div class="flex gap-3 justify-center lg:justify-start mt-4">
         <a href="#"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g clip-path="url(#clip0_14181_1314)">
           <rect width="43.9153" height="43.9153" rx="7.31921" fill="#061A2C"/>
@@ -1789,10 +1772,10 @@
     </div>
 
     <!-- App Downloads -->
-    <div>
-      <h4 class="mb-2 text-3xl text-white">Download Mustakshif App</h4>
+    <div class="text-center lg:text-left mt-4 md:mt-0">
+      <h4 class="mb-2 text-xl lg:text-3xl text-white">Download Mustakshif App</h4>
       <p class="mb-4 text-white text-lg">Scan barcode, see ingredient and explore Halal products instantly.</p>
-      <div class="flex gap-4">
+      <div class="flex gap-4 justify-center lg:justify-start">
         <a href="#"><img src="../assets/images/App store.png" alt="App Store" ></a>
         <a href="#"><img src="../assets/images/Google play.png" alt="Google Play" ></a>
       </div>
@@ -1802,12 +1785,12 @@
 
   <!-- Bottom Links -->
   <div class="mt-6 py-4 px-6 text-center" style="border-top: 1px solid #526270;border-bottom: 1px solid #526270;color: #EAECEF;">
-    <button onclick="toggleFooterMenu()" class="md:hidden w-full text-left px-4 py-2 bg-gray-800 text-white flex justify-between">
+    <button onclick="toggleFooterMenu()" class="md:hidden w-full text-left px-4 py-2 bg-gray-800 text-white hover:text-[#b79950] flex justify-between">
   <span class="text-white">Info Pages </span><span id="toggleIcon" class="float-right text-white">+</span>
 </button>
 
 <!-- Footer Links -->
-<div id="footerMenu" class="hidden md:flex md:flex-wrap gap-4 justify-center py-2 px-4 md:px-0">
+<div id="footerMenu" class="hidden flex md:flex flex-col md:flex-row md:flex-wrap gap-6 justify-center py-2 px-4 md:px-0">
   <a href="#" class="text-lg text-white">About us</a>
   <a href="#" class="text-lg text-white">Subscribe</a>
   <a href="#" class="text-lg text-white">Blogs</a>

@@ -545,11 +545,6 @@ button.slick-prev.slick-arrow {
   cursor: pointer;
   font-size: 18px;
 }
-.lang-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
 .lang-toggle img {
   width: 28px;
   height: 28px;
@@ -609,10 +604,10 @@ button.slick-prev.slick-arrow {
   border: 1px solid #000;
 }
 @media screen and (max-width:768px){
-  .mobilebgheader{
+  /* .mobilebgheader{
     background-color: #fff;
     padding: 20px;
-  }
+  } */
   .mobilelogo-width{
     width: 100px;
   }
@@ -658,12 +653,12 @@ button.slick-prev.slick-arrow {
   .mobile-flex-col{
     flex-direction: column;
   }
-  .mobilebgheader {
+  /* .mobilebgheader {
     background-color: #fff;
     padding: 20px;
     position: relative;
     z-index: 999;
-}
+} */
   .mobilelogo-width{
     width: 70px;
   }
@@ -1155,17 +1150,6 @@ font-size: 18px;
   max-width: 876px;
   width:100%;
 }
-/* .priceplan input[type='radio'] {
-    border: 0px;
-    background-color: #b89b5133;
-}
-
-.priceplan input[type='radio']:checked {
-    background-color: #b89b51 !important;
-    color: #b89b51 !important;
-    background-image: none;
-} */
-
 .changecolor {
     background-color: rgb(184, 155, 81, 0.2) !important;
 }
@@ -1846,7 +1830,6 @@ footer{
     display: none;
 }
 }
-
 .business-listing-page{
   background-color: #f9fafb;
 }
@@ -1925,9 +1908,6 @@ footer{
   max-height: 300px;
 }
 }
-
-
-
 /* Resolving Issues start from header */
 #hs-header-base a {
     font-family: 'Sen' !important;
@@ -1935,10 +1915,6 @@ footer{
     font-weight: 600;
     text-wrap: nowrap;
     text-transform: uppercase;
-    
-}
-#hs-header-base{
-  padding-right: 10px;
 }
 .onlymenu {
 gap: 40px;
@@ -1953,16 +1929,6 @@ color: #000;
     font-weight: 400;
     text-wrap: nowrap;
     text-transform: uppercase;
-}
-.navbtns-parent{
-  flex-direction: row;
-  gap: 0px;
-}
-.actions {
-    display: flex;
-    /* align-items: center; */
-    gap: 10px;
-    /* justify-content: center; */
 }
 .header-btnsss{
   gap: 10px;
@@ -2314,12 +2280,12 @@ line-clamp: 1;
     height: 80px;
     display: block;
   }
-  .mobilebgheader {
+  /* .mobilebgheader {
     background-color: #fff;
     padding: 20px;
     position: relative;
     z-index: 999;
-}
+} */
   .onlymenu {
     display: grid;
 }
@@ -2449,11 +2415,6 @@ line-clamp: 1;
 }
 .onlymenu {
     gap: 20px;
-}
-.actions {
-    display: flex;
-    gap: 30px;
-    justify-content: start;
 }
 .navbtns-parent {
     align-items: start;
