@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-      }
+        bagoss: ["BagossStandardTRIAL-Regular", "sans-serif"],
+        sen: ["Sen", "sans-serif"],
+      },
     },
   },
   plugins: [
