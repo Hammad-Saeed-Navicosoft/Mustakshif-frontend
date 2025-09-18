@@ -1,7 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: BagossStandardTRIAL-Regular;
+  src: url(/assets/fonts/BagossStandardTRIAL-Regular.woff);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Sen;
+  src: url(/assets/fonts/Sen-VariableFont_wght.ttf);
+  font-weight: normal;
+}
+@layer base {
+  h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
+    @apply font-bagoss;
+  }
+}
 @layer components {
   .sec-heading {
     @apply font-medium text-[32px];
@@ -9,4 +23,8 @@
   .sec-text {
     @apply text-[18px] lg:text-[22px] font-medium text-[#606060];
   }
+  .container{
+    @apply max-w-[1440px];
+  }
 }
+
