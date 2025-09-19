@@ -13,7 +13,7 @@
 }
 @layer base {
   h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
-    @apply font-bagoss;
+    @apply font-bagoss text-[#061a2c];
   }
 }
 @layer components {
@@ -28,6 +28,9 @@
   }
   .priceplan input[type='radio'] {
     @apply appearance-none w-[18px] h-[18px] border-2 border-[#b89b51] rounded-full bg-white cursor-pointer align-middle;
+  }
+  .btn-gold{
+    @apply text-white bg-[#a28537] hover:bg-[#c7ad6b] text-base font-medium;
   }
   .priceplan input[type='radio']:checked {
     background-color: #b89b51 !important;

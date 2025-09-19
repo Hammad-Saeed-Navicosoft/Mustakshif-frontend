@@ -355,15 +355,6 @@ form.otherforms input {
   .headingline  hr {
     border-color: #172941;
   }
-  .home-header{
-    background-color: transparent;
-    z-index: 1;
-    border: 0px;
-  }
-  body.home-page .home-header{
-    position: absolute;
-    z-index: 1;
-  }
   .margin-right-desktop {
     margin-right: 120px;
   }
@@ -394,15 +385,6 @@ form.otherforms input {
   .margin-top-neg{
     margin-top: -125px;
   }
-}
-.home-header{
-  background-color: transparent;
-  z-index: 1;
-  border: 0px;
-}
-body.home-page .home-header{
-  position: absolute;
-  z-index: 1;
 }
 .table_scroll::-webkit-scrollbar {
   width: 10px;
@@ -520,11 +502,6 @@ button.slick-prev.slick-arrow {
   color: rgb(183 153 80) !important;
   font-size: 30px !important;
 }
-.sidebg{
-  background-image: url("/assets/images/sidebgimg.png");
-  background-size: cover;
-  background-position: center;
-}
 .mobileimgside {
   position: absolute;
   top: 160px;
@@ -604,10 +581,6 @@ button.slick-prev.slick-arrow {
   border: 1px solid #000;
 }
 @media screen and (max-width:768px){
-  /* .mobilebgheader{
-    background-color: #fff;
-    padding: 20px;
-  } */
   .mobilelogo-width{
     width: 100px;
   }
@@ -675,12 +648,7 @@ button.slick-prev.slick-arrow {
   .smallmobileblockitems{
     display: block;
   }
-  .div1, .div2, .div3, .div4, .div5, .div6{
-    padding: 10px 0px;
-  }
-  .tab-section .tablist{
-    overflow: auto;
-  }
+
   .profile-margin-negative {
     margin-top: -40px;
   }
@@ -748,20 +716,7 @@ h3.text-2xl.font-medium {
 .last-rowmblimg img{
   width: 33%;
 }
-.smallmobileblockitems .div2, .div3 {
-      display: inline-block;
-      width: 49%;
-      vertical-align: top;
-    }
-    .smallmobileblockitems .div2{
-      margin-right: 1%;;
-    }
-    .smallmobileblockitems .div1, .div2, .div3, .div4, .div5, .div6 {
-    padding: 3px 0px;
-}
-.tab-section nav{
-  background:none;
-}
+
 .slidingcards button.slick-next {
     position: absolute;
     right: 20px;
@@ -1974,23 +1929,6 @@ color: #000;
 .btnOnImg{
   font-size: 18px;
 }
-.mustakship-business-page .tab-section .tablist button{
-  font-size: 16px;
-}
-.mustakship-business-page .products-busi h3{
-  font-size: 15px;
-}
-.mustakship-business-page .nearbbbbb{
-  padding: 16px 24px;
-}
-.mustakship-business-page .smallmobileblockitems h3{
-  overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-line-clamp: 1;
--webkit-box-orient: vertical;
-}
 .mustakshif-product-page .phead{
   font-size: 28px;
 }
@@ -2003,29 +1941,6 @@ line-clamp: 1;
 .mustakshif-product-page .pgrd h3{
   font-size: 20px;
 }
-.mustakship-business-page .sidebg h3{
-  font-size: 32px;
-}
-.mustakship-business-page  .tab-section .tablist{
-    overflow: auto;
-  }
- .mustakship-business-page .mobileimgside {
-    position: absolute;
-    top: 100px;
-    left: 10px;
-    z-index: 0;
-}
-.mustakship-business-page .qrcodesec{
-  width: 128px;
-}
-.mustakship-business-page .img-sec-features {
-    width: 22px;
-    height: 22px;
-}
-.mustakship-business-page .imgsidebus {
-    padding: 18px 0px;
-} 
-
 .mustakshif-product-page .pgrd .imgconnn{
     height: 289px;
     max-height: 289px;
@@ -2107,22 +2022,6 @@ line-clamp: 1;
   line-clamp: 2;
   -webkit-box-orient: vertical; 
 }
-
-@media screen and (min-width:1840px) and (max-width:1900px){
-.main-banner-sec {
-    padding: 220px 10px;
-}
-}
-@media screen and (min-width:1720px) and (max-width:1840px){
-.main-banner-sec {
-    padding: 200px 10px;
-}
-}
-@media screen and (min-width:1536px) and (max-width:1720px){
-.main-banner-sec {
-    padding: 180px 10px;
-}
-}
 @media screen and (max-width:1536px){
   #hs-header-base a {
     font-size: 16px;
@@ -2180,36 +2079,8 @@ line-clamp: 1;
     padding-left: 20px;
   padding-right: 20px;
 }
-
-
-}
-@media screen and (min-width:1280px) and (max-width:1536px){
-  .home-header nav{
-  gap: 40px;
-}
-.home-page .main-banner-sec{
-  padding: 150px 10px;
-}
-.home-page .main-banner-sec .home-main-text-cont{
-  max-width:712px !important;
-}
-.counter-sec {
-    width: 62.5%;
-}
 }
 @media screen and (min-width:1024px) and (max-width:1400px){
-.mustakship-business-page .imgsidebus {
-    display: none;
-}
-.mustakship-business-page .businessdownbtn {
-    align-items: center!important;
-}
-.mustakship-business-page .sidebg {
-  height: 27.9%;
-}
-.mustakship-business-page .sidebg h3 {
-    font-size: 23px;
-}
 .textimgsec3x > div:nth-child(2) {
     margin: 0px 0px 30px 0px !important;
 }
@@ -2307,18 +2178,6 @@ line-clamp: 1;
 }
 .smallmobileblockitems{
   align-items: flex-start;
-}
-.mustakship-business-page .imgsidebus {
-    display: none;
-}
-.mustakship-business-page .businessdownbtn {
-    align-items: center!important;
-}
-.mustakship-business-page .sidebg {
-    height: 20%;
-}
-.mustakship-business-page .sidebg h3 {
-    font-size: 23px;
 }
 .textimgsec3x > div:nth-child(2) {
     margin: 0px auto 30px auto !important;
@@ -2424,9 +2283,6 @@ line-clamp: 1;
 }
 .btnOnImg{
   font-size: 12px;
-}
-.mustakship-business-page .tab-section .tablist button{
-  font-size: 20px;
 }
 .bg-btn-gold{
   padding: 10px 21px;

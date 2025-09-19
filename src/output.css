@@ -751,6 +751,8 @@ select {
 
 h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   font-family: BagossStandardTRIAL-Regular, sans-serif;
+  --tw-text-opacity: 1;
+  color: rgb(6 26 44 / var(--tw-text-opacity, 1));
 }
 
 .container {
@@ -901,6 +903,21 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   vertical-align: middle;
 }
 
+.btn-gold {
+  --tw-bg-opacity: 1;
+  background-color: rgb(162 133 55 / var(--tw-bg-opacity, 1));
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.btn-gold:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(199 173 107 / var(--tw-bg-opacity, 1));
+}
+
 .priceplan input[type='radio']:checked {
   background-color: #b89b51 !important;
   color: #fff !important;
@@ -971,6 +988,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   bottom: 0px;
 }
 
+.bottom-\[1px\] {
+  bottom: 1px;
+}
+
 .bottom-full {
   bottom: 100%;
 }
@@ -983,8 +1004,16 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   left: 0.5rem;
 }
 
+.left-\[10px\] {
+  left: 10px;
+}
+
 .left-\[15px\] {
   left: 15px;
+}
+
+.right-\[1px\] {
+  right: 1px;
 }
 
 .right-auto {
@@ -997,6 +1026,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
 .top-2 {
   top: 0.5rem;
+}
+
+.top-\[100px\] {
+  top: 100px;
 }
 
 .top-\[15px\] {
@@ -1017,6 +1050,14 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
 .top-full {
   top: 100%;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .z-10 {
@@ -1043,28 +1084,12 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   z-index: 1;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
-
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
-.col-start-3 {
-  grid-column-start: 3;
-}
-
-.row-span-2 {
-  grid-row: span 2 / span 2;
-}
-
-.row-start-2 {
-  grid-row-start: 2;
-}
-
 .float-right {
   float: right;
+}
+
+.m-0 {
+  margin: 0px;
 }
 
 .m-\[10px\] {
@@ -1150,6 +1175,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
 .-mb-10 {
   margin-bottom: -2.5rem;
+}
+
+.-mt-\[25px\] {
+  margin-top: -25px;
 }
 
 .mb-1 {
@@ -1250,6 +1279,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
 .mt-\[-35px\] {
   margin-top: -35px;
+}
+
+.mt-\[-40px\] {
+  margin-top: -40px;
 }
 
 .mt-\[20px\] {
@@ -1392,12 +1425,28 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   height: 2rem;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
+.h-\[22px\] {
+  height: 22px;
+}
+
+.h-\[250px\] {
+  height: 250px;
+}
+
 .h-\[28px\] {
   height: 28px;
 }
 
 .h-\[490px\] {
   height: 490px;
+}
+
+.h-\[72px\] {
+  height: 72px;
 }
 
 .h-auto {
@@ -1472,6 +1521,14 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   width: 100px;
 }
 
+.w-\[128px\] {
+  width: 128px;
+}
+
+.w-\[22px\] {
+  width: 22px;
+}
+
 .w-\[28px\] {
   width: 28px;
 }
@@ -1487,10 +1544,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
 .w-full {
   width: 100%;
-}
-
-.min-w-0 {
-  min-width: 0px;
 }
 
 .min-w-\[150px\] {
@@ -1539,10 +1592,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
 .flex-none {
   flex: none;
-}
-
-.shrink {
-  flex-shrink: 1;
 }
 
 .shrink-0 {
@@ -1622,14 +1671,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1867,6 +1908,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   border-radius: 50px;
 }
 
+.rounded-\[5px\] {
+  border-radius: 5px;
+}
+
 .rounded-\[6px\] {
   border-radius: 6px;
 }
@@ -1894,6 +1939,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+}
+
+.rounded-br-\[10px\] {
+  border-bottom-right-radius: 10px;
 }
 
 .border {
@@ -1945,6 +1994,11 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 .border-\[\#B89B51\] {
   --tw-border-opacity: 1;
   border-color: rgb(184 155 81 / var(--tw-border-opacity, 1));
+}
+
+.border-\[\#E0DFDC\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(224 223 220 / var(--tw-border-opacity, 1));
 }
 
 .border-\[\#EFF0F6\] {
@@ -2019,9 +2073,19 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   background-color: rgb(72 74 74 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#58BD51\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 189 81 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#B89B51\] {
   --tw-bg-opacity: 1;
   background-color: rgb(184 155 81 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#D2C092\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(210 192 146 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#E9E3CB\] {
@@ -2054,9 +2118,19 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   background-color: rgb(183 153 80 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#f1f1f1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 241 241 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#fdeeeb\] {
   --tw-bg-opacity: 1;
   background-color: rgb(253 238 235 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#ff0000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-black {
@@ -2129,6 +2203,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
 .bg-\[url\(\'\/assets\/images\/everybllockbg\.png\'\)\] {
   background-image: url('/assets/images/everybllockbg.png');
+}
+
+.bg-\[url\(\'\/assets\/images\/sidebgimg\.png\'\)\] {
+  background-image: url('/assets/images/sidebgimg.png');
 }
 
 .bg-gradient-to-r {
@@ -2564,6 +2642,14 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   font-size: 20px;
 }
 
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[26px\] {
+  font-size: 26px;
+}
+
 .text-\[28px\] {
   font-size: 28px;
 }
@@ -2732,6 +2818,11 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#172941\] {
+  --tw-text-opacity: 1;
+  color: rgb(23 41 65 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -3165,6 +3256,20 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   display: block;
 }
 
+.aria-selected\:border-b[aria-selected="true"] {
+  border-bottom-width: 1px;
+}
+
+.aria-selected\:border-b-\[\#B89B51\][aria-selected="true"] {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(184 155 81 / var(--tw-border-opacity, 1));
+}
+
+.aria-selected\:text-\[\#B89B51\][aria-selected="true"] {
+  --tw-text-opacity: 1;
+  color: rgb(184 155 81 / var(--tw-text-opacity, 1));
+}
+
 .hs-dropdown.open > .hs-dropdown-open\:-rotate-180 {
   --tw-rotate: -180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3338,6 +3443,11 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
     margin-right: auto;
   }
 
+  .md\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
   .md\:my-5 {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
@@ -3376,6 +3486,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
     margin-top: -140px;
   }
 
+  .md\:mt-\[-65\] {
+    margin-top: -65;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3390,6 +3504,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
   .md\:h-40 {
     height: 10rem;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:w-1\/3 {
@@ -3477,6 +3595,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
     justify-content: flex-start;
   }
 
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
   }
@@ -3552,6 +3674,11 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
     padding-right: 1rem;
   }
 
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -3583,6 +3710,14 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .md\:text-\[26px\] {
+    font-size: 26px;
   }
 
   .md\:text-\[28px\] {
@@ -3689,6 +3824,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 }
 
 @media (min-width: 1024px) {
+  .lg\:relative {
+    position: relative;
+  }
+
   .lg\:m-\[20px\] {
     margin: 20px;
   }
@@ -3721,6 +3860,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
     margin-top: -145px;
   }
 
+  .lg\:mt-\[-85px\] {
+    margin-top: -85px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3731,6 +3874,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-\[200px\] {
+    height: 200px;
   }
 
   .lg\:h-\[770px\] {
@@ -3797,6 +3944,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
     background-image: url('../assets/images/Wave.png');
   }
 
+  .lg\:p-5 {
+    padding: 1.25rem;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -3830,6 +3981,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
     line-height: 2.5rem;
   }
 
+  .lg\:text-\[18px\] {
+    font-size: 18px;
+  }
+
   .lg\:text-\[38px\] {
     font-size: 38px;
   }
@@ -3844,6 +3999,14 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 }
 
 @media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:h-\[28\%\] {
+    height: 28%;
+  }
+
   .xl\:h-auto {
     height: auto;
   }
@@ -3858,6 +4021,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
   .xl\:flex-row {
     flex-direction: row;
+  }
+
+  .xl\:items-end {
+    align-items: flex-end;
   }
 
   .xl\:gap-2 {
@@ -3886,6 +4053,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .xl\:text-\[32px\] {
+    font-size: 32px;
   }
 
   .xl\:text-\[65px\] {
