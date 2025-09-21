@@ -2809,8 +2809,9 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   font-style: italic;
 }
 
-.leading-\[55px\] {
-  line-height: 55px;
+.text-\[\#172941\] {
+  --tw-text-opacity: 1;
+  color: rgb(23 41 65 / var(--tw-text-opacity, 1));
 }
 
 .text-\[\#172941\] {
@@ -3438,14 +3439,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
 .hs-collapse-toggle.open.hs-collapse-open\:hidden {
   display: none;
-}
-
-[data-hs-tab].active.hs-tab-active\:font-semibold {
-  font-weight: 600;
-}
-
-[data-hs-tab].active .hs-tab-active\:font-semibold {
-  font-weight: 600;
 }
 
 .selected .hs-combo-box-selected\:block {
