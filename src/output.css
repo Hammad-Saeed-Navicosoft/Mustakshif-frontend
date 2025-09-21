@@ -992,6 +992,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   bottom: 1px;
 }
 
+.bottom-\[20\%\] {
+  bottom: 20%;
+}
+
 .bottom-full {
   bottom: 100%;
 }
@@ -1006,6 +1010,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
 .left-\[10px\] {
   left: 10px;
+}
+
+.left-\[15\%\] {
+  left: 15%;
 }
 
 .left-\[15px\] {
@@ -1050,10 +1058,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
 .top-full {
   top: 100%;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .z-0 {
@@ -1156,9 +1160,19 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   margin-bottom: 1.5rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .my-\[5\%\] {
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .\!me-1 {
@@ -1275,6 +1289,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-\[-25px\] {
+  margin-top: -25px;
 }
 
 .mt-\[-35px\] {
@@ -1429,6 +1447,14 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   height: 100px;
 }
 
+.h-\[180px\] {
+  height: 180px;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
 .h-\[22px\] {
   height: 22px;
 }
@@ -1445,6 +1471,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   height: 490px;
 }
 
+.h-\[600px\] {
+  height: 600px;
+}
+
 .h-\[72px\] {
   height: 72px;
 }
@@ -1457,8 +1487,20 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   height: 100%;
 }
 
+.h-\[210px\] {
+  height: 210px;
+}
+
+.h-\[289px\] {
+  height: 289px;
+}
+
 .max-h-\[75vh\] {
   max-height: 75vh;
+}
+
+.max-h-\[289px\] {
+  max-height: 289px;
 }
 
 .\!w-2\.5 {
@@ -1533,6 +1575,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   width: 28px;
 }
 
+.w-\[70\%\] {
+  width: 70%;
+}
+
 .w-\[calc\(100\%-2rem\)\] {
   width: calc(100% - 2rem);
 }
@@ -1544,6 +1590,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[289px\] {
+  width: 289px;
 }
 
 .min-w-\[150px\] {
@@ -1936,6 +1986,16 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   border-radius: 0.75rem;
 }
 
+.rounded-l-\[10px\] {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.rounded-r-none {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -2078,6 +2138,11 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   background-color: rgb(88 189 81 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#B85151\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(184 81 81 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#B89B51\] {
   --tw-bg-opacity: 1;
   background-color: rgb(184 155 81 / var(--tw-bg-opacity, 1));
@@ -2116,6 +2181,11 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 .bg-\[\#b79950\] {
   --tw-bg-opacity: 1;
   background-color: rgb(183 153 80 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#f1ebdc\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 235 220 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#f1f1f1\] {
@@ -2183,6 +2253,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#e0dfdc33\] {
+  background-color: #e0dfdc33;
 }
 
 .bg-opacity-50 {
@@ -2526,6 +2600,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   padding-right: 2.5rem;
 }
 
+.pr-\[30px\] {
+  padding-right: 30px;
+}
+
 .ps-7 {
   padding-inline-start: 1.75rem;
 }
@@ -2735,6 +2813,11 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   line-height: 55px;
 }
 
+.text-\[\#172941\] {
+  --tw-text-opacity: 1;
+  color: rgb(23 41 65 / var(--tw-text-opacity, 1));
+}
+
 .text-\[\#183B56\] {
   --tw-text-opacity: 1;
   color: rgb(24 59 86 / var(--tw-text-opacity, 1));
@@ -2818,11 +2901,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#172941\] {
-  --tw-text-opacity: 1;
-  color: rgb(23 41 65 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -3265,6 +3343,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
   border-bottom-color: rgb(184 155 81 / var(--tw-border-opacity, 1));
 }
 
+.aria-selected\:font-semibold[aria-selected="true"] {
+  font-weight: 600;
+}
+
 .aria-selected\:text-\[\#B89B51\][aria-selected="true"] {
   --tw-text-opacity: 1;
   color: rgb(184 155 81 / var(--tw-text-opacity, 1));
@@ -3408,6 +3490,14 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 }
 
 @media (min-width: 768px) {
+  .md\:bottom-\[100px\] {
+    bottom: 100px;
+  }
+
+  .md\:left-\[12\%\] {
+    left: 12%;
+  }
+
   .md\:start-full {
     inset-inline-start: 100%;
   }
@@ -3458,6 +3548,11 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
     margin-bottom: 30px;
   }
 
+  .md\:my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .md\:mb-12 {
     margin-bottom: 3rem;
   }
@@ -3482,8 +3577,16 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
     margin-top: 0.5rem;
   }
 
+  .md\:mt-\[-125px\] {
+    margin-top: -125px;
+  }
+
   .md\:mt-\[-140px\] {
     margin-top: -140px;
+  }
+
+  .md\:mt-\[-20px\] {
+    margin-top: -20px;
   }
 
   .md\:mt-\[-65\] {
@@ -3504,6 +3607,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
   .md\:h-40 {
     height: 10rem;
+  }
+
+  .md\:h-\[140px\] {
+    height: 140px;
   }
 
   .md\:h-auto {
@@ -3569,6 +3676,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -3860,6 +3971,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
     margin-top: -145px;
   }
 
+  .lg\:mt-\[-25px\] {
+    margin-top: -25px;
+  }
+
   .lg\:mt-\[-85px\] {
     margin-top: -85px;
   }
@@ -3906,6 +4021,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -4017,6 +4136,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
 
   .xl\:max-w-\[712px\] {
     max-width: 712px;
+  }
+
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .xl\:flex-row {
