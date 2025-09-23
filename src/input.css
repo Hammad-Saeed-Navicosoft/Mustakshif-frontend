@@ -15,13 +15,23 @@
   h1, h2, h3, h4, h5, h6, p, a, button, span, input, label, li, div {
     @apply font-bagoss text-[#061a2c];
   }
+  input:focus,
+  select:focus,
+  textarea:focus,
+  [type="checkbox"]:focus,
+  [type="radio"]:focus {
+    @apply outline-none ring-0 shadow-none;
+  }
+  select option:checked {
+    @apply bg-[#b79950] text-white;
+  }
 }
 @layer components {
   .sec-heading {
     @apply font-medium text-[32px];
   }
   .sec-text {
-    @apply text-[18px] lg:text-[22px] font-medium text-[#606060];
+    @apply text-lg lg:text-[22px] font-medium text-[#606060];
   }
   .container{
     @apply max-w-[1440px];
@@ -58,5 +68,22 @@
     top: -30px;
     left: 90%;
   }
+  .no-focus:focus {
+    @apply outline-none ring-0 shadow-none;
+  }
+  .form-input:focus + .form-label,
+  .form-input:not(:placeholder-shown) + .form-label {
+    @apply -top-2 text-sm text-black;
+  }
+ [type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus {
+  border-color: #b79950;
+  background-color: #b79950;
+}
+.form-input:focus {
+    border: 1px solid #000000 !important;
+    border-color: #000 !important;
+    --tw-ring-shadow: none;
+    box-shadow: none;
+}
 }
 

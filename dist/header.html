@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shariah Board</title>
+    <title>Set Password Mustakshif</title>
     <link href="/src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   </head>
-  <body class="shariah-board">
+  <body class="home-page">
 
     <!-- ========== HEADER ========== -->
     <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full border-0 border-gray-200 home-header bg-[#0d1e38] md:bg-transparent relative">
@@ -147,298 +146,125 @@
     </header>
     <!-- ========== END HEADER ========== -->
 
-    <!-- Main Page -->
-    <div class="main-banner-secx">
-      <img src="../assets/images/shariah-main-banner.png" alt="">
+
+    <div class="relative overflow-hidden dashboard-container">
+
+      <div class="relative topmarginseclogin py-6 bg-[#F7F5ED]">
+        <div class="container mx-auto px-4 py-6 my-6">
+          <div class="md-mt-6 pt-4 mb-1 w-full" style="background-color: #fff;">
+
+            <!-- Contact Us -->
+            <div class="px-4 py-10 sm:px-6 lg:px-8 mx-auto">
+            <div class="mx-auto">
+
+                <div class="grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
+                <!-- Card -->
+                <div class="flex flex-col margin-right-desktop py-4">
+                    <div>
+                        <h3 class="text-3xl font-medium">Set password</h3>
+                        <p class="py-2 text-base">Your previous password has been reseted. Please set a new password for your account.</p> 
+                    </div>
+
+                    <form class="login-signupformset">
+                      <div class="grid gap-y-4">
+
+                          <!-- Password Input with Toggle -->
+                          <div class="form-group">
+                            <input
+                              type="password"
+                              id="createpassword"
+                              name="createpassword"
+                              class="form-input "
+                              placeholder=" "
+                            />
+                            <label for="createpassword" class="form-label">Create Password</label>
+                            <button type="button" class="password-toggle" onclick="togglePassword()">
+                              <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 
+                                  9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                              </svg>
+                            </button>
+                          </div>
+
+                          <!-- Password Input with Toggle -->
+                          <div class="form-group">
+                            <input
+                              type="password"
+                              id="re-password"
+                              name="re-password"
+                              class="form-input"
+                              placeholder=" "
+                            />
+                            <label for="re-password" class="form-label">Re-enter Password</label>
+                            <button type="button" class="password-toggle" onclick="togglePassword()">
+                              <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 
+                                  9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                              </svg>
+                            </button>
+                          </div>
+
+                        <a onclick="openformModal()" class="button-bg-gold w-full py-3 px-4 my-4 inline-flex justify-center items-center gap-x-2 text-base font-medium rounded-lg text-white  disabled:pointer-events-none">Set Password</a>
+                      </div>
+                    </form>
+                    <!-- End Form -->
+
+
+                    <div class="mt-5 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
+                        <a class="w-full sm:w-auto py-3 inline-flex items-center gap-x-2 text-base font-medium text-black" href="login.html">
+                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        Back to Login
+                        </a>
+                    </div>
+                    
+                </div>
+                <!-- End Card -->
+
+                <div class="divide-y divide-gray-200">
+                  <div>
+                    <img src="/assets/images/set-pword-img.png" alt="" srcset="">
+                  </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <!-- End Contact Us -->
+
+          </div>
+        </div>
+
+        <!-- Form Modal -->
+          <div id="form-modal" class="flex lg:items-center items-start justify-center py-6 px-4">
+            <div class="rounded-lg border px-6 py-6 my-6 text-center flex items-center justify-center modal-inner">
+              <div class="py-6" style="max-width: 512px; width:100%;">
+                <div class="text-center flex justify-center my-4">
+                  <img src="/assets/images/checkedpassword-img.png" alt="" srcset="">
+                </div>
+
+                <div class="text-center">
+                  <h3 class="text-2xl font-medium">Password Changed!</h3>
+                  <p class="py-4 text-sm">Your password has been Changed Successfull.</p> 
+                </div>
+
+                <div class="flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
+                    <a href="login.html" class="button-bg-gold w-full py-3 px-6 my-4 inline-flex justify-center items-center gap-x-2 text-base font-medium rounded-lg text-white  disabled:pointer-events-none">Back to Login</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+      </div>
+
     </div>
-
-    <div class="shariah-full-width-text-sec bg-[#F7F5ED]">
-      <div class="container mx-auto text-center px-6 py-12 lg:py-16">
-        <h3 class="sec-heading">Shariah Board</h3>
-        <p class="text-lg font-medium">Mustakshif not only explores and empowers Muslims to make informed choices about their dietary preferences but also fosters a greater understanding and appreciation of the significance of halal principles. So we, with our groundbreaking Halal Scanner app, provide a trusted resource for Muslims worldwide to navigate the complexities of halal and haram ingredients to keep their religious commitments unwavering.</p>
-        <br>
-        <p class="text-lg font-medium">To stay true to the trust that the Muslim community places in our company and reinforce our app and website's absolute adherence to Islamic Shariah, we have a Shariah Board comprising internationally-renowned scholars. Mufti Abdullah Patel Sahib is the chairman of our Shariah Board.</p>
-        <br>
-        <p class="text-lg font-medium">Our distinguished panel of ULAMA-E-KARAM and ISLAMIC SCHOLARS diligently serves as our guiding light in upholding the principles of Islamic dietary laws and ensuring the purity and permissibility of the ingredients in the millions of products. Further, our Shariah committee undertakes to meticulously examine the source and assess the permissibility status of every ingredient with dedication and a deep understanding of Islamic jurisprudence.</p>
-        <br>
-        <p class="text-lg font-medium">Further, our Shariah committee undertakes to meticulously examine the source and assess the permissibility status of every ingredient with dedication and a deep understanding of Islamic jurisprudence.</p>
-
-        <div class="text-center mx-auto flex justify-center my-6">
-          <img src="../assets/images/Shariah-first-sec-img1.png" alt="">
-        </div>
-        <p class="text-lg font-medium"> Most of our members have Takhasus in Halal (Halal specialization) and are serving to uphold the sanctity of Halal in the USA, Australia, Canada, the UK, Europe, and other countries. So we are truly privileged to work alongside such distinguished scholars in our efforts to ensure "Halal For All" and contribute to the spiritual well-being and peace of mind of countless individuals, allowing them to consume what is clean and permissible according to the highest standards of Islamic law.</p>
-        <br>
-        <p class="text-lg font-medium">Mustakshif data is increasing exponentially, given the ever-evolving landscape of food production & consumption and frequent new product launches. However, their diligent scrutiny, alongside their collective expertise, knowledge, & unwavering commitment, are instrumental in ensuring the utmost accuracy & reliability of our app. Before verifying the ingredients/ products as Halal/ Haram/ Mushbooh, our panel analyze all the source, manufacturing, & packaging.</p>
-        <br>
-        <p class="text-lg font-medium">Only after the board approves the "Verified Halal" status, we tag the product as Halal-Certified. Still, if a consumer reaches out to us for the inaccurate status of an ingredient or product, our Shariah Board double-checks the permissibility status in light of Islamic laws.</p>
-        <br>
-        <p class="text-lg font-medium">We extend our heartfelt gratitude and utmost respect to each member for their invaluable contributions to Mustakshif and the broader Muslim community. May Allah (SWT) bless each member of this esteemed panel abundantly, showering His mercy and granting them continued wisdom in their noble pursuit. We are honored and humbled to have these scholars' presence, wisdom, guidance, dedication, and support in our efforts to build a better future for the global Muslim community.</p>
-      </div>
-    </div>
-
-    <div class="text-image-sidebysidesecx textimgsec1x">
-      <div class="container mx-auto flex flex-col lg:flex-row align-middle justify-center gap-5 px-6 py-12 lg:py-16">
-        <div class="imgside lg:w-1/2 flex align-middle justify-center items-center">
-          <img src="../assets/images/shariah-text-img-sec1-img.png" alt="">
-        </div>
-        <div class="textside lg:w-1/2 flex flex-col align-middle justify-center pt-6 lg:pt-0">
-          <h3 class="text-[32px] font-medium mb-4">Mufti Abdullah Patel Sahib</h3>
-          <p class="text-lg font-medium">Mufti Abdullah completed his full secular education and Hifz-ul-Qur'an at the local Madrasah before 1985. His 'Aalim Faadhil Course first year at the local Madrasah under Sheikh Moulana Aiyyub Surty Sahib (DB) follows the course completion at Darul-Uloom Azaadville South Africa by 1992.</p>
-          <br>
-          <p class="text-lg font-medium">Mufti Abdullah further embarked on a remarkable journey to Darul Uloom Deoband, India, to acquire comprehensive knowledge of Islamic jurisprudence. He repeated the final year and made his way into Iftaa (Higher Islamic Jurisprudence) and completed Iftaa the following year.</p>
-          <br>
-          <p class="text-lg font-medium">Mufti Abdullah has Mufti Nizaamuddin Sahib (R.A), Mufti Zafeeruddin Sb, Mufti Habeebur-Rahman (Sb), Mufti Kafeelur-Rahman Sb. (Damat Barakaatuhum) as his teachers. Currently, he is serving as:</p>
-          <h4 class="text-[25px] font-medium my-3 mx-0">Currently, he is serving as:</h4>
-          <ul class="golden-tick-list">
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">Principal of Gloucestershire Islamic Secondary School for Girls.</p>
-            </li>
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">The Editor of the 'Light of Islam' monthly community newsletter.</p>
-            </li>
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">Director of Gloucestershire Islamic Academy.
-               </p>
-            </li>
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">Teaches Arabic/Aalim courses (1-3 years) and general Deeniyat classes at Madrasah Noor-ul-Islam – (Local Madrasah.)</p>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="text-image-sidebysidesecx textimgsec2x px-6 py-12 lg:py-16 bg-[#F7F5ED]">
-      <div class="container mx-auto flex flex-col-reverse lg:flex-row align-middle justify-center items-center gap-5">
-        <div class="textside lg:w-1/2">
-          <h3 class="text-[32px] font-medium mb-4">Mufti Faisal al Mahmudi</h3>
-          <p class="text-lg font-medium">Shaykh Mufti Faisal Al-Mahmudi, originally from Pakistan, embarked on a journey to pursue higher education in Accounting and Finance. After completing his Bachelor's and Master's degrees at the University of Regina, later his passion convinced him to move to South Africa to study Islamic studies at Madrasah In'aamiyyah. Over six years, he excelled in his Alim course, specializing in Usool al-Fiqh, Fiqh, Usool al-Hadeeth, Hadeeth (authenticated ijazah in Sihah Sittah), and Tafseer.</p>
-          <br>
-          <p class="text-lg font-medium">Notably, he stands among a select few who have undertaken a comprehensive study of Sahih al Bukhari, cover to cover, under Mufti Ebrahim Desai from <a href="https://www.askimam.org" class="text-[#b79950]">https://www.askimam.org</a>. Following his Alim course, Shaykh Faisal sought further mentorship from Mufti Ebrahim Desai, focusing on Iftaa (issuing juristic verdicts).</p>
-          <br>
-          <p class="text-lg font-medium">In 2012, he successfully completed a two-year Iftaa program, obtaining a Master's degree in Islamic Theology and a Master's Diploma with a specialization in Islamic Finance. He served as an Administrator under Mufti Ebrahim Desai's guidance for Darul Ifta' al Mahmudiya for two years and headed the Computer Department for four years.
-          </p>
-        </div>
-        <div class="imgside lg:w-1/2 flex align-middle justify-center">
-          <img src="../assets/images/shariah-text-img-sec2-img.png" alt="">
-        </div>
-      </div>
-      <div class="container mx-auto flex flex-col lg:flex-row gap-5 mt-3">
-        <div class="lg:w-1/2">
-          <h4 class="text-[25px] font-medium my-3 mx-0">Since then, Shaykh Faisal has established and managed:</h4>
-          <ol class="ordered-list list-decimal pl-5">
-            <li class="flex gap-5 items-center mb-3 list-item list-outside">
-              <p class="text-lg font-medium">Darul Iftaa Canada [Fatawa, Mediation, Counseling] 
-                <a href="https://www.fatwa.ca" class="text-[#b79950]"> (https://www.fatwa.ca)</a>
-              </p>
-            </li>
-            <br>
-            <br class="hidden md:block">
-            <li class="flex gap-5 items-center mb-3 list-item list-outside">
-              <p class="text-lg font-medium">ilmHub Center [Qur'an School(s), Islamic Studies Courses, Online Hadeeth and Fiqh Courses etc.]<br> 
-              <a href="https://www.ilmhub.com" class="text-[#b79950]">(https://www.ilmhub.com)</a>
-              </p>
-            </li>
-            <br>
-            <br class="hidden md:block">
-            <li class="flex gap-5 items-center mb-3 list-item list-outside">
-              <p class="text-lg font-medium">AskHalal [Halal Foods & Ingredients] <br>
-              <a href="https://www.askhalal.ca" class="text-[#b79950]">(https://www.askhalal.ca)</a>
-              </p>
-            </li>
-          </ol>
-        </div>
-
-        <div class="lg:w-1/2">
-          <h4 class="text-[25px] font-medium my-3 mx-0">Shaykh Faisal also serves as:</h4>
-          <ul class="golden-tick-list">
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">CEO/Principal for all ilmHub activities.</p>
-            </li>
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">Ameer for Darul Qadhaa Alberta.</p>
-            </li>
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">Shariah Advisory for Islamic Medical Forum (IIMF).</p>
-            </li>
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">Shariah Advisory for Mustakshif (Explore Halal).</p>
-            </li>
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">Executive Board Member for CIFB (Canadian Islamic Finance Board).</p>
-            </li>
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">Regular teacher for Tajweed Sciences under ilmHub using QSI's Qur'an Learning Management System.</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-image-sidebysidesecx textimgsec3x px-6 py-12 lg:pt-16 lg:pb-16 xl:pt-6">
-      <div class="container mx-auto flex flex-col lg:flex-row align-middle justify-center items-center">
-        <img src="../assets/images/shariah-text-img-sec3-img-mbl.png" alt="" class="md:hidden mt-[30px]">
-        <div class="imgside lg:w-1/2 flex align-middle justify-center">
-          <img src="../assets/images/shariah-text-img-sec3-img.png" alt="" class="hidden md:block w-full">
-        </div>
-        <div class="textside lg:w-1/2 mt-6 lg:mt-0">
-          <h3 class="text-[32px] font-medium mb-4">Dr. Mufti Abdul Karim Usman (Pakistan)</h3>
-          <p class="text-lg font-medium">Mufti Abdul Karim Usman is an esteemed scholar with a robust background in Islamic jurisprudence and education. Holding a Ph.D. in Shariah from the International Islamic University, Islamabad, with a focus on "Transmutation: Nature, Rules, and its Application on the Shariah Rulings," written in Arabic, he demonstrates a profound understanding of Islamic law. His educational journey includes a Master of Arts in Islamic Studies and Islamic Jurisprudence, a Bachelor of Arts in Journalism/Education, and completion of the Mufti Course (Specialization in Islamic Fiqh and Fatwa) at JAMIA DARUL ULOOM, Karachi, which granted him a Post Graduate Degree of Advanced Specialization in Islamic Jurisprudence and the Issuance of Legal Opinion (Fatwas).</p>
-          <br>
-          <p class="text-lg font-medium">Dr. Usman also holds the Shahadah al-‘Alamiyyah fi al-Uloom al-Islamiyyah wa al-‘Arabiyyah, an international degree in Arabic and Islamic Sciences, granted upon completion of the classical curriculum of Islamic learning known as the Dars-e-Nizami from JAMIA ASHRAFIA, Lahore.</p>
-          <br>
-          <p class="text-lg font-medium">With over 20 years of teaching experience, he has served in various capacities at the International Islamic University, Islamabad, evolving from a Research Investigator to an Assistant Professor. Dr. Usman has actively participated in international conferences and workshops, presenting thought-provoking papers on diverse topics such as "Fatwa as a Non-State Legal System" and "Halal Food: Principles, Shariah Standards and Contemporary Issues."</p>
-    
-        </div>
-      </div>
-      <div class="container mx-auto text-left lg:text-center pt-4">
-        <p class="text-lg font-medium">He has authored multiple articles and papers published in reputable journals, contributing significantly to the field. Moreover, Dr. Usman has supervised several Ph.D. and MS/LLM theses, fostering the next generation of scholars in the realm of Islamic jurisprudence. Beyond academia, he has delivered lectures on Islamic law and social responsibilities, engaging diverse audiences. His involvement in Shariah advisory roles for Islamic financial institutions and memberships in organizations like the National Commission on the Status of Women in Pakistan exemplifies his commitment to both academia and social impact.</p>
-      </div>
-    </div>
-
-    <div class="text-image-sidebysidesecx textimgsec4x bg-[#F7F5ED] px-6 py-12 lg:py-16">
-      <div class="container mx-auto flex flex-col-reverse lg:flex-row align-middle justify-center items-center gap-5">
-        <div class="textside lg:w-1/2">
-          <h3 class="text-[32px] font-medium mb-4">Molana Eshfaq Akbar</h3>
-          <p class="text-lg font-medium">Molana Eshfaq Akbar was Born in Brisbane to one of the oldest Muslim families in Queensland and studied for 6 years in Darul Uloom Karachi and 2 years in Labasa, Fiji. He has a passion for instilling a traditional Islamic identity in future generations, especially the youth.</p>
-          <br>
-          <h4 class="text-[25px] font-medium my-3 mx-0">Shaykh Faisal also serves as:</h4>
-          <ul class="golden-tick-list">
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">Running his own community centre and Madrasah in Lakemba.</p>
-            </li>
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">Well known for answering Islamic queries, especially in regard to food products.</p>
-            </li>
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">He has been the Imam of Mackay masjid for 2 years and Imam in Lakemba, Sydney, since 2019.</p>
-            </li> 
-          </ul>
-        </div>
-        <div class="imgside lg:w-1/2 flex align-middle justify-center">
-          <img src="../assets/images/shariah-text-img-sec4-img.png" alt="">
-        </div>
-      </div>
-    </div>
-      
-    <div class="text-image-sidebysidesecx textimgsec5x px-6 py-12 lg:py-16 xl:py-14 2xl:py-4">
-      <div class="container mx-auto flex flex-col lg:flex-row align-middle justify-center items-center">
-        <img src="../assets/images/shariah-text-img-sec5-img-mbl.png" alt="" class="lg:hidden">
-        <div class="imgside lg:w-1/2 flex align-middle justify-center">
-          <img src="../assets/images/shariah-text-img-sec5-img.png" alt="" class="hidden lg:block">
-        </div>
-        <div class="textside lg:w-1/2 mt-6 lg:mt-0">
-          <h3 class="text-[32px] font-medium mb-4">Mufti Abdul Kareem (Australia)</h3>
-          <p class="text-lg font-medium">Mufti Abdul Kareem, based in Sydney, Australia, is an Imam, scholar, and teacher who has made contributions to the local Muslim community. With a passion for Islamic knowledge and a strong commitment to serving others, he is part of the religious landscape of Sydney.</p>
-          <br>
-          <p class="text-lg font-medium">Mufti Abdul Kareem, based in Sydney, Australia, is an Imam, scholar, and teacher who has made contributions to the local Muslim community. With a passion for Islamic knowledge and a strong commitment to serving others, he is part of the religious landscape of Sydney.</p>
-          <br>
-          <p class="text-lg font-medium">Originally from Fiji & raised in Sydney, Mufti Abdul Kareem embarked on a lifelong pursuit of knowledge from an early age.</p>
-          <br>
-          <p class="text-lg font-medium">At Nadwatul Ulama in Lucknow, India, Mufti Abdul Kareem focused on the memorization of the Quran, laying a strong foundation for his spiritual journey. He then continued his studies at Al Jameatul Islamia Fiji, deepening his understanding of Islamic theology, jurisprudence, and Prophetic traditions under the guidance of esteemed scholars.</p>
-          <br>
-          <p class="text-lg font-medium">Seeking advanced knowledge, Mufti Abdul Kareem pursued further studies at Darul Uloom Deoband, renowned as one of the world's oldest and most prestigious Islamic seminaries. Returning to Sydney, Mufti Abdul Kareem dedicated himself to serving the Muslim community as an Imam.</p>
-          <ul class="golden-tick-list mt-3">
-             <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">He leads prayers, delivers sermons, & offers valuable spiritual guidance to the community.</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-image-sidebysidesecx textimgsec6x bg-[#F7F5ED] px-6 py-12 lg:py-16">
-      <div class="container mx-auto flex flex-col-reverse lg:flex-row align-middle justify-center items-center gap-5">
-        <div class="textside lg:w-1/2 flex flex-col align-middle justify-center">
-          <h3 class="text-[32px] font-medium mb-4">Mufti Umar Syed</h3>
-          <p class="text-lg font-medium">In addition to his role as an Imam, Mufti Abdul Kareem is a teacher at Daar Ibn Umar, an esteemed Islamic educational institution in Sydney.</p>
-          <br>
-          <br><p class="text-lg font-medium">Mufti Umar Syed completed Hifz-ul-Qur'an in 2007 from Jamiyah Quraniyah Karachi, Pakistan. He has also completed his 'Ālimiyyah Studies (Islamic Sciences) from Darul Ulum College of Victoria in Melbourne, Australia.</p>
-          <br>
-          <br><p class="text-lg font-medium">He travelled to Pakistan to complete specialisation in Ifta from Mahad Al Faqeer Al Islami. In addition, Mufti Umar has completed programming through the University of Michigan, USA, and done a Bachelor of Computer Science from La Trobe University, Victoria.</p>
-          <br>
-          <ul class="golden-tick-list">
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">Currently, he is serving as:</p>
-            </li>
-            <li class="flex gap-5 items-center mb-3">
-              <span class="bg-[#eae3ce] rounded-full w-[44px] h-[44px] inline-flex justify-center items-center shrink-0">
-                <img src="../assets/images/shariah-tick.png" alt="" class="w-[24px] h-[24px] max-w-[24px]">
-              </span>
-               <p class="text-[#A28537] text-lg font-medium">Director for Darul Hikmah, Australia.</p>
-            </li>
-          </ul>
-        </div>
-        <div class="imgside lg:w-1/2 flex align-middle justify-center">
-          <img src="../assets/images/shariah-text-img-sec6-img.png" alt="">
-        </div>
-      </div>
-    </div>
-
-    <div class="text-image-sidebysidesecx textimgsec7x px-6 py-12 lg:py-16 xl:py-14 2xl:py-4">
-      <div class="container mx-auto flex flex-col lg:flex-row align-middle justify-center items-center">
-        <img src="../assets/images/shariah-text-img-sec7-img-mbl.png" alt="" class="md:hidden">
-        <div class="imgside lg:w-1/2 flex align-middle justify-center mt-6 lg:mt-0">
-          <img src="../assets/images/shariah-text-img-sec7-img.png" alt="" class="hidden md:block">
-        </div>
-        <div class="textside lg:w-1/2">
-          <h3 class="text-[32px] font-medium mb-4">Mufti Muhammad Saad Qazi</h3>
-          <p class="text-lg font-medium">Since 2018, Mufti Umar has been involved in research work for Australia Halal Research Organisation.</p>
-          <br>
-          <p class="text-lg font-medium">Sheikh Qazi Saad began studying the sacred Islamic sciences at a young age. He completed Hifz-ul-Qur'an at the age of 12. After, he studied Islamic education in various subjects such as Arabic, Tafsir, Hadith, and Fiqh (Islamic Jurisprudence) for the next 6 years at Darul Ulum College of Victoria.</p>
-          <br>
-          <p class="text-lg font-medium">To acquire a wealth of Islamic expertise, he pursued further Islamic studies at world-renowned institutes in Pakistan, including Darul Uloom Karachi. He also has one of the famed and well-recognized scholars, Mufti Taqi Uthmani (DB), as his teacher.</p>
-          <br>
-          <p class="text-lg font-medium">Sheikh completed his Mufti course (with a specialisation in Hanafi Jurisprudence) in Pakistan. In addition, he got a firm grounding in Fiqhi matters found within the food industry. Further, Mufti Muhammad Saad Qazi also holds a Bachelor of Islamic studies from Charles Sturt University in Australia.</p>
-        </div>
-      </div>
-    </div>
+   
 
     <footer class="bg-[#061A2C] text-white pt-[40px] pb-[10px] px-4 md:px-2">
       <div class="container mx-auto py-4">
@@ -604,7 +430,7 @@
       </script>
 
         </div>
-            <p class="my-4 text-white text-lg text-center">2025 © Mustakshif. Design & Develop by Navicosoft</p>
+        <p class="my-4 text-white text-lg text-center">2025 © Mustakshif. Design & Develop by Navicosoft</p>
       </div>
     </footer>
 
