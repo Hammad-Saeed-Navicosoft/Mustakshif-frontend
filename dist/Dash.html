@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
+    <title>Dashboard</title>
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -17,16 +17,16 @@
 <script src="//unpkg.com/alpinejs" defer></script>
 
   </head>
-  <body class="profile-page">
+  <body class="dashboard-page">
 
 <!-- Include Alpine.js -->
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
 <!-- Mobile Header with Sidebar -->
-<div x-data="{ open: false }" class="md:hidden z-50 relative">
+<div x-data="{ open: false }" class="lg:hidden z-50 relative">
 
   <!-- TOP BAR (Always Visible) -->
-  <div class="flex justify-between items-center px-4 py-3" style="background-color: #0D1E38;">
+  <div class="flex justify-between items-center px-4 py-3 bg-[#0D1E38]">
     <!-- Hamburger Button -->
     <button @click="open = true">
       <svg width="34" height="19" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,7 +116,7 @@
 
 
 
-<section class="lg:bg-[url('../assets/images/Group_1000004942.png')] bg-no-repeat bg-cover">
+    <section class="lg:bg-[url('../assets/images/Group_1000004942.png')] bg-no-repeat bg-cover">
       <div class="container mx-auto flex gap-0">
 
 
@@ -247,60 +247,140 @@
 
 
 
-<div class="container mx-auto px-4 py-3">
-  <div class="flex flex-col md:flex-row items-start gap-8 profilecol">
+<h2 class="text-[26px] mb-5">My Business</h2>
 
-    <!-- Profile Image Section -->
-    <div class="w-full md:w-[30%] flex justify-center ">
-      <label class="relative cursor-pointer group w-40">
-        <img src="/assets/images/addimageprofile.png" alt="Profile"
-             class="rounded-full w-32 h-32 md:w-40 md:h-40 object-cover mx-auto md:mx-0" />
+<div class="border rounded-md p-2 space-y-4 bg-white">
 
-        <div class="absolute inset-0 bg-black bg-opacity-60 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-          <div class="text-white text-center text-sm">
-            <svg class="w-6 h-6 mx-auto mb-1" fill="white" viewBox="0 0 24 24">
-              <path d="M12 5a7 7 0 100 14 7 7 0 000-14zM2 12a10 10 0 1117.32 6.906l4.387 4.387-1.414 1.414-4.387-4.387A10 10 0 012 12z"/>
-            </svg>
-            Click to change photo
-          </div>
-        </div>
-        <input type="file" class="hidden" />
-      </label>
+  <div class="flex flex-col lg:flex-row gap-5 border-b p-5 items-center justify-between mybusinesscards">
+    <div class="flex gap-4 flex-col md:flex-row lg:max-w-[55%]">
+      <!-- Image Placeholder -->
+      <div class="w-[120px] h-[120px] rounded text-center mx-auto bg-[#D9D9D9]" ></div>
+
+      <!-- Text Content -->
+      <div>
+        <p class="font-medium cardh text-[26px] leading-9">Display name Business on your</p>
+        <p class="text-lg">Display name Business on your Display name <br>Business on your</p>
+      </div>
     </div>
 
-    <!-- Form Section -->
-    <div class="w-full md:w-1/2 space-y-5">
-      <div>
-        <label class="block mb-1 font-medium text-[#5A7184] text-lg">First Name*</label>
-        <input type="text" placeholder="First Name"
-               class="w-full border border-gray-300 rounded-lg px-5 py-4 outline-none placeholder-[#959EAD]" />
-      </div>
-
-      <div>
-        <label class="block mb-1 font-medium text-[#5A7184] text-lg">Last Name*</label>
-        <input type="text" placeholder="Last Name"
-               class="w-full border border-gray-300 rounded-lg px-5 py-4 outline-none placeholder-[#959EAD]" />
-      </div>
-
-      <div>
-        <label class="block mb-1 font-medium text-[#5A7184] text-lg">Email*</label>
-        <input type="email" placeholder="you@example.com"
-               class="w-full border border-gray-300 rounded-lg px-5 py-4 outline-none placeholder-[#959EAD]" />
-      </div>
-
-      <div>
-        <label class="block mb-1 font-medium text-[#5A7184] text-lg">Phone Number*</label>
-        <input type="text" placeholder="009078601"
-               class="w-full border border-gray-300 rounded-lg px-5 py-4 outline-none placeholder-[#959EAD]" />
-      </div>
-
-      <div class="pt-4 text-center">
-        <button class="text-white rounded-full bg-[#B89B51] py-[10px] px-[60px] mb-14">
-          Save Change
-        </button>
-      </div>
+    <!-- Buttons -->
+    <div class="flex gap-2">
+      <button class="flex items-center text-white text-lg gap-2 bg-[#B89B51] px-4 lg:px-[10px] py-[10px] xl:px-[30px] ">
+        
+<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="29" height="29" fill="url(#pattern0_13931_1132)"/>
+<defs>
+<pattern id="pattern0_13931_1132" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_1132" transform="scale(0.01)"/>
+</pattern>
+<image id="image0_13931_1132" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACnUlEQVR4nO3dT8gUdRzH8VELCSECE0Uk6gHDStI6qeCl7nWQp0t4qiQ8eukaQRSB4B8SukQnA0FQ6NTFLlFQQQQREU8UHZIOpnnItHrF4HMISlyf/e2z3539vGBuy+7M980wzC77m66LiIiIiIiIkeEuHMS7OIFFrBn9HaIZ3I9P/NcFbMqoVxG24Cu39g22JcrqxHgQ37m9H7A9USYbYwd+Mrqf8XiiTCbGk/jFnbuEPYnSNsZ+XLZyV/F0orSJ8dTyQMd1Dc8myngxnsHv2vkDzyXKymI8jxva+xMvJMqdxTiMv0zO3ziSKKPFeMXqeTNRbh1iDd6y+k7m+6//j3Hc9LyDtTlbbsZYh/dM3/u4e66jYD3OquMD3NPNI2zAh+r5CPd28wT34WN1fYaN3TzAZnypvq+xtRsyPIBvzY7vsdANER7CktnzIx7uhgQ7cdHsutgfQzcU+MLs+7wbCvxq9l3qhgKvmX2vdgP8TXxxhdvRBgM9OsbnPzHt+ZXi5lDGtTjt4xgMCVKLBKlFgtQiQWqRILVIkFokSC0SpBYJUosEqUWC1CJBapEgtUiQWiRILRKkFglSiwSpRYLUIkFqkSC1SJBaJEgtEqQWCVKLBKlFgtQiQWqRILVIkFokSC040OD/IQemfRyDgb0NgmRl0sZrvC+NEaNfeHldsx2Kro+yD7+tIMaV/gzLDCcACziFT/v/jd9m61/zdr+CRGJERERERERERERMER7rn7exvGj9mWxGmUE/qzfwaOsYL0/o8UPz4gZeahVjd2I0i7KrRZD+KczRxrEWQc432pngXIsg03wU0dA0OUN25RpS6BqyHOUQrrfZr7l0HS82ifGvKI/gdZzOPYhR78NOL89sR9MYERERERERXTv/AMU3xXdv6Xj2AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+        Bulk Upload
+      </button>
+      <button class="flex items-center text-white text-lg gap-2 bg-[#1A73E8]  px-4 lg:px-[10px] py-[10px] xl:px-[30px]">
+       
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="25" height="24" fill="url(#pattern0_13931_1137)"/>
+<defs>
+<pattern id="pattern0_13931_1137" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_1137" transform="matrix(0.0096 0 0 0.01 0.02 0)"/>
+</pattern>
+<image id="image0_13931_1137" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgklEQVR4nO3dPW7UQByGcUuEe1BwACTalOngAKHhAghShhIBUraYa4CSwFEogS4nQGlDgeBFIxwBUbzr9doz78w8j+Qy/tif/p61EyldR4smaU/SStKlpAtJh8sekQaTdEfSO/3fL0nPh3+KUmKAYogBiiEGKKmSdDoS41+UZ8lOsLUkHUr6MQGFhX6pJD2V9HMCypPFTqr1NA3lIvd51/DQ92hGlG9pr6A+jA/9rebFTCgnaa+irq+272/c/492XOgj7t6Uk9mXdFzZdm/CZNxsE8q6STmfhNHv+JXqKuwwGbd1vOWkRNy7kzAqBAkzY2yL8nEnjMpAVjPcpoYac/s6nXybqhAkLDQZoydltioACYkwrnsJyHwYY9/a5kMpeEJWW64Z8avoXMU15TEg+Sdjt4e+SickVItRIEioGqMwkFA9RkEgoQmMQkBCMxgFgISmMMxBQnMYxiChSYyRIPEPih8m3B5kfAKPnWXDGAnyuTNMtU1GySCqFaNEENWMURqIascoCUR/FvC44GZbwCXdX/YqCwGRwWRIehs/q651EPlgxNoGkRdG2yDyw2ge5CzzAn5yyz6anhCnybgOkAwYb9bsC5DEt6nXG/YHSMoncElfNuwTkJSvQwBZU453U4CsKTVGf0xuWUOlxuiPCchQqTH6YwIyVGqM/piAOAWIWYCYBYhZgJgFiFmAmAWIWYCYBYhZgJgl6euG1zTt/oIqR4CYBYhZgJgFiFmAmAWIWYCYBYhZgJgFiFmAmAWIWYCYBYhZgJgFiFmAmFUKyJWkT41s30sAob8BYhYgZgFiFiBmAWIWIC2CHMT/58SmMZ/BweIgREREREREREREXZ5+Aw9JJWM8vSqYAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+        Edit
+      </button>
     </div>
   </div>
+  <div class="flex flex-col lg:flex-row gap-5 border-b p-5 items-center justify-between mybusinesscards">
+    <div class="flex gap-4 flex-col md:flex-row lg:max-w-[55%]">
+      <!-- Image Placeholder -->
+      <div class="w-[120px] h-[120px] rounded text-center mx-auto bg-[#D9D9D9]" ></div>
+
+      <!-- Text Content -->
+      <div>
+        <p class="font-medium cardh text-[26px] leading-9">Display name Business on your</p>
+        <p class="text-lg">Display name Business on your Display name <br>Business on your</p>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex gap-2">
+      <button class="flex items-center text-white text-lg gap-2 bg-[#B89B51] px-4 lg:px-[10px] py-[10px] xl:px-[30px] ">
+        
+<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="29" height="29" fill="url(#pattern0_13931_1132)"/>
+<defs>
+<pattern id="pattern0_13931_1132" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_1132" transform="scale(0.01)"/>
+</pattern>
+<image id="image0_13931_1132" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACnUlEQVR4nO3dT8gUdRzH8VELCSECE0Uk6gHDStI6qeCl7nWQp0t4qiQ8eukaQRSB4B8SukQnA0FQ6NTFLlFQQQQREU8UHZIOpnnItHrF4HMISlyf/e2z3539vGBuy+7M980wzC77m66LiIiIiIiIkeEuHMS7OIFFrBn9HaIZ3I9P/NcFbMqoVxG24Cu39g22JcrqxHgQ37m9H7A9USYbYwd+Mrqf8XiiTCbGk/jFnbuEPYnSNsZ+XLZyV/F0orSJ8dTyQMd1Dc8myngxnsHv2vkDzyXKymI8jxva+xMvJMqdxTiMv0zO3ziSKKPFeMXqeTNRbh1iDd6y+k7m+6//j3Hc9LyDtTlbbsZYh/dM3/u4e66jYD3OquMD3NPNI2zAh+r5CPd28wT34WN1fYaN3TzAZnypvq+xtRsyPIBvzY7vsdANER7CktnzIx7uhgQ7cdHsutgfQzcU+MLs+7wbCvxq9l3qhgKvmX2vdgP8TXxxhdvRBgM9OsbnPzHt+ZXi5lDGtTjt4xgMCVKLBKlFgtQiQWqRILVIkFokSC0SpBYJUosEqUWC1CJBapEgtUiQWiRILRKkFglSiwSpRYLUIkFqkSC1SJBaJEgtEqQWCVKLBKlFgtQiQWqRILVIkFokSC040OD/IQemfRyDgb0NgmRl0sZrvC+NEaNfeHldsx2Kro+yD7+tIMaV/gzLDCcACziFT/v/jd9m61/zdr+CRGJERERERERERERMER7rn7exvGj9mWxGmUE/qzfwaOsYL0/o8UPz4gZeahVjd2I0i7KrRZD+KczRxrEWQc432pngXIsg03wU0dA0OUN25RpS6BqyHOUQrrfZr7l0HS82ifGvKI/gdZzOPYhR78NOL89sR9MYERERERERXTv/AMU3xXdv6Xj2AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+        Bulk Upload
+      </button>
+      <button class="flex items-center text-white text-lg gap-2 bg-[#1A73E8]  px-4 lg:px-[10px] py-[10px] xl:px-[30px]">
+       
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="25" height="24" fill="url(#pattern0_13931_1137)"/>
+<defs>
+<pattern id="pattern0_13931_1137" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_1137" transform="matrix(0.0096 0 0 0.01 0.02 0)"/>
+</pattern>
+<image id="image0_13931_1137" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgklEQVR4nO3dPW7UQByGcUuEe1BwACTalOngAKHhAghShhIBUraYa4CSwFEogS4nQGlDgeBFIxwBUbzr9doz78w8j+Qy/tif/p61EyldR4smaU/SStKlpAtJh8sekQaTdEfSO/3fL0nPh3+KUmKAYogBiiEGKKmSdDoS41+UZ8lOsLUkHUr6MQGFhX6pJD2V9HMCypPFTqr1NA3lIvd51/DQ92hGlG9pr6A+jA/9rebFTCgnaa+irq+272/c/492XOgj7t6Uk9mXdFzZdm/CZNxsE8q6STmfhNHv+JXqKuwwGbd1vOWkRNy7kzAqBAkzY2yL8nEnjMpAVjPcpoYac/s6nXybqhAkLDQZoydltioACYkwrnsJyHwYY9/a5kMpeEJWW64Z8avoXMU15TEg+Sdjt4e+SickVItRIEioGqMwkFA9RkEgoQmMQkBCMxgFgISmMMxBQnMYxiChSYyRIPEPih8m3B5kfAKPnWXDGAnyuTNMtU1GySCqFaNEENWMURqIascoCUR/FvC44GZbwCXdX/YqCwGRwWRIehs/q651EPlgxNoGkRdG2yDyw2ge5CzzAn5yyz6anhCnybgOkAwYb9bsC5DEt6nXG/YHSMoncElfNuwTkJSvQwBZU453U4CsKTVGf0xuWUOlxuiPCchQqTH6YwIyVGqM/piAOAWIWYCYBYhZgJgFiFmAmAWIWYCYBYhZgJgl6euG1zTt/oIqR4CYBYhZgJgFiFmAmAWIWYCYBYhZgJgFiFmAmAWIWYCYBYhZgJgFiFmAmFUKyJWkT41s30sAob8BYhYgZgFiFiBmAWIWIC2CHMT/58SmMZ/BweIgREREREREREREXZ5+Aw9JJWM8vSqYAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+        Edit
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col lg:flex-row gap-5 p-5 items-center justify-between mybusinesscards">
+    <div class="flex gap-4 flex-col md:flex-row lg:max-w-[55%]">
+      <!-- Image Placeholder -->
+      <div class="w-[120px] h-[120px] rounded text-center mx-auto bg-[#D9D9D9]" ></div>
+
+      <!-- Text Content -->
+      <div>
+        <p class="font-medium cardh text-[26px] leading-9">Display name Business on your</p>
+        <p class="text-lg">Display name Business on your Display name <br>Business on your</p>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex gap-2">
+      <button class="flex items-center text-white text-lg gap-2 bg-[#B89B51] px-4 lg:px-[10px] py-[10px] xl:px-[30px] ">
+        
+<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="29" height="29" fill="url(#pattern0_13931_1132)"/>
+<defs>
+<pattern id="pattern0_13931_1132" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_1132" transform="scale(0.01)"/>
+</pattern>
+<image id="image0_13931_1132" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACnUlEQVR4nO3dT8gUdRzH8VELCSECE0Uk6gHDStI6qeCl7nWQp0t4qiQ8eukaQRSB4B8SukQnA0FQ6NTFLlFQQQQREU8UHZIOpnnItHrF4HMISlyf/e2z3539vGBuy+7M980wzC77m66LiIiIiIiIkeEuHMS7OIFFrBn9HaIZ3I9P/NcFbMqoVxG24Cu39g22JcrqxHgQ37m9H7A9USYbYwd+Mrqf8XiiTCbGk/jFnbuEPYnSNsZ+XLZyV/F0orSJ8dTyQMd1Dc8myngxnsHv2vkDzyXKymI8jxva+xMvJMqdxTiMv0zO3ziSKKPFeMXqeTNRbh1iDd6y+k7m+6//j3Hc9LyDtTlbbsZYh/dM3/u4e66jYD3OquMD3NPNI2zAh+r5CPd28wT34WN1fYaN3TzAZnypvq+xtRsyPIBvzY7vsdANER7CktnzIx7uhgQ7cdHsutgfQzcU+MLs+7wbCvxq9l3qhgKvmX2vdgP8TXxxhdvRBgM9OsbnPzHt+ZXi5lDGtTjt4xgMCVKLBKlFgtQiQWqRILVIkFokSC0SpBYJUosEqUWC1CJBapEgtUiQWiRILRKkFglSiwSpRYLUIkFqkSC1SJBaJEgtEqQWCVKLBKlFgtQiQWqRILVIkFokSC040OD/IQemfRyDgb0NgmRl0sZrvC+NEaNfeHldsx2Kro+yD7+tIMaV/gzLDCcACziFT/v/jd9m61/zdr+CRGJERERERERERERMER7rn7exvGj9mWxGmUE/qzfwaOsYL0/o8UPz4gZeahVjd2I0i7KrRZD+KczRxrEWQc432pngXIsg03wU0dA0OUN25RpS6BqyHOUQrrfZr7l0HS82ifGvKI/gdZzOPYhR78NOL89sR9MYERERERERXTv/AMU3xXdv6Xj2AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+        Bulk Upload
+      </button>
+      <button class="flex items-center text-white text-lg gap-2 bg-[#1A73E8]  px-4 lg:px-[10px] py-[10px] xl:px-[30px]">
+       
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="25" height="24" fill="url(#pattern0_13931_1137)"/>
+<defs>
+<pattern id="pattern0_13931_1137" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_13931_1137" transform="matrix(0.0096 0 0 0.01 0.02 0)"/>
+</pattern>
+<image id="image0_13931_1137" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgklEQVR4nO3dPW7UQByGcUuEe1BwACTalOngAKHhAghShhIBUraYa4CSwFEogS4nQGlDgeBFIxwBUbzr9doz78w8j+Qy/tif/p61EyldR4smaU/SStKlpAtJh8sekQaTdEfSO/3fL0nPh3+KUmKAYogBiiEGKKmSdDoS41+UZ8lOsLUkHUr6MQGFhX6pJD2V9HMCypPFTqr1NA3lIvd51/DQ92hGlG9pr6A+jA/9rebFTCgnaa+irq+272/c/492XOgj7t6Uk9mXdFzZdm/CZNxsE8q6STmfhNHv+JXqKuwwGbd1vOWkRNy7kzAqBAkzY2yL8nEnjMpAVjPcpoYac/s6nXybqhAkLDQZoydltioACYkwrnsJyHwYY9/a5kMpeEJWW64Z8avoXMU15TEg+Sdjt4e+SickVItRIEioGqMwkFA9RkEgoQmMQkBCMxgFgISmMMxBQnMYxiChSYyRIPEPih8m3B5kfAKPnWXDGAnyuTNMtU1GySCqFaNEENWMURqIascoCUR/FvC44GZbwCXdX/YqCwGRwWRIehs/q651EPlgxNoGkRdG2yDyw2ge5CzzAn5yyz6anhCnybgOkAwYb9bsC5DEt6nXG/YHSMoncElfNuwTkJSvQwBZU453U4CsKTVGf0xuWUOlxuiPCchQqTH6YwIyVGqM/piAOAWIWYCYBYhZgJgFiFmAmAWIWYCYBYhZgJgl6euG1zTt/oIqR4CYBYhZgJgFiFmAmAWIWYCYBYhZgJgFiFmAmAWIWYCYBYhZgJgFiFmAmFUKyJWkT41s30sAob8BYhYgZgFiFiBmAWIWIC2CHMT/58SmMZ/BweIgREREREREREREXZ5+Aw9JJWM8vSqYAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+        Edit
+      </button>
+    </div>
+  </div>
+
+  
+  
+
 </div>
 
 
