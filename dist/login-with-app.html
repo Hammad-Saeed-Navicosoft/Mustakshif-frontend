@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login With App Mustakshif</title>
     <link href="/src/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -16,16 +15,16 @@
   <body class="home-page">
 
     <!-- ========== HEADER ========== -->
-    <header class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200 home-header">
-      <nav class="relative container w-full mx-auto lg:flex md:items-center md:justify-between md:gap-3">
-        <div class="flex justify-between items-center gap-x-1 px-4 h-full">
+    <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full border-0 border-gray-200 home-header bg-[#0d1e38] md:bg-transparent relative">
+      <nav class="relative container w-full mx-auto lg:flex lg:items-center lg:justify-between md:gap-3">
+        <div class="w-full lg:w-auto flex justify-between items-center py-2 md:py-0 gap-x-1 px-4">
           <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80" href="index.html" aria-label="Brand">
-            <img class="mobilelogo-width hidden md:block" src="/assets/images/newlogo.png" alt="" srcset=""/>
-            <img class="mobilelogo-width md:hidden" src="/assets/images/logo 2.png" alt="" srcset=""/>
+            <img class="hidden md:block" src="/assets/images/newlogo.png" alt="" srcset=""/>
+            <img class="w-[100px] md:hidden" src="/assets/images/logo 2.png" alt="" srcset=""/>
           </a>
 
-           <!-- Collapse Button -->
-          <button type="button" class="hs-collapse-toggle lg:hidden relative size-9 flex justify-center items-center font-medium text-sm rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
+          <!-- Collapse Button -->
+          <button type="button" class="hs-collapse-toggle lg:hidden relative size-9 flex justify-center items-center font-medium text-sm rounded-lg bg-white border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
             <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
             <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
             <span class="sr-only">Toggle navigation</span>
@@ -34,127 +33,107 @@
         </div>
 
         <!-- Collapse -->
-        <div id="hs-header-base" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:block mobilebgheader"  aria-labelledby="hs-header-base-collapse" >
-          <div class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
-            <div class="py-2 md:py-0 flex flex-col lg:flex-row lg:items-center gap-0.5 md:gap-1">
+        <div id="hs-header-base" class="hs-collapse hidden basis-full grow lg:flex p-4 lg-p-0 bg-white lg:bg-transparent w-full absolute lg:relative z-[1]"  aria-labelledby="hs-header-base-collapse" >
+          <div class="w-full overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
+            <div class="py-2 md:py-0 flex flex-col xl:flex-row items-start lg:items-center gap-0.5 md:gap-1">
               <div class="grow">
-                <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-6 px-6">
-                  <a class="flex items-center text-base text-gray-800" href="./index.html" aria-current="page">
-                    <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-                    Home 
+                <div class="flex flex-col lg:flex-row justify-center lg:items-center gap-6 xl:gap-3 2xl:gap-6 px-3">
+                  
+
+                  <a class="flex items-center text-base text-black font-sen font-semibold uppercase hover:text-[#b79950]" href="#">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Halal Places
                   </a>
-
-                  <!-- Dropdown -->
-                  <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--adaptive:adaptive] [--is-collapse:true] md:[--is-collapse:false] ">
-                    <button id="hs-header-base-dropdown" type="button" class="hs-dropdown-toggle w-full flex items-center text-base text-gray-800" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                      <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 2.5-2.5L3 5"/><path d="m3 19 2.5-2.5L3 14"/><path d="M10 6h11"/><path d="M10 12h11"/><path d="M10 18h11"/></svg>
-                      Brands  
-                      <svg class="hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 shrink-0 size-4 ms-auto md:ms-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                    </button>
-
-                    <div class="hs-dropdown-menu main-sub-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 relative w-full md:w-52 hidden z-10 top-full ps-7 md:ps-0 md:bg-white md:rounded-lg md:shadow-md before:absolute before:-top-4 before:start-0 before:w-full before:h-5 md:after:hidden after:absolute after:top-1 after:start-4.5 after:w-0.5 after:h-[calc(100%-4px)] after:bg-gray-100" role="menu" aria-orientation="vertical" aria-labelledby="hs-header-base-dropdown">
-                      <div class="py-1 md:px-1 space-y-0.5">
-                        <a class="p-2 md:px-3 flex items-center text-base text-gray-800" href="#">
-                          About
-                        </a>
-
-                        <div class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] [--is-collapse:true] md:[--is-collapse:false] relative">
-                          <button id="hs-header-base-dropdown-sub" type="button" class="hs-dropdown-toggle w-full flex justify-between items-center text-base text-gray-800 p-2 md:px-3">
-                            Sub Menu
-                            <svg class="hs-dropdown-open:-rotate-180 md:hs-dropdown-open:-rotate-90 md:-rotate-90 duration-300 ms-auto shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                          </button>
-
-                          <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 relative md:w-48 hidden z-10 md:mt-2 md:mx-2.5! md:top-0 md:start-full ps-7 md:ps-0 md:bg-white md:rounded-lg md:shadow-md before:hidden md:before:block before:absolute before:-end-5 before:top-0 before:h-full before:w-5 md:after:hidden after:absolute after:top-1 after:start-4.5 after:w-0.5 after:h-[calc(100%-4px)] after:bg-gray-100" role="menu" aria-orientation="vertical" aria-labelledby="hs-header-base-dropdown-sub">
-                            <div class="p-1 space-y-1">
-                              <a class="p-2 md:px-3 flex items-center text-base text-gray-800" href="#">
-                                About
-                              </a>
-
-                              <a class="p-2 md:px-3 flex items-center text-base text-gray-800" href="#">
-                                Downloads
-                              </a>
-
-                              <a class="p-2 md:px-3 flex items-center text-base text-gray-800" href="#">
-                                Team Account
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-
-                        <a class="p-2 md:px-3 flex items-center text-base text-gray-800" href="#">
-                          Downloads
-                        </a>
-
-                        <a class="p-2 md:px-3 flex items-center text-base text-gray-800" href="#">
-                          Team Account
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Dropdown -->
-
-                  <a class="flex items-center text-base text-gray-800" href="./Shariah-board.html">
-                    <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  <a class="flex items-center text-base text-black font-sen font-semibold uppercase hover:text-[#b79950]" href="#">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Products
+                  </a>
+                  <a class="flex items-center text-base text-black font-sen font-semibold uppercase hover:text-[#b79950]" href="./Shariah-board.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                     Shariah Board
                   </a>
 
-                  <a class="flex items-center text-base text-gray-800" href="#">
-                    <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                  <a class="flex items-center text-base text-black font-sen font-semibold uppercase hover:text-[#b79950]" href="#">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
                     Subscription 
                   </a>
 
-                  <a class="flex items-center text-base text-gray-800" href="./How-mustakshif-works.html">
-                    <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+                  <a class="flex items-center text-base text-black font-sen font-semibold uppercase hover:text-[#b79950]" href="./How-mustakshif-works.html">
+                    <svg class="shrink-0 size-4 me-3 md:me-2 block lg:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
                      How Mustakshif Work?
                   </a>
 
-                  <div class="actions">
+                </div>
+              </div>
 
+              <!-- Button Group -->
+              <div class="md:mt-0 md:flex items-center gap-4 xl:gap-2 2xl:gap-4 px-2">
+                <div class="flex items-center gap-4 xl:gap-3 2xl:gap-6 my-4 lg:my-0">
                     <!-- Search icon -->
-                    <button class="icon-button" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button>
+                    <!-- <button class="text-[18px]" onclick="openSearchModal()"><img src="/assets/images/searchmodule.png" width="auto" alt=""></button> -->
+
+
+                    <!-- Toggle Checkbox (hidden) -->
+                    <input type="checkbox" id="searchToggle" class="peer hidden" />
+
+                    <!-- Search Button -->
+                    <label for="searchToggle" class="text-[18px] cursor-pointer inline-flex items-center">
+                    <img src="/assets/images/searchmodule.png" alt="search" />
+                    </label>
+
+                    <!-- Search Modal -->
+                    <div class="fixed inset-0 z-[1000] hidden peer-checked:block bg-black/50 px-2">
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-6 bg-white my-[5%] mx-auto p-[20px] w-full md:w-[80%] max-w-[970px] rounded-[10px]">
+                        
+                        <!-- Search Input -->
+                        <input type="text" 
+                            class="w-full p-[10px] text-[16px] rounded-[20px] shadow-none focus:outline-none focus:ring-0 focus:border-black" 
+                            placeholder="Search..." />
+                        
+                        <!-- Close Button -->
+                        <label for="searchToggle" 
+                            class="px-[50px] py-[10px] flex items-center gap-2 text-[16px] rounded-[20px] border border-black cursor-pointer">
+                        <span>&#10006;</span> Close
+                        </label>
+                    </div>
+                    </div>
 
                     <!-- Language selector with flag images -->
                     <div class="lang-dropdown">
-                      <button class="lang-toggle" onclick="toggleLangMenu()">
-                        <img src="https://flagcdn.com/w40/us.png" alt="English">
+                      <button class="lang-toggle bg-none border-0" onclick="toggleLangMenu()">
+                        <img class="w-[28px] h-[28px] rounded-full" src="https://flagcdn.com/w40/us.png" alt="English">
                       </button>
-                      <div class="lang-menu" id="langMenu">
-                        <button onclick="setLanguage('en', 'us')">
+                      <div class="lang-menu absolute top-auto right-auto bg-white border border-gray-300 hidden flex-col min-w-[150px] z-50 shadow-md overflow-auto" id="langMenu">
+                        <button class="flex items-center gap-2 bg-transparent border-0 px-3 py-2 text-left cursor-pointer hover:bg-[#f0f0f0]" onclick="setLanguage('en', 'us')">
                           <img src="https://flagcdn.com/w40/us.png" alt="EN"> English
                         </button>
-                        <button onclick="setLanguage('ms', 'my')">
+                        <button  class="flex items-center gap-2 bg-transparent border-0 px-3 py-2 text-left cursor-pointer hover:bg-[#f0f0f0]" onclick="setLanguage('ms', 'my')">
                           <img src="https://flagcdn.com/w40/my.png" alt="MS"> Malay
                         </button>
-                        <button onclick="setLanguage('ar', 'sa')">
+                        <button  class="flex items-center gap-2 bg-transparent border-0 px-3 py-2 text-left cursor-pointer hover:bg-[#f0f0f0]" onclick="setLanguage('ar', 'sa')">
                           <img src="https://flagcdn.com/w40/sa.png" alt="AR"> Arabic
                         </button>
-                        <button onclick="setLanguage('fr', 'fr')">
+                        <button  class="flex items-center gap-2 bg-transparent border-0 px-3 py-2 text-left cursor-pointer hover:bg-[#f0f0f0]" onclick="setLanguage('fr', 'fr')">
                           <img src="https://flagcdn.com/w40/fr.png" alt="FR"> France
                         </button>
-                        <button onclick="setLanguage('de', 'de')">
+                        <button  class="flex items-center gap-2 bg-transparent border-0 px-3 py-2 text-left cursor-pointer hover:bg-[#f0f0f0]" onclick="setLanguage('de', 'de')">
                           <img src="https://flagcdn.com/w40/de.png" alt="DE"> Germen
                         </button>
                       </div>
                     </div>
 
                     <!-- Search Modal -->
-                    <div id="searchModal">
-                      <div class="modal-content flex items-center gap-6">
-                        <input type="text" placeholder="Search..." />
-                        <button class="px-4 flex items-center gap-2" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
+                    <!-- <div id="searchModal" class="hidden fixed z-[1000] inset-0 w-full h-full bg-black/50 px-2">
+                      <div class="modal-content flex flex-col md:flex-row items-start md:items-center gap-6 bg-white my-[5%] mx-auto p-[20px] px-[20px] w-full md:w-[80%] max-w-[970px] rounded-[10px]">
+                        <input type="text" class="w-full p-[10px] text-[16px] rounded-[20px] shadow-none focus:outline-none focus:ring-0 focus:border-black focus:shadow-none" placeholder="Search..."/>
+                        <button class="px-4 flex items-center gap-2 px-[50px] py-[10px] text-[16px] rounded-[20px] border border-black" onclick="closeSearchModal()"><span>&#10006;</span> Close</button>
                       </div>
-                    </div>
-
-                  </div>
+                    </div> -->
                 </div>
-              </div>
-
-              <!-- Button Group -->
-              <div class="md:ms-auto md:mt-0 flex flex-wrap items-center gap-2 px-2">
-                <a class="bg-btn-gold py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                <a class="inline-flex items-center gap-2 text-white bg-[#a28537] hover:bg-[#c7ad6b] rounded-[30px] py-[10px] xl:py-[15px] px-[20px] xl:px-[14px] 2xl:px-[20px] font-sen text-sm font-semibold whitespace-nowrap uppercase" href="#">
                   <i class="fa fa-user text-base" style="font-size: 16px;"></i> Log in
                 </a>
-                <a class="bg-btn-blue py-4 px-6 inline-flex items-center gap-2 text-sm font-medium text-white shadow-sm" href="#">
+                <a class="inline-flex items-center gap-2 text-white bg-[#0B1A31] hover:bg-[#b79950] rounded-[30px] py-[10px] xl:py-[15px] px-[28px] xl:px[16px] 2xl:px-[28px] font-sen text-sm font-semibold whitespace-nowrap uppercase" href="#">
                   Download
                 </a>
               </div>
@@ -167,90 +146,231 @@
     </header>
     <!-- ========== END HEADER ========== -->
 
+    <div class="relative md:mt-[-25px]  md:py-20 md:bg-[#F7F5ED] z-[0]">
+      <div class="container mx-auto px-4">
+        <div class="py-12 px-6 md:px-8 w-full bg-white">
 
-    <div class="relative overflow-hidden dashboard-container">
+          <div class="flex flex-col-reverse md:grid items-center md:grid-cols-2 gap-6 lg:gap-16">
+            <!-- Card -->
+            <div class="py-4 lg:mr-[60px] xl:mr-[120px]">
+              <div class="mb-4">
+                <h3 class="text-[32px] font-medium">Login With Mustakshif App</h3>
+                <p class="py-2 text-base">Unlock Full Access to Halal Catalogue by simply following these steps:</p> 
 
-        <div class="topmarginseclogin py-6" style="background-color: #F7F5ED;">
-            <div class="container mx-auto px-4 py-6 my-6">
-                <div class="md-mt-6 pt-4 mb-1 w-full" style="background-color: #fff;">
+                <ul class="my-4">
+                    <li class="mb-2 text-base">1- Download The Most Authentic FREE Halal Scanner App</li>
+                    <li class="mb-2 text-base">2- Go to the "Settings" section</li>
+                    <li class="mb-2 text-base">3- Find Your Referral Code</li>
+                    <li class="mb-2 text-base">4- Enter the Code Here</li>
+                </ul>
+              </div>
 
-                <!-- Contact Us -->
-                <div class="px-4 py-10 sm:px-6 lg:px-8 mx-auto">
-                <div class="mx-auto">
+              <form class="login-signupformset">
+                <div class="grid gap-y-2">
+                  <!-- Password Input -->
+                  <div class="form-group relative my-3 md:my-4 w-full">
+                    <input
+                    type="text"
+                    id="vcode"
+                    name="verify code"
+                    class="form-input w-full pl-3 pt-4 pr-10 pb-2 text-base border border-black rounded-md outline-none no-focus"
+                    placeholder=" "
+                    />
+                    <label for="vcode" class="form-label absolute left-3 top-4 text-black bg-white px-1 text-base transition ease-linear duration-200 pointer-events-none">🔓 Enter User ID</label>
+                  </div>
 
-                    <div class="grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
-                    <!-- Card -->
-                    <div class="flex flex-col margin-right-desktop py-4">
-                        <div>
-                            <h3 class="text-3xl font-medium">Login With Mustakshif App</h3>
-                            <p class="py-2 text-base">Unlock Full Access to Halal Catalogue by simply following these steps:</p> 
-
-                            <ul class="my-4">
-                                <li class="mb-2">1- Download The Most Authentic FREE Halal Scanner App</li>
-                                <li class="mb-2">2- Go to the "Settings" section</li>
-                                <li class="mb-2">3- Find Your Referral Code</li>
-                                <li class="mb-2">4- Enter the Code Here</li>
-                            </ul>
-
-                        </div>
-
-                        <form class="login-signupformset">
-                          <div class="grid gap-y-4">
-
-                              <!-- Password Input with Toggle -->
-                                <div class="form-group">
-                                    <input
-                                    type="text"
-                                    id="vcode"
-                                    name="verify code"
-                                    class="form-input"
-                                    placeholder=" "
-                                    />
-                                    <label for="vcode" class="form-label">🔓 Enter User ID</label>
-                                </div>
-
-                            <button type="submit" class="button-bg-gold w-full py-3 px-4 my-4 inline-flex justify-center items-center gap-x-2 text-base font-medium rounded-lg text-white  disabled:pointer-events-none">Explore Halal</button>
-                          </div>
-                        </form>
-                        <!-- End Form -->
-
-
-                        <div class="mt-5 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
-                            <a class="w-full sm:w-auto py-3 inline-flex items-center gap-x-2 text-base font-medium text-black" href="login.html">
-                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-                            Back
-                            </a>
-                        </div>
-                        
-                    </div>
-                    <!-- End Card -->
-
-                    <div class="divide-y divide-gray-200">
-                       <div>
-                        <img src="/assets/images/login-with-app-img.png" alt="" srcset="">
-                       </div>
-                    </div>
-                    </div>
+                  <button type="submit" class="button-bg-gold w-full py-3 px-4 my-2 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg text-white  disabled:pointer-events-none bg-[#b79950] hover:bg-[#b79a50e8]">Explore Halal</button>
                 </div>
-                </div>
-                <!-- End Contact Us -->
+              </form>
+              <!-- End Form -->
 
-                </div>
-
+              <div class="md:mt-5 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
+                <a class="w-full sm:w-auto py-3 inline-flex justify-center md:justify-start items-center gap-x-2 text-base font-medium text-black" href="login.html">
+                <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                Back
+                </a>
+              </div>
+                
             </div>
+            <!-- End Card -->
+
+            <div class="divide-y divide-gray-200">
+              <div>
+                <img src="/assets/images/login-with-app-img.png" class="hidden md:block" alt="" srcset="">
+                <img src="/assets/images/login-with-app-mbl.png" class="md:hidden" srcset="">
+              </div>
+            </div>
+          </div>
+
         </div>
-
-
+      </div>
     </div>
-   
 
-    <footer>
-      <div class="mt-auto w-full container py-4 px-4 sm:px-6 lg:px-8 mx-auto">
-        <div class="text-center">
-          <h3 class="text-base font-medium" style="color: #677d99">
-            2025 @ Mustakshif, Design & Develop By Navicosoft
-          </h3>
+    <footer class="bg-[#061A2C] text-white pt-[40px] pb-[10px] px-4 md:px-2">
+      <div class="container mx-auto py-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          <!-- Logo & Description -->
+          <div class="text-center mt-4 md:mt-0 lg:text-left ">
+            <img src="../assets/images/logo 2.png" alt="Mustakshif Logo" class="mb-4 mx-auto" style="height: 90px;">
+            <p class="text-white text-lg">Our halal ingredient checker heeds all-inclusive Halal standards and Islamic dietary laws</p>
+          </div>
+
+          <!-- Customer Support -->
+          <div class="text-center lg:text-left mt-4 md:mt-0">
+            <h4 class="mb-2 text-xl lg:text-3xl text-white">Customer Support</h4>
+            <p class="mb-1 text-white text-lg flex gap-2 justify-center lg:justify-start items-center">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4.36 3.33333C4.4 3.92667 4.5 4.50667 4.66 5.06L3.86 5.86C3.58667 5.06 3.41333 4.21333 3.35333 3.33333L4.36 3.33333ZM10.9333 11.3467C11.5 11.5067 12.08 11.6067 12.6667 11.6467V12.64C11.7867 12.58 10.94 12.4067 10.1333 12.14L10.9333 11.3467ZM5 2L2.66667 2C2.3 2 2 2.3 2 2.66667C2 8.92667 7.07333 14 13.3333 14C13.7 14 14 13.7 14 13.3333L14 11.0067C14 10.64 13.7 10.34 13.3333 10.34C12.5067 10.34 11.7 10.2067 10.9533 9.96C10.8872 9.936 10.817 9.92469 10.7467 9.92667C10.5733 9.92667 10.4067 9.99333 10.2733 10.12L8.80667 11.5867C6.91695 10.6203 5.37974 9.08305 4.41333 7.19333L5.88 5.72667C6.06667 5.54 6.12 5.28 6.04667 5.04667C5.79377 4.2787 5.66548 3.4752 5.66667 2.66667C5.66667 2.3 5.36667 2 5 2Z" fill="white"/>
+      </svg> <span class="text-white text-lg">(+1) 123 456 7893</span></p>
+            <p class="mb-4 text-white text-lg flex gap-2 justify-center lg:justify-start items-center"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.3359 0.667969L1.66927 0.667969C0.935938 0.667969 0.342604 1.26797 0.342604 2.0013L0.335937 10.0013C0.335937 10.7346 0.935938 11.3346 1.66927 11.3346L12.3359 11.3346C13.0693 11.3346 13.6693 10.7346 13.6693 10.0013L13.6693 2.0013C13.6693 1.26797 13.0693 0.667969 12.3359 0.667969ZM12.3359 3.33464L7.0026 6.66797L1.66927 3.33464L1.66927 2.0013L7.0026 5.33464L12.3359 2.0013V3.33464Z" fill="white"/>
+      </svg><span class="text-white text-lg">name@email.com</span> </p>
+            <div class="flex gap-3 justify-center lg:justify-start mt-4">
+              <a href="#"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g clip-path="url(#clip0_14181_1314)">
+                <rect width="43.9153" height="43.9153" rx="7.31921" fill="#061A2C"/>
+                <rect x="8.71875" y="6.22656" width="28.013" height="28.013" fill="url(#pattern0_14181_1314)"/>
+                <rect x="0.457451" y="0.457451" width="43.0004" height="43.0004" rx="6.86176" stroke="#606060" stroke-width="0.914902"/>
+                </g>
+                <defs>
+                <pattern id="pattern0_14181_1314" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_14181_1314" transform="scale(0.0111111)"/>
+                </pattern>
+                <clipPath id="clip0_14181_1314">
+                <rect width="43.9153" height="43.9153" rx="7.31921" fill="white"/>
+                </clipPath>
+                <image id="image0_14181_1314" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC4klEQVR4nO2aTahNURiGFwZKCplRuKQMZcRUdywjfyPJRK6BFGVgwEgyMVEm6ioz+S0jQxIuuZNbCinXRWHmNx6tY+8Z1zrf2t9eZ9/zPnU6g1Pf937v3vs9a+29QxBCCCGEEEKIuQgwH9gD3ATeAN+q7xvA7vh7aY2dB1gHPGZ2JoCR0lq7bvJ70ngns20mLwCe0B8PFSP9Gx0z2cJOy4EdWoBbRqOvl9beKYAZo9HTpbV3imoJZ+Frae2dolonW3hdWnunqDYjFq6W1t4pgF1Go3eU1t7FbXfc8fXDA62jbWaPVDu+FN4Cq5s/5MNl9qOEM3lNaa1zJUZiZl+P6+Rq6Re/r8WdoOJCCCGEGOx76suBtdVnGbCwtK7Owx8j9wOXgWfAr78sRX8Cr4A7wClgNB6QkqLNBL/6U/+otR64FO8cGutOV6YvbdxIJyN6tGV0jAHgNPCDZvgA7HUztUEjerRhNLDC8EwzlQutxUmOyuBsNLAKeIkvF91NzjCih2P9KWAx8JR2GBtmo8/RHl/cb5blqAt+9b9Xy7M2GR9Go0sQD+5KGd0Ox2R0O9yT0e0Q/xeWKKPpvVx5FNgObAE2AlvjJQ9MNmT26DAb/RzYnPAY7kDGm1c1hxoztykjgnP9isl+LmdgX2a/s1mGehgRnOsDn4ENfc4zD7ib0fOK2UwvI4Jz/XjTxzjTtoyeE5aeKaLMBOf6wCbjTIuqq8HCC0vPFFFmgm/9jznvkQD3jX1nrD3/J8hM8K1/O3OucWPfTzl9ZxNkJvjWP58515mBesF+gI0+kTnXSc+5LILMBN/6RzLnOu45l0WQmeBbP2uHBhz2nMsiyEzwrX8wc64xz7ksgswE3/oyukZG64wOio50FB01ig5FR1B0pKPoqFF0KDqCoiMdRUeNokPRERQd6Sg6ahQdio6g6EhH0VGj6FB0BEVHOoqOGkWHoiMMXHQIIYQQQgghhBBCCCFEmFP8BsqRFeE8vQqMAAAAAElFTkSuQmCC"/>
+                </defs>
+                </svg>
+              </a>
+              <a href="#">
+                <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_14181_1319)">
+                <rect x="0.914062" width="43.9153" height="43.9153" rx="7.31921" fill="#061A2C"/>
+                <g clip-path="url(#clip1_14181_1319)">
+                <g clip-path="url(#clip2_14181_1319)">
+                <path d="M24.4429 20.7024L30.5746 13.7227H29.1226L23.796 19.7821L19.5445 13.7227H14.6406L21.0706 22.8863L14.6406 30.2046H16.0935L21.7146 23.8049L26.205 30.2046H31.1089M16.6177 14.7949H18.8492L29.1208 29.1845H26.8893" fill="white"/>
+                </g>
+                </g>
+                <rect x="1.37151" y="0.457451" width="43.0004" height="43.0004" rx="6.86176" stroke="#606060" stroke-width="0.914902"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_14181_1319">
+                <rect x="0.914062" width="43.9153" height="43.9153" rx="7.31921" fill="white"/>
+                </clipPath>
+                <clipPath id="clip1_14181_1319">
+                <rect width="16.4682" height="16.4682" fill="white" transform="translate(14.6406 13.7227)"/>
+                </clipPath>
+                <clipPath id="clip2_14181_1319">
+                <rect width="16.4682" height="16.4682" fill="white" transform="translate(14.6406 13.7227)"/>
+                </clipPath>
+                </defs>
+                </svg>
+              </a>
+              <a href="#">
+                <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g clip-path="url(#clip0_14181_1325)">
+                <rect x="0.835938" width="43.9153" height="43.9153" rx="7.31921" fill="#061A2C"/>
+                <rect x="9.15625" y="8.09375" width="28.013" height="28.013" fill="url(#pattern0_14181_1325)"/>
+                <rect x="1.29339" y="0.457451" width="43.0004" height="43.0004" rx="6.86176" stroke="#606060" stroke-width="0.914902"/>
+                </g>
+                <defs>
+                <pattern id="pattern0_14181_1325" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_14181_1325" transform="scale(0.0111111)"/>
+                </pattern>
+                <clipPath id="clip0_14181_1325">
+                <rect x="0.835938" width="43.9153" height="43.9153" rx="7.31921" fill="white"/>
+                </clipPath>
+                <image id="image0_14181_1325" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADUElEQVR4nO3cO08UURjG8aOlFkoBCqKlH0AN1jbaKZDYGgoLE28YCwsKqcCPIGIksTJGYkG0UKMWRluovEVjB3grgHhL9G9OfDesXPccdmbO7D6/crM7855nZ2ZnZ868zomIiIiIiIiISF0AbcB+oBs4BwwDo8A48ASYAt4BM8BXYI5Fc/bajL1nyj4zbssYtmV22zraGvZrA1qAg0AfMAiMAY+A18B38ufX+cpqGLOa+qzGFpc6oAM4AlwERoCnwCzlM2u1j9hY/Jg6it7lTwG3ShpoqI92SPKHovY8At5h33YRu30qfgA3Mgsc6AE+FT3KhHwGeusd8kngd9EjS9Af4HQ9t2S/QFmZz6ZnoyHvtnNVWdsXYNdGgvbnmlKb0diQ9wC/alyJwE+gMyboC0ov2NmYoO+Hr6fpTcQE/b7pYwv3NibohYgVNbuFmKAlgoLOiYLOiYLOSZmCHijzD3FpgnaLd2xGynjFsFRBV9hN1WeUiAuVSqHAJuA48IESKG3QFcAW4BIwT8JcqFQLBTqBm6nejGiYoCuALuA5iXGhylAo/47fJ4BpEtGQQVcAW23WUeHTIFyo0hS6/B6nP34XxoUqTaErAA4Bk6Wov4giowpdvf7NdvzOdcpa0wVdAWwHrthUrvTqz6OouhRa+3j2ArfJWExhhXDZBj2RXP1ZF7SaDALWoWMldQxYP4ZrqePpnX+mJXcxxRbCbSxgP41Nf1hqERmw/oKHcmEB66JSLBd2mfQFiYnZHZMsFF34zzZodCurvtzygHVzNgvu/5APaLpBRpwm0ORmQFPCpHFO78pOQedEQSccdGnnKBdoLiZo36dIwryJCfpe4EqEuAc6zyu5YGdip1fpofusH7q3sH3vIMmyjUTVpG/f9EPW768U3xjFwu5NdXZ9w7T6qQpbzauybl61ZMv2u4hk1Y6tKux24HpeMzObssHgksB3+nNGayPZLC0z7+bWMnOdLf0w0A9ctfbCyTzAE8DX/NjG0G9jKi7YwJmcXTbzftB2uYfWWvgb+fPrfAk8sFouW22+xm2uUQGtwD7gmO2WQ8A14I5tWZVG3dPW6LD6qdl5e23a3jNpn7ljD+wP2TKP2jpaix6viIiIiIiIiIhrEH8BelVYxPQ3ygQAAAAASUVORK5CYII="/>
+                </defs>
+                </svg>
+              </a>
+              <a href="#">    
+                <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g clip-path="url(#clip0_14181_1334)">
+                <rect x="0.75" width="43.9153" height="43.9153" rx="7.31921" fill="#061A2C"/>
+                <rect x="1.20745" y="0.457451" width="43.0004" height="43.0004" rx="6.86176" stroke="#606060" stroke-width="0.914902"/>
+                <rect x="9.1875" y="8.09375" width="28.013" height="28.013" fill="url(#pattern0_14181_1334)"/>
+                </g>
+                <defs>
+                <pattern id="pattern0_14181_1334" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_14181_1334" transform="scale(0.0111111)"/>
+                </pattern>
+                <clipPath id="clip0_14181_1334">
+                <rect x="0.75" width="43.9153" height="43.9153" rx="7.31921" fill="white"/>
+                </clipPath>
+                <image id="image0_14181_1334" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEyElEQVR4nO2cy29VVRSHLwOKjqsDCpiAMaKiWIsSHo1xaKLEKY8pCcrDmTiCONKgYUSBBhgCaqLgA5Uo8Q8wGA0+agLqEAExpcRabtvPrHQRSune99G1zzl37/0lN2lu2rXW+eV0nbXX3mfVaplMJpPJZDKZTCaTIsAC4AXgLeAU8AtwHbhFeYxpDD9rTBLb8xJrrdMAngEGgX/oHK4Dh4Cna1UHWAl8QWczCXwOPFWrGsB9wH6gTjzUgffk2mpVAHgE+IF4+R54uGyRVwFXiJ+/gTVlifwscIN0uAH0lZEurpIefwHLinzwSd5KlR+B+4sQWqqL1NkXWuQnIyvh2kU0WBlS6C/bDi0+Pg0lcq+ummJiDHgD6NHPbv2uGSaDLNe1dxEbu2e5ThG7WQ6G6MJ1UoOoWXpmuVa5s1tZyHRZCi2tThIRelGLNvothZaeLYmkjjdbtLHXUujTxMmY5uR2Hoa3+dhSaNkZKYOLwACwUauebmC+frr1u03yUAIulRTjT5ZCXysw8HHgBLC2xRjnAeuAk2qjKK5aCt3qv1O7nAUeNYj3MeCbgmL+z0blqcBD8y+w1SzgO3FvA0ZDB28ZcEiuyAaCWbD3xv5c6JauZbAhRV5uFqg/lQQT2zLQUOliVRO+HwJ2Al8BQ8BN/QzpdzuAJU3YWR0qjVRd6K0NfC4GjjVZQcjvHJVVXQObr6Ym9NkG/l4BRtrc19vQwPa5VIQe95VwwOvAxBzsy9/u8th/3LrOrqrQxxvcyXMR+TYTvjsb+IAEhF7rycntpAtfGulx+Fofu9AXZans8CEPPmuOeJbrf8Qs9ICnhAvRnxCbix0+D8cs9EaHfamTQ7Hd4XNzzEL3lrC7fsbhsy9mobsd9n8jHEMOnw/GLHSXw75ltTGTEc+GswlZ6CmGUxS622E/pw5joXsdQueHobHQmxxCS6szFK85fG6xcjCHZHFPUFYcdNhfEmjBUvcsWAZjFvqSZwku/WRrBj1L8D9jFlpY5/CxyPidmGFgocNXv6Gfygp90uPnRaMUIm3Slz1+PiQBocdls9Tja5dB43+nx/4Ko5535YUWvm7gb0ObaUTSxUseu5Kbv8WYKgstbGvgUw4dHmkyldS1iljYwGaQMrLqQo/K4ZYmfMvOy3Z9mf9X7YuM6M9npE52lXAz7KyR41spCo0eanHma8P4nwh5UNMyUAKLvdos2Nnv5KCnYS2DDc2oHG4xC/jOg29HqHQxnU48tntOzl0YxLsiRHVRxLHdIg+iTwDv65GAeS3ewf26GDGtk4s8iF7WqxW/6271Zt3jk9cpuvTzgH63RUs7s+MDZb5aEevLQhZ8ZCl0rK+/WbDHUuhYX+i0YL2l0At0LlzmbqRImG8mtPURqog4YCpyxGMk5sJksCGE2sTJTHE6iMjTmjNlDnCtCvXgIzWBd8u+ygrwTlCRp1Ug50mX7wobgSyzOnXYXmpcBpYWIvKMuaQpjcwclrnYhYo8Tey+RO7sy6WJPCONnI88Jy+tVQF9QO6LrPS7BbxtOgXMeKTmZx2+gpwEPrHY6Slq1v+AzoXrpAbRQNCZo6HQIVP9MrJMGuTABb2govYgZ2NMY7igMe3VGG27cJlMJpPJZDKZTCZT6xD+Bw8TuAekC6jrAAAAAElFTkSuQmCC"/>
+                </defs>
+                </svg>
+              </a>
+              <a href="#">    
+                <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g clip-path="url(#clip0_14181_1345)">
+                <rect x="0.671875" width="43.9153" height="43.9153" rx="7.31921" fill="#061A2C"/>
+                <rect x="1.12933" y="0.457451" width="43.0004" height="43.0004" rx="6.86176" stroke="#606060" stroke-width="0.914902"/>
+                <rect x="8.76562" y="8.09375" width="28.013" height="28.013" fill="url(#pattern0_14181_1345)"/>
+                </g>
+                <defs>
+                <pattern id="pattern0_14181_1345" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_14181_1345" transform="scale(0.0111111)"/>
+                </pattern>
+                <clipPath id="clip0_14181_1345">
+                <rect x="0.671875" width="43.9153" height="43.9153" rx="7.31921" fill="white"/>
+                </clipPath>
+                <image id="image0_14181_1345" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAABsUlEQVR4nO3YoaoUcRjG4T8iVgWT4Zj0AgxegOcKTFbbFi9BMBpOsZksNptROXgJ4uFgEVGLGEUQVAz6yGERFkFh1pmd/3y8T97wzY+XZZjWIiIiIiIiYjw4ixu4h2c4xnt8sfYJH/EWr/EcT/AAN0c8pSZcxSN8t72ncz9H7wt+iJ//ETih/wWX8GaEwAn9N7iID8aVv45NOIOjkSMn9J9wZ4LICb0J5/E5oSeG2xNFzqI34VVCTwyXJ4ycRf+GVULvAO5vGfoQ13Hh5NVwF7cumvVHoqHuzn334uDFwMgnvz81992Lg3cDQ9+a++ZFsv6WPMSVuW9eJPwYGPrc3DcvkuFOz33zIhlo7nsXS0IndCmy6ISu9hYxtYNWkf6sWkX6c61VpD97rSJ9+Vr2S5++vGxV6cvjVpW+HLSq9GXVqtKX/VaVvuy1qvTjW9lXu20YaO57F0tCJ3QpsuiELkUWndClyKITuhRZdEKXIotO6FJk0Qldiiw6oUuRRSd0KbLohC5FFp3QpciiE7oUWXRClyKLTuhSZNEJXYosOqFLkUUndCmy6IiIiIiIiLZTvwA1C/tyHE7zlwAAAABJRU5ErkJggg=="/>
+                </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- App Downloads -->
+          <div class="text-center lg:text-left mt-4 md:mt-0">
+            <h4 class="mb-2 text-xl lg:text-3xl text-white">Download Mustakshif App</h4>
+            <p class="mb-4 text-white text-lg">Scan barcode, see ingredient and explore Halal products instantly.</p>
+            <div class="flex gap-4 justify-center lg:justify-start">
+              <a href="#"><img src="../assets/images/App store.png" alt="App Store" ></a>
+              <a href="#"><img src="../assets/images/Google play.png" alt="Google Play" ></a>
+            </div>
+          </div>
+
         </div>
+
+        <!-- Bottom Links -->
+        <div class="mt-6 py-4 px-6 text-center" style="border-top: 1px solid #526270;border-bottom: 1px solid #526270;color: #EAECEF;">
+          <button onclick="toggleFooterMenu()" class="md:hidden w-full text-left px-4 py-2 bg-gray-800 text-white hover:text-[#b79950] flex justify-between">
+        <span class="text-white">Info Pages </span><span id="toggleIcon" class="float-right text-white">+</span>
+      </button>
+
+      <!-- Footer Links -->
+      <div id="footerMenu" class="hidden flex md:flex flex-col md:flex-row md:flex-wrap gap-6 justify-center py-2 px-4 md:px-0">
+        <a href="#" class="text-lg text-white">About us</a>
+        <a href="#" class="text-lg text-white">Subscribe</a>
+        <a href="#" class="text-lg text-white">Blogs</a>
+        <a href="#" class="text-lg text-white">Contact us</a>
+        <a href="#" class="text-lg text-white">Write for us</a>
+        <a href="#" class="text-lg text-white">User Data Deletion</a>
+        <a href="#" class="text-lg text-white">User Data Protection</a>
+        <a href="#" class="text-lg text-white">Privacy Policy</a>
+        <a href="#" class="text-lg text-white">Terms of Conditions</a>
+      </div>
+      <script>
+        function toggleFooterMenu() {
+          const menu = document.getElementById('footerMenu');
+          const icon = document.getElementById('toggleIcon');
+          if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+            icon.textContent = '-';
+          } else {
+            menu.classList.add('hidden');
+            icon.textContent = '+';
+          }
+        }
+      </script>
+
+        </div>
+        <p class="my-4 text-white text-lg text-center">2025 © Mustakshif. Design & Develop by Navicosoft</p>
       </div>
     </footer>
 

@@ -42,6 +42,9 @@
   .btn-gold{
     @apply text-white bg-[#a28537] hover:bg-[#c7ad6b] text-base font-medium;
   }
+  .homecategslider .slick-track {
+    @apply flex items-stretch !important;
+  }
   .priceplan input[type='radio']:checked {
     background-color: #b89b51 !important;
     color: #fff !important;
@@ -58,16 +61,19 @@
   .changecolor {
     background-color: rgb(184, 155, 81, 0.2) !important;
   }
-  button.slick-arrow.slick-next {
-    position: absolute;
-    right: 36px;
-    top: -30px;
+  .slidingcards .slick-next {
+   @apply absolute right-0 md:right-[36px] top-[-35px] md:top-[-40px];
   }
-  button.slick-prev.slick-arrow {
-    position: absolute;
-    top: -30px;
-    left: 90%;
+  .slidingcards1 .slick-next {
+   @apply absolute right-0 md:right-[36px] top-[-35px] md:top-[-40px];
   }
+  .slidingcards1 .slick-prev {
+   @apply absolute top-[-35px] md:top-[-40px] left-[82%] md:left-[84%] lg:left-[88%] xl:left-[90%];
+  }
+  .slidingcards1 .slick-prev:before,.slidingcards1 .slick-next:before {
+    @apply text-[#b79950] text-[26px] md:text-[30px];
+  }
+
   .no-focus:focus {
     @apply outline-none ring-0 shadow-none;
   }

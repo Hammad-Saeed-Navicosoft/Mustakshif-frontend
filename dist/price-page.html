@@ -152,11 +152,11 @@
 
 
 
-    <div class="mplans-section bg-none lg:bg-[url('../assets/images/Wave.png')] bg-no-repeat bg-bottom bg-contain pb-[20px] pt-[20px]">
+    <div class="mplans-section bg-[url('../assets/images/priceplanpage.png')] bg-no-repeat bg-center bg-cover py-16 md:mt-[-25px]">
       <div class="container mx-auto">
         <div class="text-center px-5">
           <h3 class="sec-heading">Mustakshif Subscription Plan</h3>
-          <p class="sec-text">Given the abundance of forbidden and doubtful products, Muslims need to determine the permissibility <br>of ingredients according to Islamic dietary laws</p>
+          <p class="text-lg font-medium">Given the abundance of forbidden and doubtful products, Muslims need to determine the permissibility <br class="hidden md:block">of ingredients according to Islamic dietary laws</p>
         </div>
 
         <div x-data="{
@@ -246,7 +246,7 @@
           <!-- Cards Grid -->
           <div class="flex flex-col lg:flex-row justify-center gap-6 priceplan" style="gap: 30px;">
             <template x-for="(item, index) in cards.filter(card => tab === 'All' || card.category === tab)" :key="index">
-              <div class="bg-white rounded-xl shadow py-[25px] px-[30px] md:p-4 mainplanclass lg:w-[30%]" style="padding: 25px 50px;">
+              <div class="bg-white rounded-xl shadow border lg:border-0 border-[#E5EAF4] py-[25px] px-[30px] md:p-4 mainplanclass lg:w-[30%]" style="padding: 25px 50px;">
                 <template x-if="item.offer || item.offer === ''">
                 <p class="text-center"> <span x-text="item.offer" class="planoffer mx-auto bg-[#fdeeeb] text-[#E95432] px-[10px] py-[5px] text-[14px] rounded-full"></span></p>
                 </template>
