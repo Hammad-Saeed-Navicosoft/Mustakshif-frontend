@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subscription</title>
-    <link href="/src/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/style.css" />
+       <link href="/src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -14,22 +13,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
 
 <script src="//unpkg.com/alpinejs" defer></script>
 
   </head>
-  <body class="subscription-page">
+  <body class="dashboard-page">
 
 <!-- Include Alpine.js -->
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
 <!-- Mobile Header with Sidebar -->
-<div x-data="{ open: false }" class="md:hidden z-50 relative">
+<div x-data="{ open: false }" class="lg:hidden z-50 relative">
 
   <!-- TOP BAR (Always Visible) -->
-  <div class="flex justify-between items-center px-4 py-3" style="background-color: #0D1E38;">
+  <div class="flex justify-between items-center px-4 py-3 bg-[#0D1E38]">
     <!-- Hamburger Button -->
     <button @click="open = true">
       <svg width="34" height="19" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,10 +85,10 @@
         <li><a href="./dashboard.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-home"></i> Dashboard</a></li>
         <li><a href="./profile.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-user"></i> Profile</a></li>
         <li><a href="./my-business.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-briefcase"></i> My Business</a></li>
-        <li><a href="./subscription.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-credit-card"></i> Subscription</a></li>
+        <li><a href="./subscription.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-credit-card"></i> Payments</a></li>
         <li><a href="./scanning-history.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-history"></i> Scanning History</a></li>
-        <li><a href="advertise.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-bullhorn"></i> Advertise</a></li>
-        <li><a href="Help-Center.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-info-circle"></i> Help Center</a></li>
+        <li><a href="./advertise.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-bullhorn"></i> Advertise</a></li>
+        <li><a href="./Help-Center.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"><i class="fa fa-info-circle"></i> Help Center</a></li>
       </ul>
 
       <!-- Profile Section -->
@@ -119,50 +116,96 @@
 
 
 
-    <section class="dashboard-header">
-      <div class="container mx-auto flex gap-5">
+    <section class="lg:bg-[url('../assets/images/Group_1000004942.png')] bg-no-repeat bg-cover">
+      <div class="container mx-auto flex gap-0">
 
 
-        <aside class="w-full md:w-1/4 flex flex-col justify-start p-6 rounded-lg shadow-sm" style="max-height: fit-content; padding: 0px 10px 30px 10px;">
+        <aside class="w-full hidden lg:flex flex-col justify-start rounded-b-lg shadow-sm pt-0 px-5 pb-6 max-h-[fit-content] lg:w-1/4 bg-white">
           <div>
             <div class="flex flex-col items-center mb-10">
-              <img src="../assets/images/newlogo.png" class="w-20 h-auto mb-2" />
-              <span class="text-xl font-bold">Mustakshif</span>
+              <img src="../assets/images/newlogo.png" class="w-[150px] h-auto mb-2" />
             </div>
             <nav class="space-y-2">
-              <a href="dashboard.html" class="flex gap-3 px-4 py-2 rounded "><img  src="../assets/images/Control Panel (1).png"> <span>Dashboard</span></a>
-              <a href="profile.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Account.png"> <span>Profile</span></a>
-              <a href="my-business.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Small Business.png"> <span>My Business</span></a>
-              <a href="subscription.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded active"><img  src="../assets/images/payments.png"> <span>Subscription</span></a>
-              <a href="scanning-history.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Time Machine.png"> <span>Scanning History</span></a>
-              <a href="advertise.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Advertise.png"> <span>Advertise With Mustakshif</span></a>
-              <a href="Help-Center.html" class="flex gap-3 px-4 py-2 hover:bg-white hover:text-[#b99753] rounded"><img  src="../assets/images/Group 1000004819.png"> <span>Help Center</span></a>
+                <a href="./dashboard.html" class="group flex gap-3 px-4 py-2 rounded  text-[#2E3338] hover:bg-[#B89B51]">
+                    <img src="../assets/images/Control Panel (1).png" alt="Dashboard">
+                    <span class="group-hover:text-white ">Dashboard</span>
+                </a>
+                <a href="./profile.html" class="group flex gap-3 px-4 py-2 text-[#2E3338] rounded hover:bg-[#B89B51]">
+                    <img src="../assets/images/Account.png" alt="Profile">
+                    <span class="group-hover:text-white">Profile</span>
+                </a>
+                <a href="./my-business.html" class="group flex gap-3 px-4 py-2 text-[#2E3338] rounded hover:bg-[#B89B51]">
+                    <img src="../assets/images/Small Business.png" alt="My Business">
+                    <span class="group-hover:text-white">My Business</span>
+                </a>
+                <a href="./subscription.html" class="group flex gap-3 px-4 py-2 text-white rounded bg-[#B89B51] hover:bg-[#B89B51]">
+                    <img src="../assets/images/payments.png" alt="Payments">
+                    <span class="group-hover:text-white text-white">Payments</span>
+                </a>
+                <a href="./scanning-history.html" class="group flex gap-3 px-4 py-2 text-[#2E3338] rounded hover:bg-[#B89B51]">
+                    <img src="../assets/images/Time Machine.png" alt="Scanning History">
+                    <span class="group-hover:text-white">Scanning History</span>
+                </a>
+                <a href="./advertise.html" class="group flex gap-3 px-4 py-2 text-[#2E3338] rounded hover:bg-[#B89B51]">
+                    <img src="../assets/images/Advertise.png" alt="Advertise">
+                    <span class="group-hover:text-white ">Advertise With Mustakshif</span>
+                </a>
+                <a href="./help.html" class="group flex gap-3 px-4 py-2 text-[#2E3338] rounded hover:bg-[#B89B51]">
+                    <img src="../assets/images/Group 1000004819.png" alt="Help Center">
+                    <span class="group-hover:text-white ">Help Center</span>
+                </a>
             </nav>
+
           </div>
 
-          <div class="text-center">
-            <img src="../assets/images/Ellipse 1543.png" class="w-14 h-14 rounded-full mx-auto mb-2" />
-            <p class="font-medium">Haider Ali</p>
-            <button class="mt-2 px-4 py-2 rounded text-white flex gap-3 justify-center mx-auto" style="background-color: #B89B51;"><img src="../assets/images/Logout.png" alt=""><span class="text-white">Logout</span></button>
+          <div class="text-center mt-14">
+            <img src="../assets/images/Ellipse 1543.png" class="w-[150px] h-[150px] rounded-full mx-auto mb-2" />
+            <p class="font-medium text-[26px] text-[#2E3338] mb-4">Haider Ali</p>
+            <button class="mt-2 px-6 py-3 rounded text-white flex gap-3 justify-center mx-auto bg-[#B89B51]"><img src="../assets/images/Logout.png" alt=""><span class="text-white">Logout</span></button>
           </div>
         </aside>
 
-<main class="flex-1 p-6">
-      <div class="flex justify-between my-10 bg-white rounded-lg searchetc" style="align-items: center; padding: 20px 30px;">
-        <h1 class="" style="color: #B89B51; font-size: 26px;">Subscription</h1>
-        <div class="langandbtns flex justify-right gap-2" style="align-items: center;">
+<main class="flex-1 p-6 w-full md:w-3/4">
+      <div class="hidden lg:flex justify-between items-center my-10 bg-white rounded-lg p-5 lg:px-[30px]">
+        <h1 class="text-[26px] text-[#B89B51]">Subscription</h1>
+        <div class="search"><form class="w-full max-w-sm">
+  <div class="flex items-center border border-gray-200 rounded-md shadow-sm overflow-hidden">
+     <!-- Submit Button -->
+      <button type="submit" class="px-4 py-2 ">
+        <svg class="w-5 h-5" fill="none" stroke="#E3E3EF" stroke-width="2" width="22px"
+             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 103.5 3.5a7.5 7.5 0 0013.15 13.15z" />
+        </svg>
+      </button>
+
+    <!-- Input -->
+    <input
+      type="text"
+      name="search"
+      placeholder="Enter keywords ..."
+      class="flex-grow px-4 py-2 text-sm border-0 focus:outline-none focus:ring-0 placeholder-[#8B8D9E]"
+      />
+      
+     
+
+  </div>
+
+</form>
+</div>
+        <div class="flex justify-end items-center gap-2">
           <div class="langselctor">
             <div class="relative flex justify-center align-middle">
   <select
-    class="appearance-none bg-white border border-gray-300 pr-10 pl-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer">
-    <option value="en">EN</option>
-    <option value="fr">FR</option>
-    <option value="de">DE</option>
+    class="appearance-none bg-white border border-none pr-10 pl-2 py-1 rounded cursor-pointer bg-[right_0.2rem_center]">
+    <option value="en" >EN</option>
+    <option value="fr" >FR</option>
+    <option value="de" >DE</option>
   </select>
           </div>
           </div>
           <div class="lightmode">
-            <button class="p-2 flex items-center justify-center rounded-full" style="background-color: #FAFAFA;">
+            <button class="p-2 flex items-center justify-center rounded-full bg-[#FAFAFA]">
   
 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_13931_2496)">
@@ -187,7 +230,7 @@
 
           </div>
           <div class="notification">
-             <button class="p-2 flex items-center justify-center rounded-full" style="background-color: #FAFAFA;">
+             <button class="p-2 flex items-center justify-center rounded-full bg-[#FAFAFA]">
   
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.6999 11.7146C19.0041 10.9021 18.688 10.1979 18.688 9.00168V8.59494C18.688 7.03607 18.3292 6.03168 17.5491 5.02729C16.3469 3.46746 14.3229 2.52734 12.3416 2.52734H12.2573C10.3176 2.52734 8.35707 3.42429 7.13398 4.9208C6.31134 5.94534 5.9109 6.9929 5.9109 8.59494V9.00168C5.9109 10.1979 5.61554 10.9021 4.89892 11.7146C4.37163 12.3132 4.20312 13.0826 4.20312 13.9152C4.20312 14.7489 4.47671 15.5384 5.02577 16.1801C5.74239 16.9495 6.75437 17.4407 7.78812 17.526C9.28479 17.6968 10.7815 17.7611 12.2999 17.7611C13.8174 17.7611 15.3141 17.6536 16.8117 17.526C17.8445 17.4407 18.8565 16.9495 19.5731 16.1801C20.1212 15.5384 20.3957 14.7489 20.3957 13.9152C20.3957 13.0826 20.2272 12.3132 19.6999 11.7146Z" fill="#B89B51"/>
@@ -200,294 +243,343 @@
           </div>
         </div>
       </div>
-      <div class="bg-white rounded-lg main-gri shadow-sm subscription-main-sec" style="padding: 20px 30px; margin-bottom: 25px;">
+      <div class="bg-white rounded-lg shadow-sm md:p-5 lg:py-12 lg:px-[30px] mb-6 main-gri">
 
 
-
-<h2 class="md:hidden" style="font-size: 26px;">Subscription</h2>
-
-
-  <!-- Plan Section -->
   <div class="plan-sec">
-    <h2 class="mb-2" style="font-size: 26px;">Plan</h2>
-    <div class="flex flex-col md:flex-row md:justify-between items-start md:items-center p-5 gap-5" style="background-color: #F7F7F7;">
+    <h2 class="mb-3 text-[26px]">Plan</h2>
+    <div class="flex flex-col md:flex-row md:justify-between items-start md:items-center p-5 gap-5 bg-[#f7f7f7]">
       <div>
-        <p style="color: #5A7184;"><span class="font-semibold">Premium 120 EUR/year </span>(VAT or sales tax may apply)</p>
-        <p >Billed annually</p>
-        <p >Next payment: Apr 7th, 2026</p>
+        <p class="text-[#5A7184] text-lg"><span class="font-semibold">Premium 120 EUR/year </span>(VAT or sales tax may apply)</p>
+        <p class="text-[#5A7184] text-lg">Billed annually</p>
+        <p class="text-[#5A7184] text-lg">Next payment: Apr 7th, 2026</p>
       </div>
-      <a href="./Change-Plan.html" class="text-white px-4 py-2 rounded hover:text-white cursor-pointer" style="background-color: #B89B51;">Upgrade plan</a>
+      <a href="./Change-Plan.html" class="text-white px-4 py-2 rounded hover:text-white cursor-pointer bg-[#B89B51;] self-start">Upgrade plan</a>
     </div>
   </div>
 
   <!-- Billing Information -->
-  <div class="billingg-sec">
-    <h2 class="mb-2" style="font-size: 26px;">Billing information</h2>
-    <div class="flex flex-col md:flex-row md:justify-between items-start md:items-center p-5 gap-5" style="background-color: #F7F7F7;">
+  <div class="billingg-sec mt-9">
+    <h2 class="mb-3 text-[26px]">Billing information</h2>
+    <div class="flex flex-col md:flex-row md:justify-between items-start p-5 gap-5 bg-[#f7f7f7]">
       <div>
-        <p >Haider Ali</p>
-        <p >haiderali@navicosoft.com</p>
+        <p class="text-[#5A7184] text-lg">Haider Ali</p>
+        <p class="text-[#5A7184] text-lg">haiderali@navicosoft.com</p>
       </div>
       <div class="flex flex-col gap-3 md:items-end" >
         <div x-data="{ showModal: false }">
-  <button @click="showModal = true" class="bg-[#B89B51] text-white px-4 py-2 rounded-md">View Billing History</button>
+  <button @click="showModal = true" class="bg-[#eae5d6] text-[#0084FF] px-4 py-2 rounded-md">Billing History</button>
 
   <!-- Modal -->
   <div
     x-show="showModal"
     x-transition
     x-cloak
-    class="fixed inset-0 backdrop-blur-sm z-50 flex items-center justify-center px-4" style="background-color: #000000bf;"
-  >
-    <div class="bg-white overflow-y-auto p-5 relative mx-auto billinghistory" style="width: 60%;">
+    class="fixed inset-0 backdrop-blur-sm z-50 flex items-center justify-center px-4 bg-[#000000bf]">
+    <div class="bg-white overflow-y-auto p-5 relative mx-auto billinghistory lg:w-[80%] xl:w-[60%] w-full">
       <div class="flex justify-between items-center mb-6" >
 
-        <h2 class="px-4" style="font-size: 26px;">Billing history</h2>
-        <button @click="showModal = false" style="background-color: #dcdcdc; color: #959595;padding: 2px 8px;">X</button>
+        <h2 class="px-4 text-[26px]">Billing history</h2>
+        <button @click="showModal = false" class="bg-[#dcdcdc] text-[#959595] py-[2px] px-2">X</button>
       </div>
       
  <!-- Table -->
-    <div class="overflow-x-auto w-full tablecont">
+    <div class="overflow-x-auto w-full tablecont overflow-y-auto max-h-[500px]">
       <table class="w-full border-collapse text-left">
-        <thead>
+        <thead class="hidden md:table-header-group">
           <tr>
-            <th class="py-2 px-4">Product</th>
-            <th class="py-2 px-4">Invoice no</th>
-            <th class="py-2 px-4">Date</th>
-            <th class="py-2 px-4">Amount</th>
-            <th class="py-2 px-4">Status</th>
-            <th class="py-2 px-4">Download</th>
+            <th class="py-2 px-4 text-[22px] font-medium text-[#5a7184]">Product</th>
+            <th class="py-2 px-4 text-[22px] font-medium text-[#5a7184]">Invoice no</th>
+            <th class="py-2 px-4 text-[22px] font-medium text-[#5a7184]">Date</th>
+            <th class="py-2 px-4 text-[22px] font-medium text-[#5a7184]">Amount</th>
+            <th class="py-2 px-4 text-[22px] font-medium text-[#5a7184]">Status</th>
+            <th class="py-2 px-4 text-[22px] font-medium text-[#5a7184]">Download</th>
           </tr>
         </thead>
         <tbody>
-          
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded paid">Paid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded unpaid">Unpaid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded paid">Paid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded unpaid">Unpaid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded paid">Paid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded unpaid">Unpaid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded paid">Paid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded unpaid">Unpaid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded paid">Paid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded unpaid">Unpaid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded paid">Paid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded unpaid">Unpaid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded paid">Paid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded unpaid">Unpaid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded paid">Paid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          <tr >
-            <td class="py-2 px-4">Monthly</td>
-            <td class="py-2 px-4">INV-C-562236</td>
-            <td class="py-2 px-4">04/06/2025</td>
-            <td class="py-2 px-4">$125.33</td>
-            <td class="py-2 px-4">
-              <span class="block text-center px-2 py-1 rounded unpaid">Unpaid</span>
-            </td>
-            <td class="py-2 px-4">
-              <button class="px-3 py-1 rounded flex items-center gap-4" style="color: #5A7184;">
-                <i class="fa-solid fa-download"></i> <span class="download">Download</span>
-              </button>
-            </td>
-          </tr>
-          
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562236</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">04/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$125.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#CBF3E0] text-[#026D4B]">Paid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
 
-        </tbody>
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562237</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">05/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$225.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#FFE0E0] text-[#D32F2F]">Unpaid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562236</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">04/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$125.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#CBF3E0] text-[#026D4B]">Paid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562237</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">05/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$225.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#FFE0E0] text-[#D32F2F]">Unpaid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562236</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">04/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$125.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#CBF3E0] text-[#026D4B]">Paid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562237</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">05/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$225.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#FFE0E0] text-[#D32F2F]">Unpaid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562236</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">04/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$125.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#CBF3E0] text-[#026D4B]">Paid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562237</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">05/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$225.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#FFE0E0] text-[#D32F2F]">Unpaid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562236</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">04/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$125.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#CBF3E0] text-[#026D4B]">Paid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562237</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">05/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$225.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#FFE0E0] text-[#D32F2F]">Unpaid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562236</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">04/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$125.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#CBF3E0] text-[#026D4B]">Paid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562237</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">05/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$225.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#FFE0E0] text-[#D32F2F]">Unpaid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562236</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">04/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$125.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#CBF3E0] text-[#026D4B]">Paid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562237</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">05/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$225.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#FFE0E0] text-[#D32F2F]">Unpaid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562236</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">04/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$125.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#CBF3E0] text-[#026D4B]">Paid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562237</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">05/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$225.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#FFE0E0] text-[#D32F2F]">Unpaid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562236</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">04/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$125.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#CBF3E0] text-[#026D4B]">Paid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+
+  <tr class="grid grid-cols-3 gap-1 md:table-row">
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">Monthly</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">INV-C-562237</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">05/06/2025</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">$225.33</td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <span class="block text-center p-[10px] rounded bg-[#FFE0E0] text-[#D32F2F]">Unpaid</span>
+    </td>
+    <td class="py-2 px-4 text-base font-normal text-[#5a7184]">
+      <button class="rounded flex items-center gap-4 text-[#5A7184] bg-[#eae5d6] w-max px-4 py-2 text-lg">
+        <i class="fa-solid fa-download"></i>
+        <span class="download text-base font-normal text-[#5A7184] hidden md:block">Download</span>
+      </button>
+    </td>
+  </tr>
+
+  
+</tbody>
+
       </table>
     </div>
 
@@ -495,48 +587,44 @@
   </div>
 </div>
 
-        <!-- <button class="rounded">Billing history</button> -->
-        <!-- <button class="rounded">Change billing information</button> -->
         <div x-data="{ showModal: false }">
-  <button @click="showModal = true" class="rounded">Change Billing Information</button>
+  <button @click="showModal = true" class="rounded bg-[#eae5d6] text-[#0084FF] px-4 py-2">Change Billing Information</button>
 
   <!-- Modal -->
   <div
     x-show="showModal"
     x-transition
     x-cloak
-    class="fixed inset-0 backdrop-blur-sm z-50 flex items-center justify-center px-4" style="background-color: #000000bf;"
-  >
-    <div class="bg-white overflow-y-auto p-5 relative mx-auto billinginfor" style="width: 60%;">
-      <div class="flex justify-between items-center mb-6" >
-
-        <h2 class="px-4" style="font-size: 26px;">Billing Information</h2>
-        <button @click="showModal = false" style="background-color: #dcdcdc; color: #959595;padding: 2px 8px;">X</button>
+    class="fixed inset-0 backdrop-blur-sm z-50 flex items-center justify-center px-4 bg-[#000000bf]">
+    <div class="bg-white overflow-y-auto p-5 relative mx-auto billinginfor w-[90%] lg:w-[60%] md:w-[80%] max-h-[90%]">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="px-4 text-[26px]">Billing Information</h2>
+        <button @click="showModal = false" class="bg-[#dcdcdc] text-[#959595] py-[2px] px-2">X</button>
       </div>
       
- <form class="grid formgrid md:grid-cols-2 gap-6 px-4">
+ <form class="grid formgrid grid-cols-1 md:grid-cols-2 gap-6 px-4">
     <!-- Name -->
     <div>
-      <label class="block mb-1 font-medium text-left">Your name*</label>
-      <input type="text" placeholder="Haider Ali" class="w-full border border-gray-300 rounded-lg px-4 py-2 outline-none" />
+      <label class="block mb-1 font-medium text-left text-[#5A7184] text-lg">Your name*</label>
+      <input type="text" placeholder="Haider Ali" class="w-full border border-[#C3CAD9] rounded-lg px-5 py-4 outline-none placeholder-[#959EAD] text-lg"  />
     </div>
 
     <!-- Email -->
     <div>
-      <label class="block mb-1 font-medium">Contact email*</label>
-      <input type="email" placeholder="you@example.com" class="w-full border border-gray-300 rounded-lg px-4 py-2 outline-none" />
+      <label class="block mb-1 font-medium text-left text-[#5A7184] text-lg">Contact email*</label>
+      <input type="email" placeholder="you@example.com" class="w-full border border-[#C3CAD9] rounded-lg px-5 py-4 outline-none placeholder-[#959EAD] text-lg"  />
     </div>
 
     <!-- Company Name -->
     <div>
-      <label class="block mb-1 font-medium">Company name*</label>
-      <input type="text" placeholder="Company name" class="w-full border border-gray-300 rounded-lg px-4 py-2 outline-none" />
+      <label class="block mb-1 font-medium text-left text-[#5A7184] text-lg">Company name*</label>
+      <input type="text" placeholder="Company name" class="w-full border border-[#C3CAD9] rounded-lg px-5 py-4 outline-none placeholder-[#959EAD] text-lg"  />
     </div>
 
     <!-- Country -->
     <div>
-      <label class="block mb-1 font-medium">Country*</label>
-      <select class="w-full border border-gray-300 rounded-md px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-yellow-500">
+      <label class="block mb-1 font-medium text-left text-[#5A7184] text-lg">Country*</label>
+      <select class="w-full border border-[#C3CAD9] rounded-lg px-5 py-4 outline-none placeholder-[#959EAD] text-lg focus:border-2">
         <option>Pakistan</option>
         <option>USA</option>
         <option>UK</option>
@@ -546,14 +634,14 @@
 
    <!-- Address -->
     <div>
-      <label class="block mb-1 font-medium">Address*</label>
-      <input type="text" placeholder="Lahore Pakistan" class="w-full border border-gray-300 rounded-lg px-4 py-2 outline-none" />
+      <label class="block mb-1 font-medium text-left text-[#5A7184] text-lg">Address*</label>
+      <input type="text" placeholder="Lahore Pakistan" class="w-full border border-[#C3CAD9] rounded-lg px-5 py-4 outline-none placeholder-[#959EAD] text-lg"  />
     </div>
 
     <!-- State -->
     <div>
-      <label class="block mb-1 font-medium">State/Region*</label>
-      <select class="w-full border border-gray-300 rounded-md px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-yellow-500">
+      <label class="block mb-1 font-medium text-left text-[#5A7184] text-lg">State/Region*</label>
+      <select class="w-full border border-[#C3CAD9] rounded-lg px-5 py-4 outline-none placeholder-[#959EAD] text-lg focus:border-2">
         <option>Punjab</option>
         <option>KPK</option>
         <option>Sindh</option>
@@ -564,20 +652,20 @@
 
     <!-- City -->
     <div>
-      <label class="block mb-1 font-medium">City*</label>
-      <input type="text" placeholder="Lahore" class="w-full border border-gray-300 rounded-lg px-4 py-2 outline-none" />
+      <label class="block mb-1 font-medium text-left text-[#5A7184] text-lg">City*</label>
+      <input type="text" placeholder="Lahore" class="w-full border border-[#C3CAD9] rounded-lg px-5 py-4 outline-none placeholder-[#959EAD] text-lg"  />
     </div>
 
 
     <!-- ZIP -->
     <div>
-      <label class="block mb-1 font-medium">ZIP/Postal Code*</label>
-      <input type="number" placeholder="54000" class="w-full border border-gray-300 rounded-lg px-4 py-2 outline-none" />
+      <label class="block mb-1 font-medium text-left text-[#5A7184] text-lg">ZIP/Postal Code*</label>
+      <input type="number" placeholder="54000" class="w-full border border-[#C3CAD9] rounded-lg px-5 py-4 outline-none placeholder-[#959EAD] text-lg"  />
     </div>
 
     <!-- Submit Button -->
     <div class="md:col-span-2 text-right justify-end flex ">
-      <button type="submit" class="text-white rounded-lg text-end" style="background-color: #B89B51; padding: 10px 30px;">
+      <button type="submit" class="text-white rounded-lg text-end bg-[#B89B51] px-[30px] py-[10px]">
         Save Change
       </button>
     </div>
@@ -591,9 +679,9 @@
   </div>
 
   <!-- Payment Details -->
-  <div class="payment-dettailss">
-    <h2 class="mb-2" style="font-size: 26px;">Payment details</h2>
-    <div class="flex flex-col md:flex-row md:justify-between items-start md:items-center p-5 gap-5" style="background-color: #F7F7F7;">
+  <div class="payment-dettailss mt-9">
+    <h2 class="mb-3 text-[26px]">Payment details</h2>
+    <div  class="flex flex-col md:flex-row md:justify-between items-start p-5 gap-5 bg-[#f7f7f7]">
       <div class="flex items-center gap-2">
         
 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -605,65 +693,66 @@
 <image id="image0_13931_1424" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
 </defs>
 </svg>
-        <span style="color: #5A7184;font-size: 18px;">Paypal@navicosoft.com</span>
+        <span class="text-[#5A7184] text-lg">Paypal@navicosoft.com</span>
       </div>
       <!-- <button class="rounded">Update payment details</button> -->
       <div x-data="{ showModal: false }">
-  <button @click="showModal = true" class="rounded">Update Payment Details</button>
+  <button @click="showModal = true" class="bg-[#eae5d6] text-[#0084FF] px-4 py-2 rounded-md">Update Payment Details</button>
 
   <!-- Modal -->
   <div
     x-show="showModal"
     x-transition
     x-cloak
-    class="fixed inset-0 backdrop-blur-sm z-50 flex items-center justify-center px-4" style="background-color: #000000bf;"
-  >
-    <div class="bg-white overflow-y-auto p-5 relative mx-auto updatepay" style="width: 40%;">
-      <button @click="showModal = false" style="background-color: #dcdcdc; color: #959595;padding: 2px 8px; " class="updatbtnnn">X</button>
-      <div class=" mx-auto container" style="width: 50%;">
-
-        <h2 class="px-4" style="font-size: 26px;margin-top: 10px;">Update payment <br class="md:hidden">details</h2>
+    class="fixed inset-0 backdrop-blur-sm z-50 flex items-center justify-center px-4 bg-[#000000bf]">
+    <div class="bg-white overflow-y-auto p-5 relative mx-auto updatepay w-[90%] md:w-[70%] lg:w-[60%] xl:w-1/2">
+      <div class="flex justify-end items-center mb-6" >
+        <button @click="showModal = false" class="bg-[#dcdcdc] text-[#959595] py-[2px] px-2">X</button>
       </div>
-     <form id="paymentForm" class="container mx-auto space-y-6 p-4" style="width: 50%;padding-bottom: 100px;">
+      <div class=" mx-auto container lg:w-[80%] xl:w-3/4 2xl:w-1/2">
+        
+        <h2 class="px-4 text-[26px]">Update payment <br class="md:hidden">details</h2>
+      </div>
+     <form id="paymentForm" class="container mx-auto space-y-6 p-4 lg:w-[80%] xl:w-3/4 2xl:w-1/2 pb-24">
   <!-- Hidden input to store selected payment -->
   <input type="hidden" name="payment_method" id="payment_method">
 
   <!-- PayPal -->
   <div id="paypal"
-    class="payment-box  rounded-lg flex justify-center items-center h-16 cursor-pointer transition hover:shadow bg-white px-4 py-3" style="border: 1px solid #C3CAD9;">
+    class="payment-box  rounded-lg flex justify-center items-center h-16 py-1 cursor-pointer transition hover:shadow bg-white px-4 border border-[#C3CAD9]" style="margin-top: 0px;">
     <img src="../assets/images/paypal.png" alt="PayPal" class="h-8">
   </div>
 
   <!-- Individual Card Options -->
-  <div class="flex justify-center gap-2 px-4 py-3 rounded-lg" style="border: 1px solid #C3CAD9;">
+  <div class="flex justify-center gap-2 px-4 rounded-lg border border-[#C3CAD9]">
     <div onclick="selectPayment('visa')" id="visa"
       class="payment-box  rounded-lg flex justify-center items-center h-16 cursor-pointer transition hover:shadow bg-white">
-      <img src="../assets/images/visa.png" alt="Visa" class="h-6">
+      <img src="../assets/images/visa.png" alt="Visa" class="h-8">
     </div>
     <div onclick="selectPayment('stripe')" id="stripe"
       class="payment-box  rounded-lg flex justify-center items-center h-16 cursor-pointer transition hover:shadow bg-white">
-      <img src="../assets/images/stripe.png" alt="Stripe" class="h-6">
+      <img src="../assets/images/stripe.png" alt="Stripe" class="h-8">
     </div>
     <div onclick="selectPayment('mastercard')" id="mastercard"
       class="payment-box  rounded-lg flex justify-center items-center h-16 cursor-pointer transition hover:shadow bg-white">
-      <img src="../assets/images/master-card.png" alt="MasterCard" class="h-6">
+      <img src="../assets/images/master-card.png" alt="MasterCard" class="h-8">
     </div>
     <div onclick="selectPayment('gpay')" id="gpay"
       class="payment-box  rounded-lg flex justify-center items-center h-16 cursor-pointer transition hover:shadow bg-white">
-      <img src="../assets/images/g-pay.png" alt="Google Pay" class="h-6">
+      <img src="../assets/images/g-pay.png" alt="Google Pay" class="h-8">
     </div>
   </div>
 
   <!-- Next Button -->
   <button type="submit"
-    class="text-white rounded hover:opacity-90 transition block text-center" style="background-color: #b89b51;color: #fff; width: 100%;">
+    class="text-white rounded hover:opacity-90 block w-full p-3 text-center bg-[#b89b51]">
     Next
   </button>
 </form>
 
 
 <div x-data="{ showModal: false }">
-  <button @click="showModal = true" class="text-white rounded hover:opacity-90 transition block text-center" style="background-color: #b89b51;color: #fff; width: 100%;">Card Details</button>
+  <button @click="showModal = true" class="text-white rounded hover:opacity-90 transition block text-center bg-[#b89b51] w-full p-3">Card Details Popup on Next</button>
 
   <!-- Modal -->
   <div
@@ -672,45 +761,45 @@
     x-cloak
     class="fixed inset-0 backdrop-blur-sm z-50 flex items-center justify-center px-4" style="background-color: #000000bf;"
   >
-    <div class="bg-white overflow-y-auto p-5 relative mx-auto carddetails" style="width: 40%;">
+    <div class="bg-white overflow-y-auto p-5 relative mx-auto carddetails w-[90%] md:w-[70%] lg:w-[60%] xl:w-1/2">
       <div class="flex justify-between items-center mb-6" >
 
-        <h2 class="px-4" style="font-size: 26px;">Card Details</h2>
-        <button @click="showModal = false" style="background-color: #dcdcdc; color: #959595;padding: 2px 8px;">X</button>
+        <h2 class="px-4 text-[26px]">Card Details</h2>
+        <button @click="showModal = false" class="bg-[#dcdcdc] text-[#959595] py-[2px] px-2">X</button>
       </div>
       
- <form class="carddetailsgrid gap-6 px-4">
+ <form class="carddetailsgrid flex flex-col gap-5 px-4">
     <!-- Cardholder's name -->
     <div>
-      <label class="block mb-1 font-medium text-left">Cardholder's name*</label>
-      <input type="text" placeholder="add name" class="w-full border border-gray-300 rounded-lg px-4 py-2 outline-none" />
+      <label class="block mb-1 font-medium text-[#5A7184] text-lg">Cardholder's name*</label>
+      <input type="text" placeholder="add name"  class="w-full border border-gray-300 rounded-lg px-5 py-4 outline-none placeholder-[#959EAD]" />
     </div>
 
     <!-- Card Number -->
     <div>
-      <label class="block mb-1 font-medium">Card Number*</label>
-      <input type="number" placeholder="add card number" class="w-full border border-gray-300 rounded-lg px-4 py-2 outline-none" />
+      <label class="block mb-1 font-medium text-[#5A7184] text-lg">Card Number*</label>
+      <input type="number" placeholder="add card number"  class="w-full border border-gray-300 rounded-lg px-5 py-4 outline-none placeholder-[#959EAD]" />
     </div>
 
     <div class="flex haldgr gap-6">
 
       <!-- Expiry Date -->
-      <div>
-        <label class="block mb-1 font-medium">Expiry Date*</label>
-      <input type="month" placeholder="expiry date" class="w-full border border-gray-300 rounded-lg px-4 py-2 outline-none" />
+      <div class="w-1/2">
+        <label class="block mb-1 font-medium text-[#5A7184] text-lg">Expiry Date*</label>
+      <input type="month" placeholder="expiry date"  class="w-full border border-gray-300 rounded-lg px-5 py-4 outline-none placeholder-[#959EAD]" />
     </div>
 
 
     <!-- CVC -->
-    <div>
-      <label class="block mb-1 font-medium">CVC*</label>
-      <input type="number" placeholder="456" class="w-full border border-gray-300 rounded-lg px-4 py-2 outline-none" />
+    <div class="w-1/2">
+      <label class="block mb-1 font-medium text-[#5A7184] text-lg">CVC*</label>
+      <input type="number" placeholder="456"  class="w-full border border-gray-300 rounded-lg px-5 py-4 outline-none placeholder-[#959EAD]" />
     </div>
   </div>
 
     <!-- Submit Button -->
-    <div class="md:col-span-2 text-right justify-end flex ">
-      <button type="submit" class="text-white rounded-lg text-end" style="background-color: #B89B51; padding: 10px 30px;color: #fff;">
+    <div class="md:col-span-2 text-right block">
+      <button type="submit" class="text-white rounded-lg text-center bg-[#B89B51] py-3 px-7 w-full">
         Next
       </button>
     </div>
@@ -734,47 +823,29 @@
   </div>
 
   <!-- Manage Subscription Cancellations -->
-  <div class="subs-cancelll">
-    <h2 class="mb-2" style="font-size: 26px;color: #BC371C;">Manage subscription cancellations</h2>
-    <div class="rounded-md p-5 bg-red-50 space-y-3" style="border: 1px solid #BC371C;">
-      <div class="flex items-start gap-2 text-sm text-red-800">
+  <div class="subs-cancelll mt-9 ">
+    <h2 class="mb-3 text-[26px] text-[#BC371C]">Manage subscription cancellations</h2>
+    <div class="rounded-md p-5 space-y-3 border-[#BC371C] border">
+      <div class="flex items-start gap-2 text-sm">
         
-        <p style="color: #959EAD;">
+        <p class="text-[#5A7184] text-lg">
           ⚠️ Cancelling a subscription will result in immediate loss of access to premium features at the end of your current billing 
 period. This action cannot be undone and may result in data loss.
         </p>
       </div>
-      <div class="flex flex-col md:flex-row justify-between items-center bg-white rounded-md p-4" style="border: 1px solid #BC371C;">
+      <div class="flex flex-col md:flex-row justify-between items-center bg-white rounded-md p-4 border border-[#BC371C]">
         <div>
-          <p style="color: #5A7184;"><span class="font-semibold">Premium 120 EUR/year </span>(VAT or sales tax may apply)</p>
-        <p >Billed annually</p>
-        <p >Next payment: Apr 7th, 2026</p>
+          <p class="text-[#5A7184] text-lg"><span class="font-semibold">Premium 120 EUR/year </span>(VAT or sales tax may apply)</p>
+        <p class="text-[#5A7184] text-lg">Billed annually</p>
+        <p class="text-[#5A7184] text-lg">Next payment: Apr 7th, 2026</p>
         </div>
-        <button class="text-white px-4 py-2 rounded" style="background-color: #BC371C;">Cancel Subscription</button>
+        <button class="text-white px-4 py-2 rounded bg-[#BC371C]">Cancel Subscription</button>
       </div>
     </div>
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       </div>
-      
     </main>
 
      
@@ -783,12 +854,6 @@ period. This action cannot be undone and may result in data loss.
 
     </section>
     
-
-
-
-
-
-
 
 
 
